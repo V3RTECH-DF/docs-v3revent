@@ -1,0 +1,70 @@
+title: V3REvent
+description: "Manual do usuário do V3REvent — gestão de inscrições em eventos para WordPress, pela V3RTECH."
+lang: pt-BR
+url: https://docs.v3revent.v3rtech.com.br
+permalink: pretty
+
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# Tema / cor
+color_scheme: v3revent
+logo: "/assets/logo.png"
+
+# Busca
+search_enabled: true
+search:
+  heading_level: 3
+  previews: 3
+  preview_words_before: 5
+  preview_words_after: 10
+  tokenizer_separator: /[\s/]+/
+  rel_url: true
+  button: false
+
+heading_anchors: true
+
+# Callouts (admonitions)
+callouts:
+  note:
+    title: Nota
+    color: blue
+  tip:
+    title: Boas práticas
+    color: green
+  warning:
+    title: Atenção
+    color: yellow
+  important:
+    title: Importante
+    color: red
+  example:
+    title: Exemplo
+    color: purple
+
+# Links auxiliares (canto superior direito)
+aux_links:
+  "V3RTECH":
+    - "https://v3rtech.com.br"
+aux_links_new_tab: true
+
+# Rodapé
+footer_content: '© 2026 <a href="https://v3rtech.com.br/" target="_blank" rel="noopener">V3RTECH</a>. Manual do usuário do V3REvent. · <a href="/disclaimer/">Aviso legal</a>'
+last_edit_timestamp: false
+back_to_top: true
+back_to_top_text: "Voltar ao topo"
+
+# Excluir do build
+exclude:
+  - "*.sh"
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
