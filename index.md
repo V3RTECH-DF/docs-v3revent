@@ -11,7 +11,13 @@ nav_order: 1
 **Gestão completa de eventos — inscrições, pagamentos, credenciamento e presença, direto do seu WordPress.**
 {: .fs-6 .fw-300 }
 
-O V3REvent é um plugin nativo de WordPress, integrado ao WooCommerce, para **criar eventos pagos e gerenciar inscrições em lote**. Seu diferencial é a **inscrição de grupos com preço por faixa de quantidade** — quanto mais participantes no mesmo pedido, menor o valor por inscrito. O responsável preenche os dados, adiciona participantes (à mão ou importando uma planilha), vê o preço calculado ao vivo e paga pelo checkout do WooCommerce. Depois, você acompanha inscrições, emite recibos e credenciais com QR e faz o check-in no dia do evento.
+O V3REvent é um plugin de WordPress para **gestão de inscrições em eventos**, totalmente integrado ao WooCommerce e feito para organizações que inscrevem **grupos, equipes ou delegações** — não apenas participantes individuais.
+
+Em um único pedido, o responsável inscreve toda a equipe, importa os participantes por planilha e aproveita o **desconto progressivo automático**: quanto maior o grupo, menor o valor por participante. O pagamento acontece no **mesmo checkout que a organização já usa** (WooCommerce), sem depender de sistemas externos.
+
+Confirmada a inscrição, cada participante recebe automaticamente a **confirmação**, a **credencial digital com QR Code** e as informações do evento. No dia da atividade, o **credenciamento é feito por leitura do QR Code**, para um controle de presença rápido e seguro.
+
+Ao final, o V3REvent fecha o ciclo de gestão: **emite recibos**, **coleta a avaliação dos participantes** e disponibiliza **relatórios completos** com indicadores, inscrições, presença e resultados do evento.
 
 Este manual tem dois objetivos: **ensinar você a operar o plugin** e **mostrar como tirar o melhor proveito** de cada recurso, com boas práticas de organização de eventos.
 
