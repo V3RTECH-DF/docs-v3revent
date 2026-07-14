@@ -40,13 +40,15 @@ O **responsável** (pagador) já recebeu o **recibo em PDF** na conclusão do pe
 
 ## Pós-evento: avaliação e retrospectiva
 
-Fechar o ciclo é o que faz o próximo evento ser melhor:
+Fechar o ciclo é o que faz o próximo evento ser melhor. A aba **Avaliação** do editor de evento reúne isso em um só lugar:
 
-- Recolha a **avaliação dos participantes** (nota e comentários) — priorize enviar a quem esteve presente, usando a lista de presentes.
-- Faça a sua **retrospectiva** como coordenador: o que funcionou, o que travou, o que mudar. Registre as **lições aprendidas** enquanto a memória está fresca.
+- Monte a **pesquisa** com perguntas de nota (1–5), NPS (0–10), escolha e texto livre.
+- **Envie o convite** por e-mail aos participantes que fizeram check-in (com a opção de mandar só para quem ainda não respondeu).
+- Acompanhe os **resultados** de forma **anônima**: score NPS, médias, distribuição das escolhas, comentários e taxa de resposta.
+- Registre a sua **retrospectiva** como coordenador: o que funcionou, o que travou, o que mudar — as **lições aprendidas** enquanto a memória está fresca.
 
 {: .note }
-> Os recursos de avaliação e retrospectiva do evento estão em evolução no V3REvent — acompanhe a seção **[Novidades](/novidades/)** para saber o que já está disponível na sua versão.
+> A pesquisa é **anônima** e liberada apenas para quem **compareceu** (fez check-in). Por isso a lista de presentes e o check-in alimentam diretamente a qualidade da sua avaliação — mais um motivo para credenciar bem no dia.
 
 ## Encerramento e dados
 

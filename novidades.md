@@ -8,14 +8,31 @@ nav_order: 7
 O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais antiga**. Cada novidade traz a **versão** em que foi introduzida, para você saber o que é realmente novo.
 
 {: .note }
-> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.19.0`). Compare com a lista abaixo para ver o que você já tem.
+> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.21.0`). Compare com a lista abaixo para ver o que você já tem.
 
 ---
 
-## Exportar a lista de presentes
-**v1.19.0 · julho de 2026**
+## Ações da lista de eventos mais limpas
+**v1.21.0 · julho de 2026**
 
-Na tela **Relatórios**, além de **Exportar todos**, agora há **Exportar presentes** — um arquivo (CSV, XLSX ou PDF) só com quem realmente compareceu (fez check-in). Ideal para enviar a pesquisa de avaliação a quem participou, emitir declarações ou ações de fidelização. Veja **[Relatórios](/modulos/relatorios/)**.
+Na tela **Eventos**, os botões **Editar** e **Duplicar** viraram **ícones** (lápis e cópia) com uma **dica ao passar o mouse**, deixando a lista mais enxuta e fácil de ler. O comportamento é o mesmo — e agora também totalmente acessível pelo teclado. Veja **[Eventos](/modulos/eventos/)**.
+
+## Avaliação do evento
+**v1.20.0 · julho de 2026**
+
+Chegou a **pesquisa de avaliação** do evento — uma nova aba **Avaliação** no editor, com quatro áreas:
+
+- **Perguntas** — monte a pesquisa com tipos prontos: **nota (1–5)**, **NPS (0–10)**, escolha única, múltipla escolha e texto livre.
+- **Convites** — envie o convite da pesquisa por e-mail **aos presentes** (com a opção de mandar só para quem ainda não respondeu).
+- **Resultados** — veja os números **de forma anônima**: score NPS, médias das notas, distribuição das escolhas, comentários e a taxa de resposta.
+- **Retrospectiva** — registre as suas **lições aprendidas** como coordenador.
+
+A pesquisa é **anônima e respondida pelos participantes que fizeram check-in**: cada um recebe um link próprio, responde sem precisar de login, e a resposta **não fica vinculada à pessoa** — só o fato de ter respondido é registrado (para não duplicar e calcular a taxa de resposta). Veja **[No dia e depois](/guia-do-gestor/no-dia-e-depois/)**.
+
+## Exportar a lista de presentes
+**v1.19.0 · julho de 2026** *(coluna de horário de check-in a partir da v1.20.1)*
+
+Na tela **Relatórios**, além de **Exportar todos**, agora há **Exportar presentes** — um arquivo (CSV, XLSX ou PDF) só com quem realmente compareceu (fez check-in). A partir da **v1.20.1**, esse arquivo traz também uma coluna **Check-in** com o **horário** de presença de cada pessoa. Ideal para enviar a pesquisa de avaliação a quem participou, emitir declarações ou ações de fidelização. Veja **[Relatórios](/modulos/relatorios/)**.
 
 ## Ordem das abas do editor mais natural
 **v1.18.0 · julho de 2026**
