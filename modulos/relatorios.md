@@ -8,6 +8,9 @@ nav_order: 5
 
 A tela **Relatórios** aprofunda um evento: indicadores, a lista completa de participantes, a **presença** e as **exportações**.
 
+{: .note }
+> Não confunda com o **[Relatório do evento](/modulos/editor-evento/)** (aba **Relatório** do editor): aquele é um **PDF consolidado** de fechamento (org, patrocinadores, valores, avaliação, equipe…). Esta tela **Relatórios** é a de **acompanhamento e exportação** dos participantes.
+
 ![Relatório de um evento com KPIs, participantes e presença](/assets/screenshots/relatorios.png)
 
 ## Indicadores do evento

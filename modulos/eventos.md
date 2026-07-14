@@ -19,7 +19,7 @@ A tela **Eventos** lista todos os eventos da organização e é o ponto de parti
 | **Local** | Onde acontece. |
 | **Status** | Rascunho, publicado etc. |
 | **Nº de inscritos** | Quantas pessoas já se inscreveram. |
-| **Ações** | Editar e Duplicar. |
+| **Ações** | **Editar**, **Duplicar** e **Gerar relatório do evento (PDF)** — ícones com dica ao passar o mouse. |
 
 ## Criar um evento
 

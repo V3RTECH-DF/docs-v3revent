@@ -17,7 +17,7 @@ Em um único pedido, o responsável inscreve toda a equipe, importa os participa
 
 Confirmada a inscrição, cada participante recebe automaticamente a **confirmação**, a **credencial digital com QR Code** e as informações do evento. No dia da atividade, o **credenciamento é feito por leitura do QR Code**, para um controle de presença rápido e seguro.
 
-Ao final, o V3REvent fecha o ciclo de gestão: **emite recibos**, **coleta a avaliação dos participantes** e disponibiliza **relatórios completos** com indicadores, inscrições, presença e resultados do evento.
+Ao final, o V3REvent fecha o ciclo de gestão: **emite recibos e certificados de participação**, **coleta a avaliação dos participantes** e gera um **relatório consolidado do evento** em PDF, com indicadores, patrocinadores, presença, valores e resultados.
 
 Este manual tem dois objetivos: **ensinar você a operar o plugin** e **mostrar como tirar o melhor proveito** de cada recurso, com boas práticas de organização de eventos.
 
@@ -49,12 +49,16 @@ Este manual tem dois objetivos: **ensinar você a operar o plugin** e **mostrar 
 - **Pagamento sem fricção** — reutiliza o carrinho, o checkout e os meios de pagamento do WooCommerce que você já usa.
 - **Comunicação automática** — cada participante recebe um e-mail de confirmação com seu código de inscrição; o responsável recebe um relatório e um **recibo em PDF**.
 - **Credencial com QR e check-in** — emita crachás com a identidade do evento e faça o **credenciamento por leitura de QR** no dia, marcando presença em segundos.
+- **Certificado de participação** — emita certificados aos elegíveis (por check-in ou inscrição confirmada), com modelo, carga horária e link público de verificação.
+- **Avaliação do evento** — pesquisa anônima respondida pelos presentes (com NPS) e a sua retrospectiva de lições aprendidas.
+- **Patrocinadores** — cadastre patrocinadores e apoiadores, exiba os logos na página pública e leve os valores e contrapartidas ao relatório.
 - **Papéis e equipe** — divida o trabalho entre Administrador da Organização, Coordenador de Eventos e Equipe de Evento, cada um com o acesso certo.
 - **Relatórios e exportação** — acompanhe inscritos e receita, filtre, mude status e exporte em **CSV, XLSX ou PDF** (inclusive só a lista de presentes).
+- **Relatório do evento** — um **PDF consolidado** de fechamento, com seções escolhíveis (org, patrocinadores, presença, valores, avaliação, equipe…).
 - **Privacidade por padrão (LGPD)** — consentimento no formulário, retenção configurável e atendimento aos direitos do titular.
 
 {: .note }
-> **A versão instalada** aparece no cabeçalho do painel do V3REvent (ex.: `v1.19.0`). Compare com a seção **[Novidades](/novidades/)** para ver o que você já tem.
+> **A versão instalada** aparece no cabeçalho do painel do V3REvent (ex.: `v1.24.0`). Compare com a seção **[Novidades](/novidades/)** para ver o que você já tem.
 
 ---
 

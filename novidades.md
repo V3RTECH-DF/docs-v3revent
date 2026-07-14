@@ -8,9 +8,24 @@ nav_order: 7
 O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais antiga**. Cada novidade traz a **versão** em que foi introduzida, para você saber o que é realmente novo.
 
 {: .note }
-> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.21.0`). Compare com a lista abaixo para ver o que você já tem.
+> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.24.0`). Compare com a lista abaixo para ver o que você já tem.
 
 ---
+
+## Relatório do evento em PDF
+**v1.24.0 · julho de 2026**
+
+Ao fechar um evento, você agora emite um **relatório consolidado em PDF**, escolhendo **quais seções incluir e em que ordem**: dados da organização, dados gerais, patrocinadores, programação, inscritos e presença, **valores (previsto × arrecadado)**, avaliação, lições aprendidas, texto livre e equipe. Uma nova aba **Relatório** no editor guarda a configuração; o PDF é **gerado na hora** com os dados atuais e **baixado no painel** (documento interno, sem link público). Também dá para gerá-lo pelo ícone de relatório na lista de eventos. Veja **[No dia e depois](/guia-do-gestor/no-dia-e-depois/)**.
+
+## Patrocinadores do evento
+**v1.23.0 · julho de 2026**
+
+Cada evento ganhou uma aba **Patrocinadores** (opcional) para cadastrar patrocinadores e apoiadores: nome, CNPJ/CPF, **logomarca**, site, tipo (patrocínio, apoio, realização, parceria), **valor** (dinheiro ou permuta, com situação previsto/confirmado/recebido) e as **contrapartidas** negociadas. Na **página pública** do evento, os **logos aparecem agrupados por tipo**; os dados financeiros e as contrapartidas ficam só no seu controle. Tudo isso também alimenta o novo **Relatório** do evento. Veja **[Editor de evento](/modulos/editor-evento/)**.
+
+## Certificado de participação
+**v1.22.0 · julho de 2026**
+
+Chegou o **certificado de participação**: uma nova aba **Certificado** no editor, com modelos prontos (Clássico e Moderno) na logo e nas cores do evento, carga horária opcional e **envio por e-mail** aos elegíveis. Quem é elegível depende da **modalidade** do evento — em **presencial**, quem fez **check-in**; em **virtual**, quem tem inscrição confirmada. Cada certificado tem um **link público de verificação** e versão em PDF. Veja **[Documentos](/modulos/documentos/)**.
 
 ## Ações da lista de eventos mais limpas
 **v1.21.0 · julho de 2026**

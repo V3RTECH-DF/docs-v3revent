@@ -8,7 +8,7 @@ nav_order: 3
 
 O editor concentra toda a configuração de um evento, organizado em abas na ordem natural de preenchimento. Você abre o editor ao criar um evento (**Novo Evento**) ou clicar em **Editar** na lista. Ao terminar, use **Salvar** no rodapé; ao mudar o status para publicado, o evento vai ao ar e ganha um produto no WooCommerce.
 
-A sequência das abas é: **Detalhes → Programação → Campos do Formulário → Tabela de Preços → Aparência → Página → Credencial → WooCommerce → Equipe**.
+A sequência das abas é: **Detalhes → Programação → Campos do Formulário → Tabela de Preços → Aparência → Página → Credencial → Certificado → Avaliação → Patrocinadores → Relatório → WooCommerce → Equipe**.
 
 ## Detalhes
 
@@ -85,6 +85,64 @@ Configura o **crachá** de cada participante confirmado:
 - Texto do **consentimento** de networking.
 
 Veja **[Documentos](/modulos/documentos/)** para como a credencial fica e a geração em lote.
+
+## Certificado
+
+Configura o **certificado de participação** dos inscritos elegíveis:
+
+![Aba Certificado do editor de evento](/assets/screenshots/evento-editor-certificado.png)
+
+- **Emitir certificado para este evento** (liga/desliga);
+- **Modelo** do certificado (entre os disponíveis — ex.: Clássico e Moderno —, com a logo e as cores do evento);
+- **Carga horária** em horas (opcional; 0 = não exibir);
+- um **contador de elegíveis** e o botão **Enviar certificados aos elegíveis** (envio manual por e-mail).
+
+Quem é elegível depende da **modalidade** do evento (aba **Detalhes**): em evento **presencial**, quem fez **check-in**; em evento **virtual**, quem tem a inscrição confirmada. Cada certificado tem um **link público de verificação** (`certificado/{código}`), imprimível e com versão em PDF.
+
+{: .note }
+> O certificado só é liberado para quem é elegível. Em evento presencial, isso significa que **o check-in no dia alimenta diretamente a emissão** — mais um motivo para credenciar bem.
+
+## Avaliação
+
+Reúne a **pesquisa de avaliação** do evento e a sua retrospectiva, em quatro áreas:
+
+![Aba Avaliação do editor de evento](/assets/screenshots/evento-editor-avaliacao.png)
+
+- **Perguntas** — monte o questionário com tipos prontos: **nota (1–5)**, **NPS (0–10)**, escolha única, múltipla escolha e texto livre;
+- **Convites** — envie o convite da pesquisa por e-mail **aos presentes** (com a opção de mandar só para quem ainda não respondeu);
+- **Resultados** — os números **de forma anônima**: score NPS, médias das notas, distribuição das escolhas, comentários e taxa de resposta;
+- **Retrospectiva** — as suas **lições aprendidas** como coordenador (o que foi bem, o que melhorar, ações para a próxima edição).
+
+A pesquisa é **anônima** e liberada apenas para quem **fez check-in**: cada participante recebe um link próprio (`avaliacao/{código}`), responde sem login, e a resposta **não fica vinculada à pessoa**. Veja **[No dia e depois](/guia-do-gestor/no-dia-e-depois/)**.
+
+## Patrocinadores
+
+Cadastra os **patrocinadores e apoiadores** do evento. A aba é **opcional** — eventos sem patrocinadores ficam em branco.
+
+![Aba Patrocinadores do editor de evento](/assets/screenshots/evento-editor-patrocinadores.png)
+
+Cada patrocinador tem:
+
+- **Nome** e **CNPJ/CPF** (aceita o CNPJ alfanumérico);
+- **Logomarca** (pela Biblioteca de Mídia) e **site**;
+- **Tipo** (patrocínio, apoio, realização, parceria);
+- **Valor**, com a **natureza** (dinheiro ou permuta) e a **situação** (previsto, confirmado, recebido);
+- **Contrapartidas** negociadas — uma lista pronta de caixas de seleção (marca no material, naming space, fala ao vivo, stand, menção em redes, logo no site, brinde) mais um campo livre.
+
+Você reordena e remove patrocinadores à vontade. Na **página pública** do evento, aparecem apenas o **logo, o nome e o tipo** (agrupados por tipo) — valores, situação, contrapartidas e documento ficam só no seu controle interno. Esses dados também alimentam o **Relatório** do evento.
+
+## Relatório
+
+Monta o **relatório consolidado do evento em PDF**, com seções **escolhíveis e reordenáveis**:
+
+![Aba Relatório do editor de evento](/assets/screenshots/evento-editor-relatorio.png)
+
+- Ligue/desligue e **reordene** as seções: dados da organização, dados gerais (obrigatória), patrocinadores, programação, inscritos e presença, valores, avaliação, lições aprendidas, texto livre e equipe;
+- informe a **meta de arrecadação prevista** (usada no comparativo previsto × arrecadado);
+- escreva um **texto livre** do coordenador;
+- **Salvar configuração** guarda as escolhas; **Gerar Relatório (PDF)** baixa o documento na hora, com os dados atuais.
+
+O relatório é gerado **sob demanda** (não fica armazenado) e é um **download restrito ao painel** — por conter valores, equipe e retrospectiva, não tem link público. Também dá para gerá-lo pelo ícone de relatório na **[lista de eventos](/modulos/eventos/)**. Veja **[No dia e depois](/guia-do-gestor/no-dia-e-depois/)**.
 
 ## WooCommerce
 

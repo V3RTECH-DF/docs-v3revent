@@ -16,7 +16,7 @@ O V3REvent tem duas frentes: o **painel administrativo** (onde você cria e gere
 |---|---|
 | **[Painel](/modulos/painel/)** | Acompanha os indicadores e gráficos de inscrições e receita. |
 | **[Eventos](/modulos/eventos/)** | A lista de todos os eventos: criar, editar e duplicar. |
-| **[Editor de evento](/modulos/editor-evento/)** | Configura um evento por abas: detalhes, programação, campos, preços, aparência, página, credencial, WooCommerce e equipe. |
+| **[Editor de evento](/modulos/editor-evento/)** | Configura um evento por abas: detalhes, programação, campos, preços, aparência, página, credencial, certificado, avaliação, patrocinadores, relatório, WooCommerce e equipe. |
 | **[Inscrições](/modulos/inscricoes/)** | A lista de inscrições: filtros, status e exportação. |
 | **[Relatórios](/modulos/relatorios/)** | Indicadores do evento, participantes, presença e exportações (inclusive só presentes). |
 | **[Check-in](/modulos/checkin/)** | Credenciamento por leitura de QR ou código, no dia do evento. |
@@ -29,4 +29,4 @@ O V3REvent tem duas frentes: o **painel administrativo** (onde você cria e gere
 |---|---|
 | **[Formulário público de inscrição](/modulos/formulario-publico/)** | Onde o responsável inscreve o grupo, importa planilha, vê o preço ao vivo e paga. |
 | **[Página do evento](/modulos/pagina-do-evento/)** | A página temática do evento: hero, informações, programação e compartilhamento. |
-| **[Documentos: recibo e credencial](/modulos/documentos/)** | O recibo do pagador e a credencial com QR de cada participante. |
+| **[Documentos: recibo, credencial e certificado](/modulos/documentos/)** | O recibo do pagador, a credencial com QR e o certificado de participação. |

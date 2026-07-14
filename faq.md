@@ -130,6 +130,46 @@ poderá acompanhar inscrições e fazer check-in, mas não alterará a configura
 evento nem verá outros eventos ou as Configurações globais.
 </details>
 
+## Pós-evento: certificado, avaliação e relatório
+
+<details markdown="1">
+<summary>Quem recebe o certificado de participação?</summary>
+
+Depende da **modalidade** do evento (aba Detalhes): em evento **presencial**, é
+elegível quem fez **check-in**; em **virtual**, quem tem a inscrição confirmada.
+Você ativa a emissão, escolhe o modelo e a carga horária na aba **Certificado** e
+envia por e-mail aos elegíveis. Cada certificado tem um **link público de
+verificação**. Veja **[Documentos](/modulos/documentos/)**.
+</details>
+
+<details markdown="1">
+<summary>Os valores e as contrapartidas dos patrocinadores aparecem para o público?</summary>
+
+Não. Na **página pública** do evento aparecem apenas o **logo, o nome e o tipo** do
+patrocinador (agrupados por tipo). O **valor**, a **situação** e as
+**contrapartidas** ficam só no painel e no **relatório do evento** — que é interno.
+Veja **[Editor de evento](/modulos/editor-evento/)**.
+</details>
+
+<details markdown="1">
+<summary>Qual a diferença entre a tela "Relatórios" e o "Relatório do evento"?</summary>
+
+A tela **Relatórios** é de **acompanhamento e exportação** dos participantes
+(indicadores, presença, CSV/XLSX/PDF). O **Relatório do evento** (aba **Relatório**
+do editor) é um **PDF consolidado de fechamento**, com seções escolhíveis —
+organização, patrocinadores, valores (previsto × arrecadado), avaliação, equipe e
+mais. É gerado sob demanda e restrito ao painel.
+</details>
+
+<details markdown="1">
+<summary>A pesquisa de avaliação é anônima?</summary>
+
+Sim. Ela é liberada apenas para quem **fez check-in**, cada um responde por um link
+próprio **sem login**, e a resposta **não fica vinculada à pessoa** — só o fato de
+ter respondido é registrado (para não duplicar e calcular a taxa de resposta). Veja
+**[No dia e depois](/guia-do-gestor/no-dia-e-depois/)**.
+</details>
+
 ## Dados e privacidade
 
 <details markdown="1">

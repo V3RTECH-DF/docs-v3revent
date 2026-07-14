@@ -23,7 +23,13 @@ Conforme o tema, a página pode incluir:
 - **Programação** — as sessões cadastradas, agrupadas por dia, com trilhas em destaque;
 - **Galeria** — imagens do evento;
 - **Inscrição** — o formulário embutido;
+- **Patrocinadores** — os logos dos patrocinadores e apoiadores, **agrupados por tipo** (patrocínio, apoio, realização…), cada um linkado ao site do patrocinador;
 - **Compartilhar** — botões para WhatsApp, redes sociais e o compartilhamento nativo do celular.
+
+![Seção de patrocinadores na página do evento](/assets/screenshots/pagina-evento-patrocinadores.png)
+
+{: .note }
+> Na página pública aparecem apenas o **logo, o nome e o tipo** do patrocinador. Valor, situação e contrapartidas ficam só no painel (aba **[Patrocinadores](/modulos/editor-evento/)** do editor).
 
 ## Montando à sua maneira (blocos e shortcodes)
 
@@ -34,6 +40,7 @@ Se você prefere usar o seu próprio tema ou o editor de blocos do WordPress, ca
 | `[v3revent_registration]` | O formulário de inscrição. |
 | `[v3revent_schedule]` | A programação do evento. |
 | `[v3revent_gallery]` | A galeria de imagens. |
+| `[v3revent_sponsors]` | Os patrocinadores, agrupados por tipo. |
 | `[v3revent_share]` | Os botões de compartilhamento. |
 
 {: .tip }

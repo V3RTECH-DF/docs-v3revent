@@ -42,6 +42,7 @@ Isso é **minimização de dados**, um princípio da LGPD — e também deixa o 
 - Suba o **logo** e defina as **cores** do evento na aba Aparência: isso personaliza formulário, e-mails, recibo e credencial de uma vez.
 - Revise os **templates de e-mail** (confirmação e relatório) em Configurações → E-mails. Você pode sobrescrever por evento.
 - Cadastre a **programação** se o evento tiver sessões — ela enriquece a página pública e ajuda o inscrito a decidir.
+- Se houver **patrocinadores ou apoiadores**, cadastre-os na aba **Patrocinadores**: os logos aparecem na página pública (agrupados por tipo) e os valores/contrapartidas alimentam o **relatório do evento** no fim. Veja **[Editor de evento](/modulos/editor-evento/)**.
 
 ## Defina a base legal e a retenção (LGPD)
 

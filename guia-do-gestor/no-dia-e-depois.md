@@ -50,6 +50,28 @@ Fechar o ciclo é o que faz o próximo evento ser melhor. A aba **Avaliação** 
 {: .note }
 > A pesquisa é **anônima** e liberada apenas para quem **compareceu** (fez check-in). Por isso a lista de presentes e o check-in alimentam diretamente a qualidade da sua avaliação — mais um motivo para credenciar bem no dia.
 
+## Emita os certificados de participação
+
+Na aba **Certificado** do editor, ative a emissão, escolha o **modelo** e a **carga horária**, e clique em **Enviar certificados aos elegíveis** — cada um recebe o certificado por e-mail, com um **link público de verificação**.
+
+Quem é elegível depende da **modalidade** do evento: em **presencial**, quem fez **check-in**; em **virtual**, quem tem a inscrição confirmada. Veja **[Documentos](/modulos/documentos/)**.
+
+## Gere o relatório do evento
+
+Para fechar o ciclo com um documento único, use a aba **Relatório** do editor (ou o ícone de relatório na lista de eventos). Você **escolhe quais seções incluir e em que ordem** — organização, dados gerais, patrocinadores, programação, inscritos e presença, **valores (previsto × arrecadado)**, avaliação, lições aprendidas, texto livre e equipe — e clica em **Gerar Relatório (PDF)**.
+
+- Informe a **meta de arrecadação prevista** para o comparativo com o arrecadado real (inscrições pagas + patrocínios recebidos);
+- escreva um **texto livre** de fechamento;
+- o PDF é gerado **na hora**, com os dados atuais, e baixado no painel.
+
+{: .tip }
+> **Um relatório para prestar contas**
+>
+> O relatório reúne, num só PDF, tudo o que o evento produziu — presença, valores, avaliação e lições. É a peça ideal para apresentar a patrocinadores, à diretoria ou ao seu próprio arquivo, e para começar o planejamento do próximo evento com números na mão.
+
+{: .note }
+> O relatório é um **documento interno** (contém valores, equipe e retrospectiva): o download é **restrito ao painel**, sem link público — diferente do recibo, da credencial e do certificado, que têm link por código.
+
 ## Encerramento e dados
 
 Depois do evento, respeite o **prazo de retenção** que você configurou: os dados dos inscritos de eventos encerrados são expurgados automaticamente fora da janela definida (Configurações → Avançado). Se um participante exercer um direito da LGPD (acesso, correção, exclusão), você atende pelas ferramentas de privacidade do plugin. Veja **[Política de Privacidade](/legal/privacidade/)**.

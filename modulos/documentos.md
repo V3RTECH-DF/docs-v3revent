@@ -1,12 +1,12 @@
 ---
-title: 'Documentos: recibo e credencial'
+title: 'Documentos: recibo, credencial e certificado'
 parent: Módulos
 nav_order: 10
 ---
 
-# Documentos: recibo e credencial
+# Documentos: recibo, credencial e certificado
 
-O V3REvent gera dois documentos automáticos a partir de uma inscrição confirmada: o **recibo** (para o pagador) e a **credencial** (para cada participante). Ambos usam a identidade do evento e os dados da organização.
+O V3REvent gera documentos automáticos a partir de um evento: o **recibo** (para o pagador), a **credencial** (para cada participante) e o **certificado de participação** (para quem é elegível). Todos usam a identidade do evento e os dados da organização, e têm um **link público por código** — imprimível e com versão em PDF.
 
 ## Recibo
 
@@ -42,6 +42,19 @@ Cada participante confirmado tem uma **credencial** (crachá) com a logo e as co
 
 {: .note }
 > O QR da credencial é o que liga o participante ao **[Check-in](/modulos/checkin/)**. Mesmo quando o QR carrega o vCard de networking, o código de inscrição continua embutido — então a leitura no credenciamento funciona igual.
+
+## Certificado de participação
+
+Quem é elegível recebe um **certificado** na logo e nas cores do evento, em um dos modelos disponíveis (ex.: Clássico e Moderno), com a carga horária quando você a informa.
+
+![Certificado de participação](/assets/screenshots/certificado-publico.png)
+
+- **Elegibilidade por modalidade:** em evento **presencial**, é elegível quem fez **check-in**; em evento **virtual**, quem tem a inscrição **confirmada**.
+- **Emissão:** você ativa o certificado, escolhe o modelo e a carga horária na aba **[Certificado](/modulos/editor-evento/)** do editor, e **envia por e-mail** aos elegíveis (envio manual, quando quiser).
+- **Verificação:** cada certificado tem um **link público** (`certificado/{código}`) que serve de comprovação — o código é a chave de validação. Há versão imprimível em tela e em PDF.
+
+{: .note }
+> O certificado é liberado **só para quem é elegível**. Em evento presencial, isso liga o certificado ao **[Check-in](/modulos/checkin/)**: sem presença registrada, não há certificado.
 
 ## Geração de PDF
 
