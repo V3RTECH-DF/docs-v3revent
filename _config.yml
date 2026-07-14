@@ -16,7 +16,7 @@ defaults:
 
 # Tema / cor
 color_scheme: v3revent
-logo: "/assets/logo.png"
+logo: "/assets/logo.svg"
 
 # Busca
 search_enabled: true
@@ -56,7 +56,7 @@ aux_links:
 aux_links_new_tab: true
 
 # Rodapé
-footer_content: '© 2026 <a href="https://v3rtech.com.br/" target="_blank" rel="noopener">V3RTECH</a>. Manual do usuário do V3REvent. · <a href="/disclaimer/">Aviso legal</a>'
+footer_content: '© 2026 <a href="https://v3rtech.com.br/" target="_blank" rel="noopener">V3RTECH</a>. Todos os direitos reservados. · <a href="/legal/termos/">Termos de Uso</a> · <a href="/legal/privacidade/">Privacidade</a>'
 last_edit_timestamp: false
 back_to_top: true
 back_to_top_text: "Voltar ao topo"
