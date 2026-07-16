@@ -50,9 +50,10 @@ Tipos disponíveis: texto, e-mail, CPF, telefone, número, seleção (select), m
 
 ## Tabela de Preços
 
-No topo da aba há o **Modo de preço**, que define como o valor da inscrição é calculado:
+No topo da aba há o **Modo de preço**, que define como o valor da inscrição é calculado. Escolha um dos três:
 
 - **Por quantidade (faixas)** — o preço por inscrito varia com o **número de inscritos** no pedido (quanto mais gente, menor o valor por inscrito).
+- **Por modalidade de inscrição** — cada inscrito paga conforme a **opção escolhida** num campo do formulário (ex.: Jovem / Chefe / Equipe), cada opção com a sua própria tabela.
 - **Por lote (data)** — o preço é definido por **janelas de data** (lotes); cobra o lote ativo **na data da inscrição**. Ideal para corridas e eventos com "1º lote / 2º lote / 3º lote".
 
 ![Aba Tabela de Preços do editor de evento](/assets/screenshots/evento-editor-precos.png)
@@ -75,9 +76,20 @@ O sistema cobra sempre o **lote ativo na data em que a pessoa se inscreve** — 
 {: .note }
 > **Neste modo não há desconto por quantidade** — o preço do lote é por inscrito, multiplicado pela quantidade. Ex.: lote a R$ 100 × 2 inscritos = R$ 200. Para desconto por grupo, use o modo **Por quantidade**.
 
-### Precificação por modalidade
+### Por modalidade de inscrição
 
-No modo **Por quantidade**, se o evento tem perfis com preços diferentes, designe um **campo de preço** (um select do formulário, ex.: "Modalidade") em que **cada opção tem a sua própria tabela de faixas**. O total é a soma por modalidade, e a faixa de cada opção é definida pela contagem daquela modalidade. Opções sem tabela própria caem na tabela base.
+Use este modo quando o evento tem **perfis com preços diferentes** — por exemplo, uma corrida com valores distintos por categoria, ou um encontro com preços para "Jovem", "Chefe" e "Equipe de serviço".
+
+Para configurar:
+
+1. Selecione **Por modalidade de inscrição** no Modo de preço.
+2. Em **Campo de preço (modalidade)**, escolha o **campo de opção única** do formulário que define a modalidade de cada inscrito (um campo do tipo lista ou opções, criado na aba **Campos do Formulário**).
+3. Cada opção do campo ganha a sua **própria tabela de preços**. Preencha as faixas de cada modalidade; opções sem tabela própria usam a **Tabela base** (mais abaixo) como padrão.
+
+![Preço por modalidade: campo designado e tabela por opção](/assets/screenshots/evento-editor-precos-modalidade.png)
+
+{: .note }
+> Se o formulário ainda não tem um campo de opção única, o editor avisa e indica criar um na aba **Campos do Formulário** — ele é quem define as modalidades disponíveis.
 
 ## Aparência
 
@@ -86,11 +98,15 @@ A identidade visual do evento, que se aplica ao formulário, à página, aos e-m
 ![Aba Aparência do editor de evento](/assets/screenshots/evento-editor-aparencia.png)
 
 - **Logo do evento** (pela Biblioteca de Mídia);
-- **Cor primária** e **secundária** (seletor de cor);
+- **Cores do evento** (ver abaixo);
 - **Fonte**;
 - **Galeria de imagens** do evento (com legendas), exibida na página pública.
 
-Essas escolhas sobrepõem o padrão global definido em **[Configurações → Aparência](/modulos/configuracoes/)**.
+### Cores do evento
+
+Por padrão, o evento **herda as cores globais** definidas em **[Configurações → Aparência](/modulos/configuracoes/)** — você não precisa configurar nada evento a evento. Alterar as cores globais atualiza automaticamente todos os eventos que estão herdando.
+
+Se um evento específico precisa de cores próprias, clique em **Personalizar para este evento** e ajuste a cor primária e a secundária. Para voltar a seguir o padrão global, use **Voltar a usar as cores globais**.
 
 ## Página
 

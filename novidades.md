@@ -8,9 +8,20 @@ nav_order: 7
 O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais antiga**. Cada novidade traz a **versão** em que foi introduzida, para você saber o que é realmente novo.
 
 {: .note }
-> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.25.0`). Compare com a lista abaixo para ver o que você já tem.
+> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.26.0`). Compare com a lista abaixo para ver o que você já tem.
 
 ---
+
+## Preço por modalidade mais fácil e cores herdadas
+**v1.26.0 · julho de 2026**
+
+Três melhorias de usabilidade no **editor de evento**, a partir de sugestões de quem usa o plugin:
+
+- **Preço por modalidade** virou uma opção direta no **Modo de preço** (aba Tabela de Preços), ao lado de "Por quantidade" e "Por lote". Antes era preciso descobrir um campo escondido — agora é só escolher **Por modalidade de inscrição** e apontar o campo do formulário (ex.: "Modalidade": Jovem / Chefe / Equipe), com uma tabela de preços por opção.
+- **Cores dos eventos herdam as globais.** As cores definidas em **Configurações → Aparência** agora são o **padrão automático** de todo evento — você só personaliza um evento se quiser. Mudar a cor global atualiza todos os eventos que seguem o padrão.
+- **Abas do editor** deixam de quebrar em duas linhas: quando são muitas, a barra **rola na horizontal**, sem esconder nenhuma.
+
+Veja **[Editor de evento](/modulos/editor-evento/)**.
 
 ## Preço por lote (data) e data limite de inscrições
 **v1.25.0 · julho de 2026**
