@@ -22,10 +22,14 @@ Os dados básicos do evento.
 - **Capacidade total** (0 = ilimitada);
 - **Máximo de inscritos por pedido**;
 - **Inscrições abertas** (liga/desliga o formulário);
+- **Data limite de inscrições** (opcional) — após esta data, as inscrições **fecham sozinhas**;
 - **Status** do evento.
 
 {: .tip }
 > Deixe **Inscrições abertas** desligado enquanto ainda está montando o evento. Ligue só quando tudo estiver conferido.
+
+{: .note }
+> A **data limite** é o jeito de programar o encerramento: informe a data e não precisa lembrar de desligar as inscrições no dia — o sistema fecha o formulário automaticamente quando ela passa. Deixe em branco para não ter limite por data.
 
 ## Programação
 
@@ -46,13 +50,34 @@ Tipos disponíveis: texto, e-mail, CPF, telefone, número, seleção (select), m
 
 ## Tabela de Preços
 
-As **faixas por quantidade**: para cada faixa, a quantidade mínima, a máxima (última em branco = "acima de"), o preço por inscrito e um rótulo.
+No topo da aba há o **Modo de preço**, que define como o valor da inscrição é calculado:
+
+- **Por quantidade (faixas)** — o preço por inscrito varia com o **número de inscritos** no pedido (quanto mais gente, menor o valor por inscrito).
+- **Por lote (data)** — o preço é definido por **janelas de data** (lotes); cobra o lote ativo **na data da inscrição**. Ideal para corridas e eventos com "1º lote / 2º lote / 3º lote".
 
 ![Aba Tabela de Preços do editor de evento](/assets/screenshots/evento-editor-precos.png)
 
+### Por quantidade (faixas)
+
+As **faixas por quantidade**: para cada faixa, a quantidade mínima, a máxima (última em branco = "acima de"), o preço por inscrito e um rótulo.
+
+### Por lote (data)
+
+No modo **Por lote (data)**, você cadastra os **lotes** — cada um com uma **data de início**, uma **data de fim**, um **preço por inscrito** e um **rótulo** (ex.: "1º lote"). Use as setas para reordenar e o **+** para adicionar lotes.
+
+![Aba Tabela de Preços no modo por lote de data](/assets/screenshots/evento-editor-precos-lote.png)
+
+O sistema cobra sempre o **lote ativo na data em que a pessoa se inscreve** — você não precisa trocar o preço na virada de cada lote, é automático. Quem se inscreve mais cedo paga o lote mais barato.
+
+{: .tip }
+> **Case o último lote com a data limite.** No modo por lote, se ninguém estiver num lote ativo (antes do 1º ou depois do último), as inscrições ficam indisponíveis. Combine o fim do último lote com a **[Data limite de inscrições](#detalhes)** (aba Detalhes) para o encerramento ficar claro.
+
+{: .note }
+> **Neste modo não há desconto por quantidade** — o preço do lote é por inscrito, multiplicado pela quantidade. Ex.: lote a R$ 100 × 2 inscritos = R$ 200. Para desconto por grupo, use o modo **Por quantidade**.
+
 ### Precificação por modalidade
 
-Se o evento tem perfis com preços diferentes, designe um **campo de preço** (um select do formulário, ex.: "Modalidade") em que **cada opção tem a sua própria tabela de faixas**. O total é a soma por modalidade, e a faixa de cada opção é definida pela contagem daquela modalidade. Opções sem tabela própria caem na tabela base.
+No modo **Por quantidade**, se o evento tem perfis com preços diferentes, designe um **campo de preço** (um select do formulário, ex.: "Modalidade") em que **cada opção tem a sua própria tabela de faixas**. O total é a soma por modalidade, e a faixa de cada opção é definida pela contagem daquela modalidade. Opções sem tabela própria caem na tabela base.
 
 ## Aparência
 

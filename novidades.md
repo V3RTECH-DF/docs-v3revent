@@ -8,9 +8,14 @@ nav_order: 7
 O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais antiga**. Cada novidade traz a **versão** em que foi introduzida, para você saber o que é realmente novo.
 
 {: .note }
-> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.24.0`). Compare com a lista abaixo para ver o que você já tem.
+> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.25.0`). Compare com a lista abaixo para ver o que você já tem.
 
 ---
+
+## Preço por lote (data) e data limite de inscrições
+**v1.25.0 · julho de 2026**
+
+A **Tabela de Preços** ganhou um **modo de preço**: além do "Por quantidade" (desconto por grupo), agora há **"Por lote (data)"**. Você cadastra lotes com **janela de data** e **preço** — ex.: 1º lote R$ 100, 2º R$ 110, 3º R$ 120 — e o sistema cobra automaticamente o **lote ativo na data da inscrição**, sem precisar trocar o preço na virada. Perfeito para **corridas** e eventos com lotes. Também entrou, na aba **Detalhes**, uma **Data limite de inscrições** (opcional) que **fecha o formulário automaticamente** na data marcada. Veja **[Editor de evento](/modulos/editor-evento/)**.
 
 ## Relatório do evento em PDF
 **v1.24.0 · julho de 2026**
