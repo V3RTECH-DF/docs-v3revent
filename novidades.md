@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Nova página do manual: personalizar as telas públicas com CSS
+**Manual · julho de 2026**
+
+A pedido de quem usa o plugin, o manual ganhou uma referência de **[Personalizar com CSS](/modulos/personalizar-css/)**: a lista das **classes** e das **variáveis de estilo** que o formulário de inscrição e a página do evento deixam disponíveis. Com ela, quem sabe um pouco de CSS pode ajustar cores, fontes, cantos e espaçamentos pelo **CSS adicional** do tema — ou reaproveitar os elementos em conteúdos com design mais avançado — sem editar o plugin.
+
 ## Formulário mais claro e topo da página mais bonito
 **v1.36.1–v1.37.0 · julho de 2026**
 
