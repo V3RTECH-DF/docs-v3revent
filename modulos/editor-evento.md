@@ -152,6 +152,26 @@ Escolhe como o evento é exibido publicamente: o **layout** e o **tema visual** 
 
 ![Aba Página do editor de evento](/assets/screenshots/evento-editor-pagina.png)
 
+### Hero (topo da página)
+
+O **Hero** é o destaque no topo da página do evento. Você escolhe **como ele aparece**, no seletor **Hero (topo da página)** — disponível quando o layout é a **página do plugin**:
+
+![Seletor de modo do Hero e campo Imagem do Hero, na aba Página](/assets/screenshots/evento-editor-hero.png)
+
+- **Só imagem** — mostra a **arte inteira, sem cortar**, sem nenhum texto por cima. **Ideal quando a arte de divulgação já traz os dados do evento** (nome, data, local). É a opção certa para não sobrepor textos e não perder informação, inclusive no celular.
+- **Imagem + texto** — usa a arte como **fundo** e sobrepõe **título, data e local** com um escurecimento para dar contraste. Boa para uma **foto** de fundo sobre a qual você quer exibir os dados do evento.
+- **Só texto** — sem imagem: título, data e local sobre um fundo nas **cores do evento**.
+- **Automático (pelo tema)** — deixa o tema decidir (é o padrão; mantém o comportamento de sempre).
+
+Em **Imagem do Hero**, escolha a arte do topo. Se deixar vazio, o Hero usa a **1ª foto da galeria** (ou o logo do evento).
+
+Veja como fica o modo **Só imagem** na página pública — a arte aparece por inteiro:
+
+![Página do evento com o Hero no modo "Só imagem" — arte integral](/assets/screenshots/pagina-hero-so-imagem.png)
+
+{: .tip }
+> **Tem uma arte de divulgação com os dados já embutidos?** Use **Só imagem** — assim a arte aparece inteira e legível, sem os textos do plugin por cima. O modo **Imagem + texto** é para quando o fundo é uma **foto** e você quer que o plugin escreva o nome/data/local em cima.
+
 ## Credencial
 
 Configura o **crachá** de cada participante confirmado:

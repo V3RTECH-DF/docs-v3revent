@@ -12,6 +12,27 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Escolha como o topo da página do evento aparece (Hero)
+**v1.35.0 · julho de 2026**
+
+Agora você decide, em cada evento, **como o topo (Hero) da página aparece** — na aba **Página** do editor:
+
+- **Só imagem** — mostra a **arte inteira, sem cortar** e sem texto por cima. Perfeito quando a sua arte de divulgação **já traz nome, data e local** — ela aparece legível, inclusive no celular.
+- **Imagem + texto** — a arte vira fundo e o plugin escreve título, data e local por cima, com contraste.
+- **Só texto** — sem imagem, sobre as cores do evento.
+
+Há também um campo **Imagem do Hero** para escolher a arte do topo. Veja **[Editor de evento](/modulos/editor-evento/)**.
+
+## Campo de múltipla escolha e correções no formulário
+**v1.34.0 · julho de 2026**
+
+O campo **checkbox** do formulário agora pode ter **opções** — vira uma **múltipla escolha** (o participante marca mais de uma, ex.: restrições alimentares). E as opções de **escolha** (radio) e das caixas agora ficam **cada uma em sua linha**, sem se encavalar. Veja **[Editor de evento](/modulos/editor-evento/)**.
+
+## E-mails mais limpos na inscrição
+**v1.33.0 · julho de 2026**
+
+Ao se inscrever num evento, o participante passa a receber **apenas os e-mails do V3REvent** (confirmação, recibo, credencial) — os e-mails genéricos de "pedido" do WooCommerce deixam de ser enviados nas inscrições, para não confundir.
+
 ## API e Webhooks para integrar com outros sistemas
 **v1.31.0–v1.32.0 · julho de 2026**
 
