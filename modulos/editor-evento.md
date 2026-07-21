@@ -51,6 +51,19 @@ Define se o formulário pede os **Dados do Responsável pela Inscrição**:
 {: .note }
 > A **data limite** é o jeito de programar o encerramento: informe a data e não precisa lembrar de desligar as inscrições no dia — o sistema fecha o formulário automaticamente quando ela passa. Deixe em branco para não ter limite por data.
 
+## Documentos
+
+Na aba **Documentos** você anexa arquivos ao evento — **regulamento**, **kit do participante** e o que mais fizer sentido —, cada um com um **título**. Eles aparecem como **links de download** na página do evento.
+
+- Clique em **Adicionar documentos** e escolha um ou mais arquivos na biblioteca de mídia (aceita PDF, DOCX e outros formatos).
+- Dê um **título** a cada documento (é o texto que o visitante vê no link), **reordene** com as setas e **remova** com a lixeira.
+- Em **Exibir na página do evento**, escolha onde a lista aparece: **antes** do formulário de inscrição (padrão), **depois** da inscrição, **logo após as informações** do evento, ou **não exibir**.
+
+![Aba Documentos do editor de evento](/assets/screenshots/evento-editor-documentos.png)
+
+{: .tip }
+> Coloque o **regulamento antes do formulário de inscrição** — assim o participante lê as regras antes de confirmar. Você também pode inserir a lista em qualquer página com o shortcode `[v3revent_documents]`.
+
 ## Programação
 
 As **sessões** do evento (dia, início, fim, título, descrição, palestrante(s), local e trilha). Você adiciona, reordena e remove cards de sessão. A programação aparece na página pública do evento e no bloco/shortcode correspondente.

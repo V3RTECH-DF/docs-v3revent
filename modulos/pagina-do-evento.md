@@ -44,6 +44,7 @@ Conforme o tema, a página pode incluir:
 - **Informações** — detalhes do evento;
 - **Programação** — as sessões cadastradas, agrupadas por dia, com trilhas em destaque;
 - **Galeria** — imagens do evento;
+- **Documentos** — regulamento, kit do participante e outros arquivos como links de download (a posição é escolhida na aba **[Documentos](/modulos/editor-evento/)** do editor);
 - **Inscrição** — o formulário embutido;
 - **Patrocinadores** — os logos dos patrocinadores e apoiadores, **agrupados por tipo** (patrocínio, apoio, realização…), cada um linkado ao site do patrocinador;
 - **Compartilhar** — botões para WhatsApp, redes sociais e o compartilhamento nativo do celular.
@@ -62,6 +63,7 @@ Se você prefere usar o seu próprio tema ou o editor de blocos do WordPress, ca
 | `[v3revent_registration]` | O formulário de inscrição. |
 | `[v3revent_schedule]` | A programação do evento. |
 | `[v3revent_gallery]` | A galeria de imagens. |
+| `[v3revent_documents]` | Os documentos do evento (regulamento, kit…) como links de download. |
 | `[v3revent_sponsors]` | Os patrocinadores, agrupados por tipo. |
 | `[v3revent_share]` | Os botões de compartilhamento. |
 

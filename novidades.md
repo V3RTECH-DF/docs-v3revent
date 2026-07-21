@@ -8,9 +8,14 @@ nav_order: 7
 O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais antiga**. Cada novidade traz a **versão** em que foi introduzida, para você saber o que é realmente novo.
 
 {: .note }
-> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.29.0`). Compare com a lista abaixo para ver o que você já tem.
+> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.30.0`). Compare com a lista abaixo para ver o que você já tem.
 
 ---
+
+## Anexar documentos ao evento (regulamento, kit…)
+**v1.30.0 · julho de 2026**
+
+Agora dá para **anexar documentos ao evento** — regulamento, kit do participante, o que precisar — na nova aba **Documentos** do editor. Cada arquivo recebe um **título** e vira um **link de download** na página do evento. Você **reordena** os documentos e escolhe **onde a lista aparece** (antes ou depois da inscrição, após as informações, ou não exibir). Também há o shortcode `[v3revent_documents]` para colocar a lista em qualquer página. Veja **[Editor de evento](/modulos/editor-evento/)**.
 
 ## Descrição do evento com editor de formatação
 **v1.29.0 · julho de 2026**
