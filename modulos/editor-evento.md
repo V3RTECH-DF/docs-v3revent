@@ -191,7 +191,7 @@ O **Hero** é o destaque no topo da página do evento. Você escolhe **como ele 
 - **Só texto** — sem imagem: título, data e local sobre um fundo nas **cores do evento**.
 - **Automático (pelo tema)** — deixa o tema decidir (é o padrão; mantém o comportamento de sempre).
 
-Em **Imagem do Hero**, escolha a arte do topo. Se deixar vazio, o Hero usa a **1ª foto da galeria** (ou o logo do evento).
+Em **Imagem do Hero**, escolha a arte do topo. Se deixar vazio, o Hero usa a **1ª foto da galeria**; se o evento não tiver nenhuma imagem, o topo aparece no modo **"só texto"** (nome, data e local sobre as cores do evento).
 
 Veja como fica o modo **Só imagem** na página pública — a arte aparece por inteiro:
 
