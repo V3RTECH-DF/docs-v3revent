@@ -184,6 +184,17 @@ ter respondido é registrado (para não duplicar e calcular a taxa de resposta).
 **[No dia e depois](/guia-do-gestor/no-dia-e-depois/)**.
 </details>
 
+## Integração com outros sistemas
+
+<details markdown="1">
+<summary>Como integro o V3REvent com o n8n ou outro sistema?</summary>
+
+Pela tela **Shortcodes e API**. Há dois caminhos: uma **API de leitura** (o outro sistema
+usa uma **chave de API** para consultar eventos, inscrições e inscritos) e **webhooks** (o
+V3REvent **avisa** o outro sistema quando algo acontece — inscrição confirmada, check-in
+etc.). Passo a passo em **[Shortcodes e API](/modulos/shortcodes-e-api/)**.
+</details>
+
 ## Dados e privacidade
 
 <details markdown="1">

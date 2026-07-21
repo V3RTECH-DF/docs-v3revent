@@ -8,9 +8,20 @@ nav_order: 7
 O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais antiga**. Cada novidade traz a **versão** em que foi introduzida, para você saber o que é realmente novo.
 
 {: .note }
-> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.30.0`). Compare com a lista abaixo para ver o que você já tem.
+> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.32.0`). Compare com a lista abaixo para ver o que você já tem.
 
 ---
+
+## API e Webhooks para integrar com outros sistemas
+**v1.31.0–v1.32.0 · julho de 2026**
+
+O V3REvent ganhou uma nova tela **Shortcodes e API** com tudo para conectar seus eventos a outros sistemas (como o **n8n**):
+
+- **API de leitura** — gere **chaves de API** (com escopo por evento) para um sistema externo ler eventos, inscrições e inscritos.
+- **Webhooks** — o V3REvent **avisa automaticamente** um serviço externo quando algo acontece: inscrição confirmada, check-in, credencial emitida, evento publicado e mais (9 gatilhos). Com botão **Testar**, log de entregas e assinatura de segurança.
+- **Shortcodes** — a lista dos shortcodes do plugin, com botão copiar, num lugar só.
+
+Veja **[Shortcodes e API](/modulos/shortcodes-e-api/)**.
 
 ## Anexar documentos ao evento (regulamento, kit…)
 **v1.30.0 · julho de 2026**
