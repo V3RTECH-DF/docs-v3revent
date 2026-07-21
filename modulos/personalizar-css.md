@@ -59,17 +59,19 @@ Todas têm um valor padrão; várias são **derivadas** de outra (por exemplo, o
 | `--v3revent-success` / `--v3revent-warning` / `--v3revent-danger` / `--v3revent-info` | Cores dos avisos (sucesso, atenção, erro, informação) e da validação | `#10B981` / `#F59E0B` / `#EF4444` / `#3B82F6` |
 | `--v3revent-bg` | Cor de fundo geral | `#f8fafc` |
 | `--v3revent-card-bg` | Fundo dos cards (seções, resumo) | `#ffffff` |
+| `--v3revent-field-bg` | Fundo dos campos do formulário e dos botões secundários | `#ffffff` (escuro: `#0f172a`) |
 | `--v3revent-border` / `--v3revent-border-strong` | Cores das bordas | `#e2e8f0` / `#cbd5e1` |
 | `--v3revent-text` | Cor do texto principal | `#1e293b` |
 | `--v3revent-muted` | Cor do texto secundário (legendas, dicas) | `#64748b` |
-| `--v3revent-accent-text` | Cor da marca **quando usada como texto** (garante contraste, inclusive no modo escuro) | igual a `primary` |
+| `--v3revent-accent-text` | Cor **primária** da marca quando usada como texto (garante contraste, inclusive no modo escuro) | igual a `primary` |
+| `--v3revent-secondary-text` | Cor **secundária** (de destaque) quando usada como texto: preço da faixa, total do resumo, ícones da barra de info, hover de link. Clareada no modo escuro para não sumir | igual a `secondary` |
 | `--v3revent-font` | Família tipográfica das telas públicas | `inherit` |
 | `--v3revent-radius` / `--v3revent-radius-lg` | Arredondamento dos cantos (padrão / grande) | `8px` / `12px` |
 | `--v3revent-shadow` | Sombra dos cards | sombra suave |
 | `--v3revent-section-gap` / `--v3revent-section-pad` | Espaço **entre** e **dentro** das seções da página do evento | varia pelo tema |
 
 {: .warning }
-> **`--v3revent-accent-text` é sensível a contraste.** Ela existe justamente para o texto da marca continuar legível no **modo escuro** da página do evento (onde é clareada automaticamente). Se você fixar um valor, teste nos dois modos (claro e escuro) para não deixar texto ilegível.
+> **`--v3revent-accent-text` e `--v3revent-secondary-text` são sensíveis a contraste.** Elas existem justamente para o texto da marca (primária e secundária) continuar legível no **modo escuro** da página do evento, onde são clareadas automaticamente. Se você fixar um valor, teste nos dois modos (claro e escuro) para não deixar texto ilegível.
 
 {: .note }
 > A cor primária, a secundária e a fonte **do evento** são injetadas pelo plugin em `:root`. Como o CSS adicional carrega depois, a sua regra `:root { --v3revent-primary: … }` vence. Para um ajuste que valha **em um evento só**, mire uma classe daquela tela (ex.: dentro de `.v3revent-registration-wrap`) em vez da variável global.
@@ -205,6 +207,14 @@ Cada seção da página é `.v3revent-page-section`, com uma variante por tipo: 
 ```css
 .v3revent-tier-item.active {
   background: color-mix(in srgb, var(--v3revent-secondary) 12%, transparent);
+}
+```
+
+**Dar um leve tom aos campos do formulário (em vez do branco padrão):**
+
+```css
+:root {
+  --v3revent-field-bg: #f4f6f8;
 }
 ```
 
