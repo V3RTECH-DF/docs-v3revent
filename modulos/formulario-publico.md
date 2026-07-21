@@ -33,6 +33,9 @@ Cada evento define um **[Tipo de inscrição](/modulos/editor-evento/)** que con
 4. **Consentimento** — o responsável marca o consentimento de tratamento de dados (com link para a sua política). Se o evento habilitar, há também a opção de **networking** (que libera o vCard no QR da credencial).
 5. **Checkout** — ao confirmar, o formulário valida os dados (incluindo CPF e e-mail), leva a inscrição ao carrinho e segue **direto para o checkout** do WooCommerce.
 
+{: .tip }
+> **Tem um cupom de desconto?** No checkout, o participante pode inserir o código no campo de cupom e o desconto é abatido do total. Veja como criar e restringir cupons em **[Descontos com cupom](/guia-do-gestor/descontos-com-cupom/)**.
+
 ## Importar participantes por planilha
 
 Em vez de digitar um a um, o responsável pode **importar uma planilha**:

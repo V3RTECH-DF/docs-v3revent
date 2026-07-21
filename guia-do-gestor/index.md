@@ -15,6 +15,7 @@ Não é teoria genérica: cada recomendação aqui aponta para uma tela, um camp
 - **[Antes do evento](/guia-do-gestor/antes-do-evento/)** — como planejar capacidade, faixas de preço, campos do formulário e prazos, já pensando em pagamento, LGPD e divulgação.
 - **[Durante as inscrições](/guia-do-gestor/durante-as-inscricoes/)** — como acompanhar inscritos e receita, tratar pagamentos pendentes e excedentes, e manter a comunicação em dia.
 - **[No dia e depois](/guia-do-gestor/no-dia-e-depois/)** — credenciamento por QR, lista de presentes, recibos, e o que fazer no pós-evento (avaliação e retrospectiva).
+- **[Descontos com cupom](/guia-do-gestor/descontos-com-cupom/)** — como criar cupons do WooCommerce e aplicá-los às inscrições (early bird, parceiros, cortesias).
 
 {: .tip }
 > **Primeira vez organizando pelo V3REvent?**

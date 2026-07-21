@@ -25,7 +25,7 @@ O diferencial do V3REvent é o **preço por faixa de quantidade**. Use isso a fa
 - Se há perfis distintos (estudante × profissional, sócio × não-sócio), considere a **precificação por modalidade**, com uma tabela de faixas por opção.
 - Teste os números fazendo uma inscrição simulada e observando o **cálculo ao vivo** e a faixa ativa em destaque.
 
-Detalhes em **[Editor de evento → Tabela de Preços](/modulos/editor-evento/)**.
+Detalhes em **[Editor de evento → Tabela de Preços](/modulos/editor-evento/)**. Para promoções por tempo limitado ou cortesias, você pode somar **[cupons de desconto](/guia-do-gestor/descontos-com-cupom/)** — o desconto incide sobre o valor já calculado.
 
 ## Peça só os dados que vai usar
 
