@@ -12,6 +12,13 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Galeria de modelos de página + modo claro/escuro
+**v1.36.0 · julho de 2026**
+
+A página do evento (layout "Página do plugin") ganhou uma **galeria de modelos**: agora são **6 estilos com personalidades diferentes** — Moderno, Compacto, **Vibrante** (lúdico), **Clássico** (formal, com serifa), **Minimalista** e **Energia** (esportivo). Cada um tem tipografia, formas e acento próprios, e **as cores continuam vindo do seu evento**. Você escolhe pela galeria, vendo uma prévia de cada um.
+
+E há um novo controle de **Esquema de cor** — **Claro, Escuro** ou **Sistema** (que segue o aparelho de cada visitante) — que vale para todos os modelos, com bom contraste nos dois modos. Veja **[Editor de evento](/modulos/editor-evento/)**.
+
 ## Escolha como o topo da página do evento aparece (Hero)
 **v1.35.0 · julho de 2026**
 

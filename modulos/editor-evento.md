@@ -148,9 +148,37 @@ Se um evento específico precisa de cores próprias, clique em **Personalizar pa
 
 ## Página
 
-Escolhe como o evento é exibido publicamente: o **layout** e o **tema visual** da página do evento (uma página inteira do plugin, com hero, informações, programação e formulário). Veja **[Página do evento](/modulos/pagina-do-evento/)**.
+Escolhe como o evento é exibido publicamente: o **layout** e o **modelo visual** da página do evento (uma página inteira do plugin, com hero, informações, programação e formulário). Veja **[Página do evento](/modulos/pagina-do-evento/)**.
 
 ![Aba Página do editor de evento](/assets/screenshots/evento-editor-pagina.png)
+
+### Escolher o modelo da página
+
+Quando o layout é **Página do plugin**, você escolhe o **modelo** numa **galeria** — cada modelo tem uma personalidade própria (tipografia, formas, acento e espaçamento), e **as cores vêm do seu evento**:
+
+![Galeria de modelos de página, com o toggle de esquema de cor](/assets/screenshots/pagina-galeria-modelos.png)
+
+Os 6 modelos:
+
+- **Moderno** — equilibrado e versátil, bom para a maioria dos eventos.
+- **Compacto** — denso e direto, em fundo escuro; vai direto à inscrição.
+- **Vibrante** — lúdico e animado (cantos arredondados), para jogos, brincadeiras, público jovem ou infantil.
+- **Clássico** — formal e elegante, com fonte serifada, para congressos e eventos científicos.
+- **Minimalista** — limpo, com muito respiro e sem enfeites.
+- **Energia** — dinâmico e marcante, em fundo escuro, para corridas e eventos esportivos.
+
+Cada card mostra uma **prévia** do visual. Clique no modelo desejado e **Salve**.
+
+#### Esquema de cor: claro, escuro ou do sistema
+
+Logo abaixo da galeria, o **Esquema de cor** vale para **qualquer** modelo:
+
+- **Claro** — fundo claro.
+- **Escuro** — fundo escuro.
+- **Sistema** — segue a preferência do **aparelho de cada visitante** (quem usa o celular no modo escuro vê a página escura, e vice-versa).
+- **Automático** — usa o padrão do modelo escolhido.
+
+Todos os modelos foram ajustados para ter **bom contraste** nos dois modos.
 
 ### Hero (topo da página)
 
