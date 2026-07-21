@@ -16,6 +16,14 @@ Painel, Eventos, Inscrições, Relatórios, Check-in e Configurações. Veja
 </details>
 
 <details markdown="1">
+<summary>Criei o evento, mas não encontro a página dele. Onde ela fica?</summary>
+
+A página do evento é **criada automaticamente** quando você **publica** o evento — no endereço `.../evento/nome-do-evento/`. Você **não precisa criá-la** nem colar shortcode.
+
+Ela **não aparece** no menu **Páginas** do WordPress porque o evento é um conteúdo próprio do V3REvent (gerido em **V3REvent → Eventos**), e não uma "Página" comum — isso é o esperado. Para abrir a página, use o botão **Ver página**: na lista de **Eventos**, na linha do evento, ou no topo do **editor** do evento. Se o evento ainda está em **rascunho**, o botão vira **Pré-visualizar** (só você vê). Detalhes em **[Página do evento](/modulos/pagina-do-evento/)**.
+</details>
+
+<details markdown="1">
 <summary>Preciso do WooCommerce?</summary>
 
 Sim. O V3REvent usa o **WooCommerce** para o carrinho, o checkout e o pagamento

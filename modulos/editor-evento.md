@@ -8,6 +8,8 @@ nav_order: 3
 
 O editor concentra toda a configuração de um evento, organizado em abas na ordem natural de preenchimento. Você abre o editor ao criar um evento (**Novo Evento**) ou clicar em **Editar** na lista. Ao terminar, use **Salvar** no rodapé; ao mudar o status para publicado, o evento vai ao ar e ganha um produto no WooCommerce.
 
+No topo do editor, o botão **Ver página** abre a página pública do evento em uma nova aba. Enquanto o evento está em rascunho, ele vira **Pré-visualizar** (mostra a página só para você). Veja **[Página do evento](/modulos/pagina-do-evento/)**.
+
 A sequência das abas é: **Detalhes → Programação → Campos do Formulário → Tabela de Preços → Aparência → Página → Credencial → Certificado → Avaliação → Patrocinadores → Relatório → WooCommerce → Equipe**.
 
 ## Detalhes

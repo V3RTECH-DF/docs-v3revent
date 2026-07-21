@@ -10,6 +10,28 @@ O V3REvent pode publicar o evento como uma **página inteira temática**, reunin
 
 ![Página pública do evento com hero, informações e programação](/assets/screenshots/pagina-evento.png)
 
+## Onde fica a página do evento?
+
+Assim que você **publica** um evento, ele **já tem uma página pública própria** — no endereço `.../evento/nome-do-evento/`. Você **não precisa criar uma página** no WordPress nem colar nada: o V3REvent cuida disso sozinho.
+
+{: .note }
+> **Por que a página não aparece em "Páginas" do WordPress?**
+>
+> Porque o evento **não é** uma "Página" comum do WordPress — é um tipo de conteúdo próprio do V3REvent, gerido pela tela **V3REvent → Eventos**. Por isso ele não aparece na lista de **Páginas**, e isso é o esperado. Para abrir, editar ou compartilhar a página, use sempre a tela **Eventos**.
+
+Para abrir a página, use o botão **Ver página**:
+
+- Na tela **[Eventos](/modulos/eventos/)**, na linha do evento, clique no ícone **Ver página** (dica ao passar o mouse).
+- Ou, dentro do **[editor do evento](/modulos/editor-evento/)**, clique em **Ver página** no topo (ao lado de "Voltar").
+
+Nos dois casos a página abre em uma nova aba. É esse o link que você divulga para o público.
+
+### Ainda em rascunho? Use "Pré-visualizar"
+
+Enquanto o evento está em **rascunho** (ainda não publicado), o botão vira **Pré-visualizar**: ele mostra como a página vai ficar, só para você (o público ainda não vê o evento). Assim você confere tudo antes de publicar. Depois de publicado, o botão passa a ser **Ver página** e o endereço fica público.
+
+![Botão "Pré-visualizar" no topo do editor de um evento em rascunho](/assets/screenshots/evento-previsualizar.png)
+
 ## Escolhendo o layout e o tema
 
 Na aba **Página** do editor, você escolhe o **layout** e o **tema visual**. Os temas variam a estrutura da página (por exemplo, um mais claro e amplo com hero de destaque, outro mais compacto e escuro), sempre respeitando a **logo e as cores do evento**.

@@ -8,9 +8,19 @@ nav_order: 7
 O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais antiga**. Cada novidade traz a **versão** em que foi introduzida, para você saber o que é realmente novo.
 
 {: .note }
-> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.26.0`). Compare com a lista abaixo para ver o que você já tem.
+> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.27.0`). Compare com a lista abaixo para ver o que você já tem.
 
 ---
+
+## Botão "Ver página" do evento
+**v1.27.0 · julho de 2026**
+
+Ficou muito mais fácil **encontrar e abrir a página pública** de um evento. Agora existe o botão **Ver página** em dois lugares: na tela **Eventos** (na linha de cada evento) e no topo do **editor** do evento. Um clique abre a página pública em uma nova aba — o link que você divulga.
+
+Enquanto o evento está em **rascunho**, o botão vira **Pré-visualizar**: você confere como a página vai ficar antes de publicar, sem que o público veja.
+
+{: .note }
+> Lembrete útil: a página do evento é publicada **automaticamente** e **não** aparece no menu **Páginas** do WordPress — o evento é gerido pela tela **V3REvent → Eventos**. Veja **[Página do evento](/modulos/pagina-do-evento/)**.
 
 ## Preço por modalidade mais fácil e cores herdadas
 **v1.26.0 · julho de 2026**
