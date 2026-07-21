@@ -25,7 +25,18 @@ Os dados básicos do evento.
 - **Máximo de inscritos por pedido**;
 - **Inscrições abertas** (liga/desliga o formulário);
 - **Data limite de inscrições** (opcional) — após esta data, as inscrições **fecham sozinhas**;
+- **Tipo de inscrição** — controla a seção "Responsável pela inscrição" no formulário (veja abaixo);
 - **Status** do evento.
+
+### Tipo de inscrição
+
+Define se o formulário pede os **Dados do Responsável pela Inscrição**:
+
+- **O participante escolhe** (padrão) — o formulário mostra a pergunta "Para quem é esta inscrição?" (Somente para mim / Para um grupo de pessoas) e revela o responsável só quando é para um grupo. Melhor opção para a maioria dos eventos, em que quase todos se inscrevem sozinhos, mas alguns podem inscrever um grupo.
+- **Somente individual** — esconde a seção do responsável. Use quando cada pessoa sempre faz a própria inscrição.
+- **Sempre em grupo (com responsável)** — mostra o responsável direto, como passo obrigatório. Use em eventos em que quem inscreve costuma ser uma empresa/escola cadastrando várias pessoas.
+
+![Seletor "Tipo de inscrição" na aba Detalhes](/assets/screenshots/evento-editor-tipo-inscricao.png)
 
 {: .tip }
 > Deixe **Inscrições abertas** desligado enquanto ainda está montando o evento. Ligue só quando tudo estiver conferido.

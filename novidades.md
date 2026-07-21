@@ -8,9 +8,20 @@ nav_order: 7
 O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais antiga**. Cada novidade traz a **versão** em que foi introduzida, para você saber o que é realmente novo.
 
 {: .note }
-> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.27.0`). Compare com a lista abaixo para ver o que você já tem.
+> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.28.0`). Compare com a lista abaixo para ver o que você já tem.
 
 ---
+
+## "Responsável pela inscrição" agora é opcional
+**v1.28.0 · julho de 2026**
+
+Antes, o formulário sempre pedia os **Dados do Responsável pela Inscrição** — o que só fazia sentido quando alguém inscrevia um grupo. Agora cada evento tem um **Tipo de inscrição** (aba Detalhes do editor):
+
+- **O participante escolhe** (novo padrão) — o formulário pergunta **"Para quem é esta inscrição?"** e só mostra o responsável quando é para um grupo.
+- **Somente individual** — esconde o responsável; o contato é o próprio participante.
+- **Sempre em grupo** — mantém o responsável como passo obrigatório (comportamento anterior).
+
+Assim, quem se inscreve sozinho não vê mais um campo que não usava. Veja **[Formulário público](/modulos/formulario-publico/)** e **[Editor de evento](/modulos/editor-evento/)**.
 
 ## Botão "Ver página" do evento
 **v1.27.0 · julho de 2026**

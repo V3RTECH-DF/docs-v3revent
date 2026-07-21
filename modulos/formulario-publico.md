@@ -6,13 +6,26 @@ nav_order: 8
 
 # Formulário público de inscrição
 
-É a tela que o **responsável pela inscrição** usa para inscrever um grupo. Ela aparece na página do evento, por shortcode ou na página temática, sempre com a **logo e as cores do evento**.
+É a tela que o participante (ou o responsável por um grupo) usa para se inscrever. Ela aparece na página do evento, por shortcode ou na página temática, sempre com a **logo e as cores do evento**.
 
 ![Formulário público de inscrição com preço ao vivo](/assets/screenshots/form-publico.png)
 
-## Como o responsável se inscreve
+## Individual ou em grupo?
 
-1. **Dados do responsável** — nome e e-mail (obrigatórios), telefone e organização.
+Cada evento define um **[Tipo de inscrição](/modulos/editor-evento/)** que controla se o formulário pede os **Dados do Responsável pela Inscrição** (a pessoa que inscreve um grupo):
+
+- **O participante escolhe** (padrão): no topo do formulário aparece a pergunta **"Para quem é esta inscrição?"**. Em **"Somente para mim"**, a seção do responsável fica oculta; em **"Para um grupo de pessoas"**, ela aparece.
+- **Somente individual**: a seção do responsável **não aparece** — o contato da inscrição é o próprio participante.
+- **Sempre em grupo**: a seção do responsável aparece direto, como um passo obrigatório.
+
+![Formulário com a pergunta "Para quem é esta inscrição?" e o responsável oculto](/assets/screenshots/form-publico-escopo.png)
+
+{: .note }
+> Quando não há responsável (inscrição individual), o **e-mail de confirmação e o recibo** usam o nome e o e-mail informados no **checkout** — ou seja, os do próprio participante.
+
+## Como se inscrever
+
+1. **Dados do responsável** *(quando aplicável)* — nome e e-mail (obrigatórios), telefone e organização.
 2. **Participantes** — o responsável adiciona um card por participante e preenche os campos que você configurou. Pode adicionar e remover participantes livremente.
 3. **Preço ao vivo** — a cada participante, o **preço unitário e o total** são recalculados na hora, e a **faixa ativa** aparece destacada na tabela de preços. Se o evento usa **modalidades**, o resumo mostra o detalhamento por modalidade. Se o evento usa **preço por lote (data)**, o formulário mostra a lista de **lotes** com o **lote atual destacado**, e cobra o preço desse lote por inscrito.
 

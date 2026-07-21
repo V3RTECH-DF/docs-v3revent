@@ -50,6 +50,12 @@ eventos. Passo a passo em **[Primeiros passos](/primeiros-passos/)**.
 ## Inscrições e preços
 
 <details markdown="1">
+<summary>Meu evento é individual — como tiro o campo "Responsável pela inscrição"?</summary>
+
+No editor do evento, aba **Detalhes**, use o **Tipo de inscrição**. Escolha **"Somente individual"** para esconder de vez a seção do responsável, ou **"O participante escolhe"** (padrão) para que o formulário pergunte "Para quem é esta inscrição?" e só mostre o responsável quando for para um grupo. Em inscrições individuais, o contato passa a ser o próprio participante (nome/e-mail do checkout). Detalhes em **[Formulário público](/modulos/formulario-publico/)**.
+</details>
+
+<details markdown="1">
 <summary>Como funciona o preço por faixa de quantidade?</summary>
 
 Você define faixas na aba **Tabela de Preços** do evento: cada faixa tem uma
