@@ -49,18 +49,19 @@ No editor do WordPress (Gutenberg), adicione um bloco **Shortcode** e cole o có
 
 ### Todos os shortcodes
 
+Todos aceitam o atributo **`id`** — o **número do evento** (ex.: `[v3revent_gallery id="1257"]`). Você encontra o ID na **lista de eventos** (coluna **ID**), que ainda traz um botão para **copiar o shortcode de inscrição pronto**. Se o shortcode estiver na **própria página do evento**, pode **omitir** o `id` — ele já pega o evento da página.
+
 | Shortcode | O que exibe | Exemplo de uso |
 |---|---|---|
-| `[v3revent_registration]` | O **formulário de inscrição** completo do evento (com preço ao vivo e checkout). | Numa página "Inscreva-se": `[v3revent_registration]` |
-| `[v3revent_registration_button]` | Um **botão** que leva ao formulário de inscrição. | No meio de um texto de divulgação: `[v3revent_registration_button]` |
-| `[v3revent_schedule]` | A **programação** do evento (dias, horários, atividades). | Numa página "Programação": `[v3revent_schedule]` |
-| `[v3revent_gallery]` | A **galeria de imagens** do evento. | Numa página de edições anteriores: `[v3revent_gallery]` |
-| `[v3revent_documents]` | Os **documentos** do evento (regulamento, kit do participante…) como links de download. | Numa seção "Baixe o regulamento": `[v3revent_documents]` |
+| `[v3revent_registration]` | O **formulário de inscrição** completo do evento (com preço ao vivo e checkout). | Numa página "Inscreva-se": `[v3revent_registration id="1257"]` |
+| `[v3revent_schedule]` | A **programação** do evento (dias, horários, atividades). | Numa página "Programação": `[v3revent_schedule id="1257"]` |
+| `[v3revent_gallery]` | A **galeria de imagens** do evento. | Numa página de edições anteriores: `[v3revent_gallery id="1257"]` |
+| `[v3revent_documents]` | Os **documentos** do evento (regulamento, kit do participante…) como links de download. | Numa seção "Baixe o regulamento": `[v3revent_documents id="1257"]` |
 | `[v3revent_sponsors]` | Os **patrocinadores**, agrupados por tipo (ouro, prata…). | No rodapé da página do evento: `[v3revent_sponsors]` |
 | `[v3revent_share]` | Os **botões de compartilhamento** do evento nas redes. | Ao fim da página do evento: `[v3revent_share]` |
 
 {: .note }
-> A lista na tela é a **fonte viva** — ela reflete exatamente os shortcodes que o plugin oferece na sua versão. Se um shortcode novo for adicionado, ele aparece ali automaticamente, com o botão Copiar.
+> A lista na tela é a **fonte viva** — ela reflete exatamente os shortcodes que o plugin oferece na sua versão. Se um shortcode novo for adicionado, ele aparece ali automaticamente, com o botão Copiar. O `[v3revent_registration]` também aceita `event_id` no lugar de `id` (compatibilidade), mas o padrão é **`id`**.
 
 {: .tip }
 > Você **não precisa** montar tudo com shortcodes. O V3REvent já gera uma **[página do evento](/modulos/pagina-do-evento/)** temática e completa. Os shortcodes servem para quando você quer encaixar **um pedaço** do evento numa página que você mesmo montou (ex.: só o formulário, ou só a programação).
