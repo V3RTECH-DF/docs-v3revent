@@ -12,6 +12,16 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Formulário mais claro e topo da página mais bonito
+**v1.36.1–v1.37.0 · julho de 2026**
+
+Vários acertos de usabilidade a partir do uso real:
+
+- **Campos de "escolha" ocupam a linha inteira** — campos do tipo checkbox/opções não ficam mais espremidos ao lado dos campos de texto.
+- **Inscrição individual mais enxuta** — quando a inscrição é "só para mim", os botões **"+ Adicionar participante"** e **"× Remover"** somem (não faz sentido ter mais de um). No grupo, o último participante também não pode ser removido.
+- **Topo (Hero) sem imagem** — se o evento não tem imagem, o topo aparece no modo **"só texto"** (nome, data e local sobre as cores do evento), em vez de esticar o logo.
+- **Toque mais fácil no celular** — checkboxes e botões um pouco maiores.
+
 ## Galeria de modelos de página + modo claro/escuro
 **v1.36.0 · julho de 2026**
 
