@@ -76,7 +76,12 @@ Define **quais dados coletar de cada participante**. Cada campo é um card com *
 
 ![Aba Campos do Formulário do editor de evento](/assets/screenshots/evento-editor-campos.png)
 
-Tipos disponíveis: texto, e-mail, CPF, telefone, número, seleção (select), múltipla escolha (radio), caixas (checkbox), área de texto e data. O padrão traz nome, CPF, e-mail, organização e telefone.
+Tipos disponíveis: texto, e-mail, CPF, telefone, número, **lista (select)**, **opções (radio)**, **checkbox**, área de texto e data. O padrão traz nome, CPF, e-mail, organização e telefone.
+
+Os tipos **lista** e **opções (radio)** deixam o participante escolher **uma** entre as opções que você definir (uma por linha). O tipo **checkbox** tem dois comportamentos:
+
+- **Sem opções** — um único checkbox de **sim/não** (ex.: "Aceito receber novidades").
+- **Com opções** — vira **múltipla escolha**: o participante pode marcar **mais de uma** (ex.: restrições alimentares: Vegetariano, Vegano, Sem lactose). Cada opção aparece em sua própria linha; se marcar o campo como obrigatório, o participante precisa escolher ao menos uma.
 
 {: .important }
 > **Minimização (LGPD):** só torne obrigatório o que você realmente vai usar. Cada dado a mais é uma responsabilidade a mais sob a LGPD — e um formulário mais longo converte menos.
