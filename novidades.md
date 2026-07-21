@@ -8,9 +8,14 @@ nav_order: 7
 O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais antiga**. Cada novidade traz a **versão** em que foi introduzida, para você saber o que é realmente novo.
 
 {: .note }
-> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.28.0`). Compare com a lista abaixo para ver o que você já tem.
+> A versão instalada aparece no cabeçalho do painel do V3REvent (ex.: `v1.29.0`). Compare com a lista abaixo para ver o que você já tem.
 
 ---
+
+## Descrição do evento com editor de formatação
+**v1.29.0 · julho de 2026**
+
+A **descrição do evento** (aba Detalhes do editor) agora tem um **editor com formatação** — o mesmo editor do WordPress. Dá para usar **negrito**, listas, títulos, links e citações, alternar entre **Visual** e **Texto (HTML)**, e **inserir imagens** pelo botão **Adicionar mídia**. Tudo isso aparece na página pública do evento. Veja **[Editor de evento](/modulos/editor-evento/)**.
 
 ## "Responsável pela inscrição" agora é opcional
 **v1.28.0 · julho de 2026**

@@ -19,6 +19,7 @@ Os dados básicos do evento.
 ![Aba Detalhes do editor de evento](/assets/screenshots/evento-editor-detalhes.png)
 
 - **Título**;
+- **Descrição do evento** — texto de apresentação, com **editor de formatação** (veja abaixo);
 - **Data/hora de início** (obrigatória) e **de término**;
 - **Local** e **link do local**;
 - **Capacidade total** (0 = ilimitada);
@@ -27,6 +28,12 @@ Os dados básicos do evento.
 - **Data limite de inscrições** (opcional) — após esta data, as inscrições **fecham sozinhas**;
 - **Tipo de inscrição** — controla a seção "Responsável pela inscrição" no formulário (veja abaixo);
 - **Status** do evento.
+
+### Descrição do evento
+
+A descrição usa um **editor com formatação** (o mesmo editor do WordPress): você aplica **negrito**, *itálico*, listas, títulos, citações e links, alterna entre as abas **Visual** e **Texto** (HTML), e pode **inserir imagens** pelo botão **Adicionar mídia**. O que você escrever aqui aparece na **página pública do evento**. Se deixar a descrição em branco, ela simplesmente não aparece na página.
+
+![Editor de descrição do evento com barra de formatação](/assets/screenshots/evento-editor-descricao.png)
 
 ### Tipo de inscrição
 
