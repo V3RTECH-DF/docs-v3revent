@@ -2,53 +2,79 @@
 title: Shortcodes e API
 parent: Módulos
 nav_order: 12
+has_children: true
 ---
 
 # Shortcodes e API
 
-A tela **Shortcodes e API** (menu do V3REvent) reúne três recursos para você exibir conteúdo em páginas e **integrar o V3REvent com outros sistemas** (como o [n8n](https://n8n.io)). Ela tem quatro abas.
+A tela **Shortcodes e API** (menu do V3REvent) reúne, num só lugar, tudo o que você precisa para **exibir conteúdo do evento em páginas** e **conectar o V3REvent a outros sistemas** — CRM, planilhas, dashboards e, principalmente, automações no [n8n](https://n8n.io). A tela tem **quatro abas**: Shortcodes, Chaves de API, API (referência) e Webhooks.
+
+Esta página cobre a **visão geral** e os **shortcodes**. As demais abas têm páginas próprias, mais detalhadas:
+
+- **[Chaves de API](/modulos/api-chaves/)** — como criar, dar escopo e revogar as chaves de acesso.
+- **[Referência da API](/modulos/api-referencia/)** — todos os endpoints, com exemplos de requisição e resposta.
+- **[Webhooks](/modulos/api-webhooks/)** — o V3REvent avisando outros sistemas em tempo real.
+- **[Receitas de integração (n8n)](/modulos/api-receitas-n8n/)** — passo a passo de automações prontas.
+
+## API ou webhook? A diferença que muda tudo
+
+São dois caminhos opostos de integração. Escolher o certo economiza muito trabalho.
+
+| | **API (leitura)** | **Webhooks** |
+|---|---|---|
+| **Sentido** | O sistema externo **puxa** (pergunta) os dados do V3REvent. | O V3REvent **empurra** (avisa) o sistema externo. |
+| **Quando roda** | Quando você quiser — sob demanda ou em horários agendados. | Na hora exata em que algo acontece (uma inscrição confirmada, um check-in). |
+| **Analogia** | Você liga perguntando "quantos inscritos temos?". | Eles te ligam assim que entra um inscrito novo. |
+| **Bom para** | Sincronizar uma planilha/CRM periodicamente, alimentar um dashboard, conferir totais. | Disparar automações imediatas: mandar mensagem, criar contato, registrar linha assim que o fato ocorre. |
+
+{: .tip }
+> Na prática você costuma usar **os dois juntos**: o webhook dispara a automação no instante do evento (ex.: "inscrição confirmada → cria contato no CRM") e a API serve para uma **conferência periódica** ou para puxar um recorte grande (ex.: "toda noite, baixar a lista de presentes do evento").
+
+### Casos de uso reais
+
+- **Sincronizar um CRM ou mailing:** a cada inscrição confirmada, criar/atualizar o contato com nome, e-mail e evento (webhook → CRM).
+- **Planilha viva de inscritos:** adicionar uma linha no Google Sheets a cada inscrição (webhook), ou reconstruir a planilha inteira de tempos em tempos (API).
+- **Dashboard externo:** um painel em Power BI/Looker/Metabase que lê os **totais do evento** (`/stats`) e a **avaliação agregada** (`/evaluation`) pela API.
+- **Automação de check-in:** ao registrar um check-in, mandar um WhatsApp de boas-vindas ou avisar um canal do time (webhook `attendee.checked_in`).
 
 ## Shortcodes
 
-A lista dos **shortcodes** do plugin, cada um com um botão **Copiar**. Cole-os em qualquer página ou post (pelo bloco “Shortcode” do editor) para exibir partes do evento — formulário de inscrição, programação, galeria, documentos, patrocinadores e compartilhamento.
+A aba **Shortcodes** lista todos os shortcodes do plugin, cada um com um botão **Copiar**. Um shortcode é um código curto entre colchetes que você **cola numa página ou post** para exibir ali um pedaço do evento — o formulário de inscrição, a programação, a galeria, os documentos, os patrocinadores ou os botões de compartilhamento.
 
 ![Aba Shortcodes](/assets/screenshots/api-shortcodes.png)
 
-## Chaves de API
+### Onde colar
 
-Para um sistema externo **ler** dados do V3REvent (eventos, inscrições, inscritos), ele precisa de uma **chave de API**.
+No editor do WordPress (Gutenberg), adicione um bloco **Shortcode** e cole o código. Em editores clássicos ou construtores de página (Elementor, etc.), use o widget/bloco equivalente de "shortcode". O conteúdo aparece já com a **logo e as cores do evento**.
 
-1. Clique em **Nova chave**, dê um nome (ex.: “Integração n8n”) e escolha o **escopo**: todos os eventos ou apenas eventos selecionados.
-2. A chave (`v3re_…`) é **mostrada uma única vez** — copie e guarde com segurança. Se perder, gere outra.
-3. Use a chave no sistema externo enviando o cabeçalho **`X-V3REvent-Api-Key`** em cada requisição.
+### Todos os shortcodes
 
-Você pode **revogar** uma chave a qualquer momento — a integração que a usa para de funcionar na hora. A coluna “último uso” ajuda a identificar chaves esquecidas.
-
-![Aba Chaves de API](/assets/screenshots/api-chaves.png)
+| Shortcode | O que exibe | Exemplo de uso |
+|---|---|---|
+| `[v3revent_registration]` | O **formulário de inscrição** completo do evento (com preço ao vivo e checkout). | Numa página "Inscreva-se": `[v3revent_registration]` |
+| `[v3revent_registration_button]` | Um **botão** que leva ao formulário de inscrição. | No meio de um texto de divulgação: `[v3revent_registration_button]` |
+| `[v3revent_schedule]` | A **programação** do evento (dias, horários, atividades). | Numa página "Programação": `[v3revent_schedule]` |
+| `[v3revent_gallery]` | A **galeria de imagens** do evento. | Numa página de edições anteriores: `[v3revent_gallery]` |
+| `[v3revent_documents]` | Os **documentos** do evento (regulamento, kit do participante…) como links de download. | Numa seção "Baixe o regulamento": `[v3revent_documents]` |
+| `[v3revent_sponsors]` | Os **patrocinadores**, agrupados por tipo (ouro, prata…). | No rodapé da página do evento: `[v3revent_sponsors]` |
+| `[v3revent_share]` | Os **botões de compartilhamento** do evento nas redes. | Ao fim da página do evento: `[v3revent_share]` |
 
 {: .note }
-> A API de **inscritos** devolve dados pessoais (nome, e-mail, CPF), como no export. A sua organização é a responsável por esses dados; a chave é o controle de acesso. Crie chaves com o **menor escopo** necessário e revogue as que não usa.
-
-## API (referência)
-
-Mostra a **URL base** da API, o cabeçalho de autenticação e a lista de **endpoints** disponíveis (ler eventos, inscrições, inscritos, estatísticas e avaliação), com um exemplo pronto de requisição. É a documentação viva — reflete exatamente o que o plugin oferece.
-
-## Webhooks
-
-Enquanto a API é o sistema externo **puxando** dados, os **webhooks** são o V3REvent **empurrando** eventos assim que eles acontecem — ideal para automações no n8n.
-
-1. Clique em **Novo webhook**, informe a **URL de destino** (precisa ser **`https://`**) e marque os **gatilhos** que quer receber:
-   - **Evento** criado / publicado / cancelado;
-   - **Inscrições** abertas / encerradas;
-   - **Inscrição** confirmada / cancelada;
-   - **Check-in** realizado;
-   - **Credencial** emitida.
-2. Use **Testar** para enviar um sinal de teste e conferir se o destino responde. O painel mostra o **log das últimas entregas** (sucesso/falha e horário).
-3. Pode **ativar/desativar** ou **remover** um webhook quando quiser.
-
-![Aba Webhooks — novo webhook](/assets/screenshots/api-webhooks.png)
-
-Cada entrega é um `POST` com o corpo em JSON e um cabeçalho **`X-V3REvent-Signature`** (assinatura HMAC). No n8n, valide essa assinatura com o **segredo do webhook** para ter certeza de que a chamada veio mesmo do V3REvent. Entregas que falham são **repetidas automaticamente** algumas vezes antes de desistir.
+> A lista na tela é a **fonte viva** — ela reflete exatamente os shortcodes que o plugin oferece na sua versão. Se um shortcode novo for adicionado, ele aparece ali automaticamente, com o botão Copiar.
 
 {: .tip }
-> **Receita rápida no n8n:** crie um fluxo com um nó **Webhook** (método POST, HTTPS), copie a URL dele, cole aqui e marque o gatilho **“Inscrição confirmada”**. A cada nova inscrição paga, o n8n recebe os dados e você pode, por exemplo, adicionar uma linha numa planilha, criar um contato no CRM ou enviar uma mensagem — sem intervenção manual.
+> Você **não precisa** montar tudo com shortcodes. O V3REvent já gera uma **[página do evento](/modulos/pagina-do-evento/)** temática e completa. Os shortcodes servem para quando você quer encaixar **um pedaço** do evento numa página que você mesmo montou (ex.: só o formulário, ou só a programação).
+
+## Dúvidas frequentes (integração)
+
+**Qual das quatro abas eu uso?**
+Para exibir conteúdo em páginas do site → **Shortcodes**. Para deixar outro sistema **ler** dados → **Chaves de API** + **[Referência da API](/modulos/api-referencia/)**. Para outro sistema **ser avisado** na hora → **[Webhooks](/modulos/api-webhooks/)**.
+
+**Preciso saber programar?**
+Para colar shortcodes, não. Para a API e os webhooks, você (ou quem cuida da sua automação) monta o fluxo no n8n praticamente sem código — veja as **[receitas](/modulos/api-receitas-n8n/)**.
+
+**Isso tem custo extra?**
+Não pelo V3REvent. A API e os webhooks fazem parte do plugin. O n8n (ou o serviço que você conectar) tem os próprios planos.
+
+**É seguro?**
+Sim, dentro dos cuidados de sempre: a API exige uma **chave** (revogável) e os webhooks são **assinados** e só entregam por **HTTPS**. Como o endpoint de inscritos traz dados pessoais, trate a chave como uma senha — veja a nota de LGPD em **[Chaves de API](/modulos/api-chaves/)**.

@@ -21,6 +21,7 @@ O V3REvent tem duas frentes: o **painel administrativo** (onde você cria e gere
 | **[Relatórios](/modulos/relatorios/)** | Indicadores do evento, participantes, presença e exportações (inclusive só presentes). |
 | **[Check-in](/modulos/checkin/)** | Credenciamento por leitura de QR ou código, no dia do evento. |
 | **[Configurações](/modulos/configuracoes/)** | Perfil da organização, e-mails, aparência global, LGPD e integrações. |
+| **[Shortcodes e API](/modulos/shortcodes-e-api/)** | Shortcodes para páginas e a integração com outros sistemas: chaves de API, referência da API, webhooks e receitas no n8n. |
 | **[Ajuda e Feedback](/modulos/ajuda-e-feedback/)** | O cabeçalho do painel: manual e envio de feedback à V3RTECH. |
 
 ## Nas telas públicas

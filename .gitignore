@@ -12,3 +12,6 @@ Gemfile.lock
 # Sistema
 .DS_Store
 Thumbs.db
+
+# Artefatos de E2E (scratch, não fazem parte do manual)
+_e2e*/
