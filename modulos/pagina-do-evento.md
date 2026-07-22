@@ -68,7 +68,7 @@ Conforme o tema, a página pode incluir:
 > Cada logo de patrocinador é sempre exibido sobre um **fundo branco**, independentemente do tema escolhido ou do modo claro/escuro. Isso garante bom contraste até para logos transparentes ou feitas para fundo claro. Por isso você pode enviar as artes em **PNG com fundo transparente** — elas aparecem sobre o fundo branco padrão. (Patrocinador sem logo mostra o nome em texto escuro sobre o branco.)
 
 {: .note }
-> **A logo do evento** aparece na página **com destaque**, sobre um **cartão branco** (legível em tema claro ou escuro). Você escolhe **onde ela aparece** — no topo, abaixo do hero, junto das informações — ou **não mostrá-la** na página, em **[Editor de evento → Aparência](/modulos/editor-evento/)** (Posição da logo na página do evento).
+> **A logo do evento** aparece na página **com destaque**, sobre um **cartão branco** (legível em tema claro ou escuro). Você escolhe **onde ela aparece** — no topo, abaixo do hero, junto das informações — ou **não mostrá-la** na página, e também o **tamanho** dela (Pequeno, Médio, Grande ou Personalizado), em **[Editor de evento → Aparência](/modulos/editor-evento/)**.
 
 ## Montando à sua maneira (blocos e shortcodes)
 

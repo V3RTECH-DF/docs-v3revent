@@ -12,6 +12,13 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Escolha o tamanho da logo do evento na página
+**v1.41.0 · julho de 2026**
+
+Além de escolher **onde** a logo aparece, agora você define o **tamanho dela** na página do evento — na aba **Aparência** do editor, no seletor **Tamanho da logo na página**: **Pequeno**, **Médio** (padrão), **Grande** ou **Personalizado**.
+
+No modo **Personalizado**, você informa **a largura _ou_ a altura** (entre **40 e 600 px**) e a outra dimensão é **calculada automaticamente**, mantendo a proporção da imagem, sem distorção. A logo continua sempre sobre o **cartão branco**. Eventos que já existiam ficam em **Médio** — mude só se quiser. Veja **[Editor de evento → Aparência](/modulos/editor-evento/)**.
+
 ## Escolha onde a logo do evento aparece na página
 **v1.40.0 · julho de 2026**
 

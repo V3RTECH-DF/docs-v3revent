@@ -168,6 +168,20 @@ A logo é sempre exibida sobre um **cartão branco**, para ficar legível em qua
 {: .note }
 > **"Não mostrar na página" tira a logo só da página.** Mesmo com essa opção, a logo continua saindo normalmente nos **relatórios**, **e-mails** e **credenciais** — ela apenas deixa de aparecer na página pública do evento.
 
+### Tamanho da logo na página
+
+Logo abaixo da posição, o seletor **Tamanho da logo na página** controla o quanto a logo do evento aparece na página pública (também no layout **[Página do plugin](/modulos/pagina-do-evento/)**):
+
+- **Pequeno**;
+- **Médio** (padrão);
+- **Grande**;
+- **Personalizado** — você define o tamanho exato.
+
+No modo **Personalizado**, informe **a largura _ou_ a altura** (entre **40 e 600 px**) — a **outra dimensão é calculada automaticamente**, mantendo a **proporção** original da imagem, sem distorção.
+
+{: .note }
+> Eventos que já existiam continuam no tamanho **Médio**; ajuste aqui só se quiser mudar. A logo continua sempre sobre o **cartão branco** — o tamanho muda apenas o quanto ela ocupa.
+
 ### Cores do evento
 
 Por padrão, o evento **herda as cores globais** definidas em **[Configurações → Aparência](/modulos/configuracoes/)** — você não precisa configurar nada evento a evento. Alterar as cores globais atualiza automaticamente todos os eventos que estão herdando.
