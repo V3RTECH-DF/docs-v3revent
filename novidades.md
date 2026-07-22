@@ -12,6 +12,32 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Contagem regressiva na página do evento
+**v1.44.0 · julho de 2026**
+
+A página do evento pode mostrar uma **contagem regressiva** ao vivo — dias, horas, minutos e segundos que se atualizam sozinhos. Há **dois contadores independentes**, cada um com o seu interruptor na aba **Detalhes** do editor:
+
+- **Início do evento** — quanto falta para o evento começar;
+- **Fim das inscrições** — quanto falta para a data limite de inscrições.
+
+Cada contador só aparece se a data correspondente estiver **preenchida** e ainda for **futura** — quando a data passa, o contador some sozinho. O contador de **fim das inscrições** é ótimo para criar urgência na reta final. Veja **[Editor de evento → Detalhes](/modulos/editor-evento/)**.
+
+## Contato dos organizadores na página do evento
+**v1.43.0 · julho de 2026**
+
+Agora dá para exibir um cartão **"Fale com a organização"** na página do evento, com os canais de atendimento. Ligue **Exibir contato dos organizadores na página** na aba **Detalhes** e preencha o que quiser divulgar: **e-mail**, **WhatsApp** e **telefone**. Só os campos preenchidos aparecem, e o botão do WhatsApp abre a conversa direto (informe o número **com o código do país**, ex.: `55`). Um contato visível reduz dúvidas e passa confiança a quem vai se inscrever. Veja **[Editor de evento → Detalhes](/modulos/editor-evento/)**.
+
+## Aviso de inscrições e data de abertura
+**v1.42.0 · julho de 2026**
+
+Quando as inscrições **não estão abertas**, a página do evento agora mostra um **aviso claro** logo abaixo do topo, em vez de só esconder o formulário:
+
+- **Inscrições em breve** — antes de abrir (mostra a data de abertura, se informada);
+- **Inscrições encerradas** — depois da data limite;
+- **Inscrições indisponíveis no momento** — quando você fecha as inscrições manualmente.
+
+Para isso, a aba **Detalhes** ganhou o campo **Data de abertura das inscrições**, o par simétrico da **data limite**: antes dela a página mostra "Em breve" e o formulário fica bloqueado; depois, as inscrições abrem sozinhas. Com **abertura** e **limite** preenchidas, você programa a **janela de inscrição** inteira, sem precisar ligar nem desligar o formulário na mão. Se deixar a data de abertura em branco, as inscrições já começam abertas — como sempre foi. Veja **[Editor de evento → Detalhes](/modulos/editor-evento/)**.
+
 ## Escolha o tamanho da logo do evento na página
 **v1.41.0 · julho de 2026**
 

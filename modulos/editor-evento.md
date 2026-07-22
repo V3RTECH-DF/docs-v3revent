@@ -25,9 +25,60 @@ Os dados básicos do evento.
 - **Capacidade total** (0 = ilimitada);
 - **Máximo de inscritos por pedido**;
 - **Inscrições abertas** (liga/desliga o formulário);
+- **Data de abertura das inscrições** (opcional) — antes dela, o formulário fica indisponível e a página mostra um aviso de **"Inscrições em breve"** (veja abaixo);
 - **Data limite de inscrições** (opcional) — após esta data, as inscrições **fecham sozinhas**;
 - **Tipo de inscrição** — controla a seção "Responsável pela inscrição" no formulário (veja abaixo);
+- **Exibir contato dos organizadores na página** (opcional) — mostra um cartão "Fale com a organização" na página do evento (veja abaixo);
+- **Contagem regressiva na página** (opcional) — mostra contadores para o início do evento e o fim das inscrições (veja abaixo);
 - **Status** do evento.
+
+### Aviso e data de abertura das inscrições
+
+A página do evento mostra automaticamente, num **cartão logo abaixo do topo**, quando as inscrições **não estão abertas** — assim o visitante entende o momento em vez de simplesmente não ver o formulário:
+
+- **Inscrições em breve** — antes da **data de abertura**. Se você informou a data, o aviso mostra **quando as inscrições abrem**.
+- **Inscrições encerradas** — depois da **[data limite de inscrições](#detalhes)**.
+- **Inscrições indisponíveis no momento** — quando você **desligou** as inscrições manualmente (**Inscrições abertas** desmarcado).
+
+<!-- print pendente: evento-editor-inscricoes-aviso.png — aba Detalhes com o campo "Data de abertura das inscrições" ao lado da "Data limite de inscrições", viewport desktop -->
+
+O campo **Data de abertura das inscrições** é o par simétrico da **data limite**: **antes** dela a página exibe "Em breve" e o formulário fica bloqueado; **depois** dela (e até a data limite, se houver) as inscrições ficam abertas. **Se você deixar a data de abertura em branco, as inscrições já começam abertas** — nada muda em relação ao comportamento de sempre.
+
+{: .note }
+> As duas datas trabalham juntas: **abertura** programa o início e **limite** programa o fim. Com as duas preenchidas, você define a **janela de inscrição** inteira e não precisa lembrar de ligar nem desligar o formulário — o sistema cuida das duas pontas.
+
+### Contato dos organizadores
+
+Ligue **Exibir contato dos organizadores na página** para mostrar um cartão **"Fale com a organização"** na página do evento, com os canais de atendimento. Ao ligar o toggle, preencha os campos que quiser divulgar:
+
+- **E-mail**;
+- **WhatsApp** — informe o número **com o código do país** (ex.: `55` para o Brasil), para que o botão abra a conversa corretamente;
+- **Telefone**.
+
+Só os campos **preenchidos** aparecem na página — deixe em branco o que não quiser divulgar. O cartão é opcional: com o toggle desligado, nada aparece.
+
+<!-- print pendente: evento-editor-contato-organizadores.png — aba Detalhes com o toggle "Exibir contato dos organizadores" ligado e os campos e-mail/WhatsApp/telefone, viewport desktop -->
+
+
+
+{: .tip }
+> Use um canal que a organização realmente acompanha durante o período de inscrições. Um contato visível reduz dúvidas e aumenta a confiança de quem vai pagar a inscrição.
+
+### Contagem regressiva
+
+Ligue **Contagem regressiva na página** para exibir contadores que atualizam **ao vivo** (dias, horas, minutos e segundos). Há um toggle para cada contador:
+
+- **Início do evento** — conta o tempo que falta para o evento começar.
+- **Fim das inscrições** — conta o tempo que falta para a **data limite de inscrições**.
+
+Cada contador só aparece se a **data correspondente estiver preenchida** e ainda for **futura**. Um contador cuja data já passou simplesmente não é exibido.
+
+<!-- print pendente: evento-editor-contagem-regressiva.png — aba Detalhes com os toggles "Contagem regressiva na página" (início do evento e fim das inscrições), viewport desktop -->
+
+
+
+{: .tip }
+> O contador de **fim das inscrições** cria senso de urgência e costuma acelerar a decisão de quem está em dúvida — combine-o com a **[data limite](#detalhes)**.
 
 ### Descrição do evento
 

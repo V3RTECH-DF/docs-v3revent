@@ -51,6 +51,9 @@ Os **modelos** variam a personalidade visual da página (tipografia, formas, ace
 Conforme o tema, a página pode incluir:
 
 - **Hero** — título, data e local em destaque;
+- **Aviso de inscrições** — cartão logo abaixo do topo quando as inscrições não estão abertas (veja abaixo);
+- **Contagem regressiva** — contadores ao vivo para o início do evento e o fim das inscrições (opcional, veja abaixo);
+- **Contato dos organizadores** — cartão "Fale com a organização" com os canais de atendimento (opcional, veja abaixo);
 - **Informações** — detalhes do evento;
 - **Programação** — as sessões cadastradas, agrupadas por dia, com trilhas em destaque;
 - **Galeria** — imagens do evento;
@@ -69,6 +72,30 @@ Conforme o tema, a página pode incluir:
 
 {: .note }
 > **A logo do evento** aparece na página **com destaque**, sobre um **cartão branco** (legível em tema claro ou escuro). Você escolhe **onde ela aparece** — no topo, abaixo do hero, junto das informações — ou **não mostrá-la** na página, e também o **tamanho** dela (Pequeno, Médio, Grande ou Personalizado), em **[Editor de evento → Aparência](/modulos/editor-evento/)**.
+
+## Aviso de inscrições
+
+Quando as inscrições **não estão abertas**, a página mostra um **cartão logo abaixo do topo** explicando o momento, em vez de simplesmente esconder o formulário:
+
+- **Inscrições em breve** — antes da **data de abertura** (e mostra a data, se você a informou);
+- **Inscrições encerradas** — depois da **data limite**;
+- **Inscrições indisponíveis no momento** — quando o organizador fechou as inscrições manualmente.
+
+O aviso é **automático**: você controla tudo pela aba **Detalhes** do editor (as datas de abertura e limite e o interruptor **Inscrições abertas**). Veja **[Editor de evento → Detalhes](/modulos/editor-evento/)**.
+
+<!-- print pendente: pagina-aviso-inscricoes.png — página do evento com o cartão "Inscrições em breve" logo abaixo do topo, viewport desktop -->
+
+## Contagem regressiva
+
+Quando ligada na aba **Detalhes**, a página exibe um box com **contadores** que atualizam **ao vivo** (dias, horas, minutos e segundos): um para o **início do evento** e outro para o **fim das inscrições**. Cada contador só aparece se a sua data estiver preenchida e ainda for futura. Veja **[Editor de evento → Detalhes](/modulos/editor-evento/)**.
+
+<!-- print pendente: pagina-contagem-regressiva.png — página do evento com o box de contagem regressiva, viewport desktop -->
+
+## Contato dos organizadores
+
+Quando ligado na aba **Detalhes**, aparece o cartão **"Fale com a organização"** com os canais que você preencheu — **e-mail**, **WhatsApp** e **telefone** (só os informados). O botão de WhatsApp abre a conversa direto. Veja **[Editor de evento → Detalhes](/modulos/editor-evento/)**.
+
+<!-- print pendente: pagina-contato-organizadores.png — página do evento com o cartão "Fale com a organização", viewport desktop -->
 
 ## Montando à sua maneira (blocos e shortcodes)
 
