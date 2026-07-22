@@ -108,7 +108,10 @@ Na aba **Documentos** você anexa arquivos ao evento — **regulamento**, **kit 
 
 - Clique em **Adicionar documentos** e escolha um ou mais arquivos na biblioteca de mídia (aceita PDF, DOCX e outros formatos).
 - Dê um **título** a cada documento (é o texto que o visitante vê no link), **reordene** com as setas e **remova** com a lixeira.
+- Em **Título da seção**, defina como o bloco se chama na página (ex.: *"Documentos complementares"*, *"Leia mais"*). Em branco, aparece como **"Documentos"**.
 - Em **Exibir na página do evento**, escolha onde a lista aparece: **antes** do formulário de inscrição (padrão), **depois** da inscrição, **logo após as informações** do evento, ou **não exibir**.
+
+Na página, os documentos aparecem em uma **grade** (vários por linha, até preencher a largura) e a seção usa a **mesma largura do formulário de inscrição**, para um alinhamento consistente.
 
 ![Aba Documentos do editor de evento](/assets/screenshots/evento-editor-documentos.png)
 

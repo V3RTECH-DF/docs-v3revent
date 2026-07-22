@@ -12,6 +12,16 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Documentos com layout melhor e título personalizável
+**v1.48.0 · julho de 2026**
+
+A seção de **Documentos** na página do evento ficou mais organizada:
+
+- Os documentos agora aparecem em **grade** (vários por linha, preenchendo a largura) em vez de um por linha.
+- A seção usa a **mesma largura do formulário de inscrição** — o mesmo vale para os **Patrocinadores** —, alinhando tudo na página.
+- O **título** da seção segue o mesmo estilo do título do formulário.
+- Você pode **personalizar o título** da seção na aba **Documentos** do editor (ex.: "Documentos complementares", "Leia mais"). Em branco, continua "Documentos".
+
 ## Título no formulário de inscrição
 **v1.47.0 · julho de 2026**
 
