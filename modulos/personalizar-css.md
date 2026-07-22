@@ -23,7 +23,7 @@ O caminho recomendado é o **CSS adicional** do WordPress, que não é apagado q
 O CSS adicional é carregado **depois** dos estilos do plugin, então, com a mesma especificidade, as suas regras vencem — sem precisar recorrer a `!important` na maioria dos casos.
 
 {: .important }
-> **Duas telas públicas ficam fora do alcance do CSS adicional.** A **página de avaliação pós-evento** e a **página web da credencial / painel de check-in** são geradas como documentos independentes, que **não usam o cabeçalho do seu tema**. Por isso, o CSS adicional do Personalizar **não chega** a elas. O que esta página descreve vale para o **formulário de inscrição** e a **página do evento**.
+> **Algumas telas ficam fora do alcance do CSS adicional.** As telas de **avaliação pós-evento**, **credencial** e **recibo** são geradas como documentos independentes, que **não usam o cabeçalho do seu tema**. Por isso, o CSS adicional do Personalizar **não chega** a elas. O que esta página descreve, por padrão, vale para o **formulário de inscrição** e a **página do evento** — mas há um ponto de extensão para desenvolvedores personalizarem também essas telas soltas (veja **[Personalizar as telas soltas](#personalizar-as-telas-soltas-avaliacao-credencial-e-recibo)**, mais abaixo).
 
 ---
 
@@ -149,17 +149,31 @@ A página temática tem o container raiz `.v3revent-page`, com **modificadores**
 | Fonte | `.v3revent-page--font-sans`, `.v3revent-page--font-serif`, `.v3revent-page--font-rounded` |
 | Cantos | `.v3revent-page--shape-sharp`, `.v3revent-page--shape-soft`, `.v3revent-page--shape-round` |
 | Densidade | `.v3revent-page--density-cozy`, `.v3revent-page--density-airy` |
-| Decoração | `.v3revent-page--accent-bar`, `.v3revent-page--accent-blocks` |
+| Decoração | `.v3revent-page--accent-minimal`, `.v3revent-page--accent-bar`, `.v3revent-page--accent-blocks` |
+
+{: .note }
+> A classe `.v3revent-page--accent-minimal` (tema **acento mínimo**) aparece no HTML por consistência, mas **não tem estilo próprio** — é ausência de decoração, de propósito. Se inspecionar o código da página, você vai vê-la sem nenhuma regra associada: isso é esperado, não é falha.
 
 Cada seção da página é `.v3revent-page-section`, com uma variante por tipo: `--registration`, `--info`, `--gallery`, `--schedule`, `--sponsors`, `--share`, `--hero`.
 
 **Hero:** `.v3revent-page-hero` (variantes `--image`, `--image-text`, `--text`), com `.v3revent-page-hero-media`, `.v3revent-page-hero-img`, `.v3revent-page-hero-content`, `.v3revent-page-hero-title`, `.v3revent-page-hero-meta`, `.v3revent-page-hero-location`.
 
-**Informações:** `.v3revent-page-info-meta`, `.v3revent-page-info-date`, `.v3revent-page-info-location`, `.v3revent-page-info-description`.
+**Informações:** `.v3revent-page-info` (wrapper do bloco), `.v3revent-page-info-meta`, `.v3revent-page-info-date`, `.v3revent-page-info-location`, `.v3revent-page-info-description`. O wrapper `.v3revent-page-info` existe no HTML e pode ser mirado, mesmo sem regra própria no plugin.
+
+**Logo do evento em destaque:** `.v3revent-event-logo-band` (faixa que envolve a logo) e `.v3revent-event-logo-img` (a imagem). A faixa recebe um modificador conforme o tamanho escolhido no editor: `.v3revent-event-logo--small`, `.v3revent-event-logo--medium`, `.v3revent-event-logo--large` ou `.v3revent-event-logo--custom`.
+
+**Aviso de inscrições:** o card exibido quando as inscrições ainda **não abriram** ou já **encerraram** é `.v3revent-reg-notice`, com um modificador de estado — `--upcoming` (em breve), `--ended` (encerradas) ou `--closed` (fechadas). Dentro dele: `.v3revent-reg-notice-title` (título) e `.v3revent-reg-notice-detail` (detalhe).
+
+**Contagem regressiva:** `.v3revent-countdowns` (a lista) · `.v3revent-countdown` (cada box) · `.v3revent-countdown-label` (rótulo do box) · `.v3revent-countdown-units` (linha das unidades) · `.v3revent-countdown-unit` (cada unidade: dias, horas…) · `.v3revent-countdown-num` (o número) · `.v3revent-countdown-lbl` (o rótulo da unidade).
+
+**Fale com a organização:** o card de contato é `.v3revent-contact`, com `.v3revent-contact-title` (título), `.v3revent-contact-list` (a lista) e `.v3revent-contact-item` (cada contato). O rótulo do tipo de contato — e-mail, telefone etc. — é `.v3revent-contact-kind`.
 
 ### Programação
 
-`.v3revent-schedule` · `.v3revent-schedule-day-title` (variante `--undated`) · `.v3revent-schedule-sessions` · `.v3revent-schedule-session` · `.v3revent-schedule-session-inner` · `.v3revent-schedule-time` · `.v3revent-schedule-heading` · `.v3revent-schedule-title` · `.v3revent-schedule-track` · `.v3revent-schedule-meta` · `.v3revent-schedule-speakers` · `.v3revent-schedule-location` · `.v3revent-schedule-description`.
+`.v3revent-schedule` · `.v3revent-schedule-day` (cada dia) · `.v3revent-schedule-day-title` (variante `--undated`) · `.v3revent-schedule-body` (corpo do dia) · `.v3revent-schedule-sessions` · `.v3revent-schedule-session` · `.v3revent-schedule-session-inner` · `.v3revent-schedule-time` · `.v3revent-schedule-heading` · `.v3revent-schedule-title` · `.v3revent-schedule-track` · `.v3revent-schedule-meta` · `.v3revent-schedule-speakers` · `.v3revent-schedule-location` · `.v3revent-schedule-description`.
+
+{: .note }
+> `.v3revent-schedule-day` e `.v3revent-schedule-body` existem no HTML como pontos de ancoragem, mesmo sem estilo próprio no plugin (herdam do contexto). Você pode mirá-los no seu CSS — por exemplo, para dar um fundo a cada dia da programação.
 
 {: .note }
 > A cor de cada **trilha** da programação é aplicada individualmente por sessão. Para mudar a cor de **todas** as trilhas de uma vez, mire a classe `.v3revent-schedule-track` diretamente (não há uma variável global para isso).
@@ -178,7 +192,10 @@ Cada seção da página é `.v3revent-page-section`, com uma variante por tipo: 
 
 ### Documentos anexos
 
-`.v3revent-documents` · `.v3revent-documents-title` · `.v3revent-documents-list` · `.v3revent-documents-link` · `.v3revent-documents-ext` (etiqueta da extensão do arquivo).
+`.v3revent-documents` · `.v3revent-documents-title` · `.v3revent-documents-list` · `.v3revent-documents-item` (cada anexo) · `.v3revent-documents-link` · `.v3revent-documents-name` (nome do arquivo) · `.v3revent-documents-ext` (etiqueta da extensão do arquivo).
+
+{: .note }
+> `.v3revent-documents-item` e `.v3revent-documents-name` existem no HTML e podem ser personalizados, mesmo sem regra própria no plugin (herdam do bloco de documentos).
 
 ---
 
@@ -228,6 +245,33 @@ Cada seção da página é `.v3revent-page-section`, com uma variante por tipo: 
 > - **Restrinja o escopo** ancorando em `.v3revent-registration-wrap` (formulário) ou `.v3revent-page` (página do evento) para não afetar o resto do site.
 > - **Teste no claro e no escuro** quando o evento usar o modo escuro na página.
 > - **Revise após cada atualização** do plugin: se um estilo seu deixou de fazer efeito, é sinal de que a estrutura interna mudou.
+
+## Personalizar as telas soltas (avaliação, credencial e recibo)
+{: #personalizar-as-telas-soltas-avaliacao-credencial-e-recibo }
+
+{: .note }
+> Esta seção é para **desenvolvedores** — quem consegue adicionar um pequeno trecho de código (um *filtro*) ao site, normalmente num plugin de utilidades ou no `functions.php` do tema-filho.
+
+As telas de **avaliação**, **credencial** e **recibo** são documentos próprios e, por isso, **não são alcançadas** pelo CSS adicional do Personalizar (como explicado no topo). Para permitir personalizá-las mesmo assim, o plugin expõe um **filtro** — `v3revent_standalone_custom_css` — cujo retorno é injetado num bloco `<style>` dentro da própria tela.
+
+O filtro recebe três informações:
+
+- **o CSS atual** (vazio por padrão);
+- **o contexto** — qual tela está sendo montada: `evaluation`, `credential` ou `receipt`;
+- **o ID do evento** — para você aplicar um estilo diferente por evento, se quiser.
+
+Exemplo — deixar o fundo da tela de avaliação levemente acinzentado e aumentar o título:
+
+```php
+add_filter( 'v3revent_standalone_custom_css', function ( $css, $context, $event_id ) {
+    if ( 'evaluation' === $context ) {
+        $css .= 'body { background: #f4f6f8; } h1 { font-size: 1.6rem; }';
+    }
+    return $css;
+}, 10, 3 );
+```
+
+As mesmas classes e variáveis descritas nesta página valem dentro dessas telas, na medida em que elas usem os componentes do plugin. Como o CSS vem de código (e não de entrada de usuário), fica sob a sua responsabilidade — o plugin apenas impede que o trecho quebre o bloco `<style>`.
 
 ## Precisa de ajuda?
 
