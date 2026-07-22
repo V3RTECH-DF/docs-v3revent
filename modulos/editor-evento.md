@@ -149,10 +149,24 @@ A identidade visual do evento, que se aplica ao formulário, à página, aos e-m
 
 ![Aba Aparência do editor de evento](/assets/screenshots/evento-editor-aparencia.png)
 
-- **Logo do evento** (pela Biblioteca de Mídia);
+- **Logo do evento** (pela Biblioteca de Mídia) e a **posição** dela na página do evento (ver abaixo);
 - **Cores do evento** (ver abaixo);
 - **Fonte**;
 - **Galeria de imagens** do evento (com legendas), exibida na página pública.
+
+### Posição da logo na página do evento
+
+O seletor **Posição da logo na página do evento** define **onde** a logo do evento aparece na página pública (no layout **[Página do plugin](/modulos/pagina-do-evento/)**):
+
+- **No topo da página (destaque)** (padrão) — a logo aparece **em destaque no alto da página**, antes do hero.
+- **Abaixo do hero** — a logo aparece logo depois do topo, no início do conteúdo.
+- **Junto das informações** — a logo acompanha o bloco de **informações** do evento.
+- **Não mostrar na página** — a página do evento **não** exibe a logo.
+
+A logo é sempre exibida sobre um **cartão branco**, para ficar legível em qualquer tema e tanto no modo claro quanto no escuro — inclusive logos com fundo transparente ou feitas para fundo claro.
+
+{: .note }
+> **"Não mostrar na página" tira a logo só da página.** Mesmo com essa opção, a logo continua saindo normalmente nos **relatórios**, **e-mails** e **credenciais** — ela apenas deixa de aparecer na página pública do evento.
 
 ### Cores do evento
 
@@ -165,6 +179,16 @@ Se um evento específico precisa de cores próprias, clique em **Personalizar pa
 Escolhe como o evento é exibido publicamente: o **layout** e o **modelo visual** da página do evento (uma página inteira do plugin, com hero, informações, programação e formulário). Veja **[Página do evento](/modulos/pagina-do-evento/)**.
 
 ![Aba Página do editor de evento](/assets/screenshots/evento-editor-pagina.png)
+
+### Escolher o layout
+
+O **layout** decide **como a página do evento se encaixa no seu site**:
+
+- **Tema do site** — a página do evento aparece **dentro do seu site**, com o **cabeçalho e o rodapé do tema** (menu, logo do site, rodapé) ao redor do conteúdo do evento. Use quando quiser que o evento faça parte da navegação do site.
+- **Página do plugin** — a página do evento aparece em **tela cheia** (formato *hotsite* / *onepage*), **sem o cabeçalho e o rodapé do tema**: só o conteúdo do evento, ocupando a tela inteira. É a opção para uma página de divulgação focada, que abre limpa e vai direto ao evento e à inscrição. É neste layout que valem a **galeria de modelos**, o **esquema de cor** e o **Hero** (abaixo).
+
+{: .note }
+> **Mudou na v1.39.0:** no layout **Página do plugin**, a página agora aparece **em tela cheia, sem o cabeçalho e o rodapé do site**. Se você prefere manter o cabeçalho e o rodapé do seu tema ao redor do evento, use o layout **Tema do site**.
 
 ### Escolher o modelo da página
 

@@ -12,6 +12,25 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Escolha onde a logo do evento aparece na página
+**v1.40.0 · julho de 2026**
+
+Você agora decide **onde a logo do evento aparece** na página do evento — na aba **Aparência** do editor, no seletor **Posição da logo na página do evento**:
+
+- **No topo da página (destaque)** (padrão) — a logo em destaque no alto da página;
+- **Abaixo do hero** — a logo logo depois do topo;
+- **Junto das informações** — a logo acompanha o bloco de informações;
+- **Não mostrar na página** — a página não exibe a logo.
+
+A logo aparece **em destaque, sobre um cartão branco**, para ficar bem legível em qualquer tema e tanto no modo claro quanto no escuro. E se você escolher **Não mostrar na página**, a logo **continua saindo normalmente nos relatórios, e-mails e credenciais** — ela só deixa de aparecer na página do evento. Veja **[Editor de evento → Aparência](/modulos/editor-evento/)**.
+
+## Página do evento em tela cheia (sem cabeçalho e rodapé do site)
+**v1.39.0 · julho de 2026**
+
+Quando você escolhe o layout **Página do plugin** (aba **Página** do editor), a página do evento agora aparece em **tela cheia** — um *hotsite* de página única, **sem o cabeçalho e o rodapé do seu tema**. Só o conteúdo do evento, ocupando a tela inteira: uma página de divulgação limpa, que abre focada e vai direto à inscrição.
+
+Se você prefere manter o **cabeçalho e o rodapé do seu site** ao redor do evento, basta usar o layout **Tema do site**. Veja **[Página do evento](/modulos/pagina-do-evento/)**.
+
 ## Logos de patrocinadores com melhor contraste
 **v1.38.2 · julho de 2026**
 

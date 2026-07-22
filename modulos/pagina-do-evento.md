@@ -34,7 +34,17 @@ Enquanto o evento está em **rascunho** (ainda não publicado), o botão vira **
 
 ## Escolhendo o layout e o tema
 
-Na aba **Página** do editor, você escolhe o **layout** e o **tema visual**. Os temas variam a estrutura da página (por exemplo, um mais claro e amplo com hero de destaque, outro mais compacto e escuro), sempre respeitando a **logo e as cores do evento**.
+Na aba **Página** do editor, você escolhe o **layout** e o **modelo visual**.
+
+O **layout** define como a página se encaixa no seu site:
+
+- **Tema do site** — o evento aparece **dentro do seu site**, com o **cabeçalho e o rodapé do tema** ao redor.
+- **Página do plugin** — o evento aparece em **tela cheia** (*hotsite* / *onepage*), **sem o cabeçalho e o rodapé do tema**: só o conteúdo do evento, ocupando a tela inteira. É uma página de divulgação focada, que abre limpa e vai direto à inscrição.
+
+{: .note }
+> **A partir da v1.39.0**, o layout **Página do plugin** é **tela cheia, sem o cabeçalho e o rodapé do site**. Para manter o cabeçalho e o rodapé do seu tema ao redor do evento, use **Tema do site**.
+
+Os **modelos** variam a personalidade visual da página (tipografia, formas, acento e espaçamento), sempre respeitando a **logo e as cores do evento**. Veja a galeria e os detalhes em **[Editor de evento → Página](/modulos/editor-evento/)**.
 
 ## As seções da página
 
@@ -56,6 +66,9 @@ Conforme o tema, a página pode incluir:
 
 {: .note }
 > Cada logo de patrocinador é sempre exibido sobre um **fundo branco**, independentemente do tema escolhido ou do modo claro/escuro. Isso garante bom contraste até para logos transparentes ou feitas para fundo claro. Por isso você pode enviar as artes em **PNG com fundo transparente** — elas aparecem sobre o fundo branco padrão. (Patrocinador sem logo mostra o nome em texto escuro sobre o branco.)
+
+{: .note }
+> **A logo do evento** aparece na página **com destaque**, sobre um **cartão branco** (legível em tema claro ou escuro). Você escolhe **onde ela aparece** — no topo, abaixo do hero, junto das informações — ou **não mostrá-la** na página, em **[Editor de evento → Aparência](/modulos/editor-evento/)** (Posição da logo na página do evento).
 
 ## Montando à sua maneira (blocos e shortcodes)
 
