@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Data e local com mais destaque na página do evento
+**v1.46.0 · julho de 2026**
+
+Na página do evento, a **data** e o **local** agora aparecem em **destaque e centralizados**, logo abaixo do topo — cada um numa "pílula" com um ícone (calendário e localização). Antes esse trecho ficava pequeno e encostado à esquerda, o que parecia deslocado em telas grandes (Full HD e maiores). A **descrição do evento**, logo abaixo, também passou a ser **centralizada**. Tudo continua legível tanto no tema **claro** quanto no **escuro**, e o local segue clicável quando você informa o link do mapa. Não é preciso configurar nada: a mudança vale automaticamente para as páginas no layout **"Página do Plugin"**.
+
 ## Contagem regressiva na página do evento
 **v1.44.0 · julho de 2026**
 

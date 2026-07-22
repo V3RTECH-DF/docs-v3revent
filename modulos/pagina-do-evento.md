@@ -54,7 +54,7 @@ Conforme o tema, a página pode incluir:
 - **Aviso de inscrições** — cartão logo abaixo do topo quando as inscrições não estão abertas (veja abaixo);
 - **Contagem regressiva** — contadores ao vivo para o início do evento e o fim das inscrições (opcional, veja abaixo);
 - **Contato dos organizadores** — cartão "Fale com a organização" com os canais de atendimento (opcional, veja abaixo);
-- **Informações** — detalhes do evento;
+- **Informações** — **data e local em destaque**, centralizados em "pílulas" com ícone (calendário e localização), seguidos da descrição do evento também centralizada;
 - **Programação** — as sessões cadastradas, agrupadas por dia, com trilhas em destaque;
 - **Galeria** — imagens do evento;
 - **Documentos** — regulamento, kit do participante e outros arquivos como links de download (a posição é escolhida na aba **[Documentos](/modulos/editor-evento/)** do editor);
