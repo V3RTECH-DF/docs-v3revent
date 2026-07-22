@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Título no formulário de inscrição
+**v1.47.0 · julho de 2026**
+
+O formulário de inscrição agora começa com um **título** — por padrão, **"Inscrição"** — que dá contexto ao bloco, em vez de começar direto na data e no local. As informações de **data e local** logo abaixo também passaram a ficar **centralizadas**. Quem quiser trocar o texto do título (por exemplo, "Garanta sua vaga") pode fazê-lo por personalização; para ocultá-lo, basta deixá-lo vazio.
+
 ## Data e local com mais destaque na página do evento
 **v1.46.0 · julho de 2026**
 
