@@ -46,13 +46,16 @@ Conforme o tema, a página pode incluir:
 - **Galeria** — imagens do evento;
 - **Documentos** — regulamento, kit do participante e outros arquivos como links de download (a posição é escolhida na aba **[Documentos](/modulos/editor-evento/)** do editor);
 - **Inscrição** — o formulário embutido;
-- **Patrocinadores** — os logos dos patrocinadores e apoiadores, **agrupados por tipo** (patrocínio, apoio, realização…), cada um linkado ao site do patrocinador;
+- **Patrocinadores** — os logos dos patrocinadores e apoiadores, **agrupados por tipo** (patrocínio, apoio, realização…), cada um exibido sobre um **fundo branco fixo** e linkado ao site do patrocinador;
 - **Compartilhar** — botões para WhatsApp, redes sociais e o compartilhamento nativo do celular.
 
 ![Seção de patrocinadores na página do evento](/assets/screenshots/pagina-evento-patrocinadores.png)
 
 {: .note }
 > Na página pública aparecem apenas o **logo, o nome e o tipo** do patrocinador. Valor, situação e contrapartidas ficam só no painel (aba **[Patrocinadores](/modulos/editor-evento/)** do editor).
+
+{: .note }
+> Cada logo de patrocinador é sempre exibido sobre um **fundo branco**, independentemente do tema escolhido ou do modo claro/escuro. Isso garante bom contraste até para logos transparentes ou feitas para fundo claro. Por isso você pode enviar as artes em **PNG com fundo transparente** — elas aparecem sobre o fundo branco padrão. (Patrocinador sem logo mostra o nome em texto escuro sobre o branco.)
 
 ## Montando à sua maneira (blocos e shortcodes)
 

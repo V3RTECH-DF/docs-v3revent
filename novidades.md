@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Logos de patrocinadores com melhor contraste
+**v1.38.2 · julho de 2026**
+
+Os **logos dos patrocinadores** na página do evento agora aparecem **sempre sobre um fundo branco**, em qualquer tema e também no modo escuro. Antes, no modo escuro, o quadro do patrocinador ficava escuro e logos transparentes (ou feitas para fundo claro) perdiam legibilidade — agora cada logo ganha o seu quadro branco, com bom contraste. Você pode enviar as artes em **PNG com fundo transparente** sem se preocupar. Veja **[Página do evento](/modulos/pagina-do-evento/)**.
+
 ## Combine tipos de preço no mesmo evento
 **v1.38.0 · julho de 2026**
 
