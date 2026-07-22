@@ -17,7 +17,7 @@ Este é o caminho completo, na ordem natural do trabalho: do rascunho do evento 
 1. No menu, abra **V3REvent → Eventos**.
 2. Clique em **Novo Evento**. O plugin cria um evento em **rascunho** e abre o editor.
 
-O editor é organizado em abas, na ordem em que você normalmente as preenche: **Detalhes → Programação → Campos do Formulário → Tabela de Preços → Aparência → Página → Credencial → WooCommerce → Equipe**.
+O editor é organizado em abas, na ordem em que você normalmente as preenche: **Detalhes → Programação → Campos do Formulário → Preços → Aparência → Página → Credencial → WooCommerce → Equipe**.
 
 ![Editor de evento — aba Detalhes](/assets/screenshots/evento-editor-detalhes.png)
 
@@ -51,13 +51,13 @@ Tipos disponíveis: texto, e-mail, CPF, telefone, número, seleção (select), m
 >
 > Cada campo obrigatório é um dado pessoal de terceiro que você passa a guardar. Pela LGPD, peça apenas o que realmente vai usar. Precisa de CPF para emitir certificado? Mantenha. Não vai usar o telefone? Considere torná-lo opcional ou removê-lo.
 
-## Passo 4 — Tabela de preços
+## Passo 4 — Preços
 
-Na aba **Tabela de Preços**, monte as **faixas por quantidade**: para cada faixa você define a quantidade mínima, a máxima (deixe a última em branco para "acima de") e o preço por inscrito, com um rótulo. Quanto maior o grupo, menor o valor unitário.
+Na aba **Preços**, ligue **Desconto por quantidade** e monte as **faixas**: para cada faixa você define a quantidade mínima, a máxima (deixe a última em branco para "acima de") e o preço por inscrito, com um rótulo. Quanto maior o grupo, menor o valor unitário — e a faixa é destravada pelo **total de inscritos do pedido**.
 
-![Editor de evento — Tabela de Preços](/assets/screenshots/evento-editor-precos.png)
+![Editor de evento — aba Preços](/assets/screenshots/evento-editor-precos.png)
 
-Se o seu evento tem **modalidades com preços diferentes** (ex.: "Estudante" e "Profissional"), você pode designar um **campo de preço** (um select do formulário) em que **cada opção tem a sua própria tabela de faixas**. O total é a soma por modalidade, e a faixa é calculada pela contagem de cada uma.
+A aba tem **três chaves independentes e combináveis**: além do desconto por quantidade, há **Preço por lote (data)** e **Preço por modalidade** (ex.: "Estudante" e "Profissional", com uma tabela por opção). Ligue as que fizerem sentido — sozinhas ou juntas. Detalhes e a regra de combinação em **[Editor de evento → Preços](/modulos/editor-evento/)**.
 
 {: .tip }
 > **Ancoragem que incentiva o grupo**

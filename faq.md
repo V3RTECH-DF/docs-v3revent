@@ -58,18 +58,21 @@ No editor do evento, aba **Detalhes**, use o **Tipo de inscrição**. Escolha **
 <details markdown="1">
 <summary>Como funciona o preço por faixa de quantidade?</summary>
 
-Você define faixas na aba **Tabela de Preços** do evento: cada faixa tem uma
+Ligue **Desconto por quantidade** na aba **Preços** do evento: cada faixa tem uma
 quantidade mínima, máxima e um preço por inscrito. Quanto maior o grupo, menor o
-valor unitário. O formulário mostra a faixa ativa em destaque e recalcula o total
-ao vivo. Veja **[Criar um evento](/criar-evento/)**.
+valor unitário. A faixa é destravada pelo **total de inscritos do pedido** (mesmo
+misturando modalidades), e o formulário mostra a faixa ativa em destaque e recalcula
+o total ao vivo. Veja **[Criar um evento](/criar-evento/)**.
 </details>
 
 <details markdown="1">
 <summary>Posso ter preços diferentes por tipo de participante?</summary>
 
-Sim. Use a **precificação por modalidade**: designe um campo de seleção (ex.:
-"Estudante" / "Profissional") como campo de preço, e dê a **cada opção sua própria
-tabela de faixas**. O total é a soma por modalidade.
+Sim. Ligue **Preço por modalidade** na aba **Preços**: designe um campo de seleção
+(ex.: "Estudante" / "Profissional") como campo de preço, e dê a **cada opção sua
+própria tabela**. O total é a soma por modalidade — e você ainda pode **combinar**
+com lotes por data e desconto por quantidade. Veja
+**[Editor de evento → Preços](/modulos/editor-evento/)**.
 </details>
 
 <details markdown="1">

@@ -12,6 +12,21 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Combine tipos de preço no mesmo evento
+**v1.38.0 · julho de 2026**
+
+Agora você pode **combinar tipos de preço** no mesmo evento. A aba **Preços** tem **três chaves independentes**, que você liga como quiser — sozinhas ou juntas:
+
+- **Preço por lote (data)** — o valor muda por janela de data (1º lote, 2º lote…).
+- **Preço por modalidade** — cada inscrito paga conforme a categoria escolhida (ex.: Estudante × Profissional).
+- **Desconto por quantidade** — o preço por inscrito cai em faixas conforme o número de inscritos.
+
+Dá para usar **qualquer combinação** — por exemplo, lotes por data em que **cada lote** tem preços por modalidade **e** desconto para grupos. Quando o preço é por lote, cada lote ganha o **seu próprio bloco de preços**, e há o botão **Duplicar lote** para copiar tudo e só ajustar as datas e os valores.
+
+Um detalhe importante: o **desconto por quantidade** conta o **total de inscritos do pedido**. Num pedido com 5 Estudantes + 3 Profissionais (8 no total), todos entram na faixa "a partir de 5", cada um pagando o valor dessa faixa na sua categoria. No formulário, quando o preço varia por categoria e/ou quantidade, os valores aparecem como **"Valor base"** e o valor final surge no resumo depois de escolher a categoria e adicionar os participantes.
+
+**Ligar uma chave só funciona igual a antes**, e **eventos que já existiam continuam iguais**, sem reconfigurar nada. Veja **[Editor de evento → Preços](/modulos/editor-evento/)**.
+
 ## Nova página do manual: personalizar as telas públicas com CSS
 **Manual · julho de 2026**
 

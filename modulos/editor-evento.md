@@ -10,7 +10,7 @@ O editor concentra toda a configuração de um evento, organizado em abas na ord
 
 No topo do editor, o botão **Ver página** abre a página pública do evento em uma nova aba. Enquanto o evento está em rascunho, ele vira **Pré-visualizar** (mostra a página só para você). Veja **[Página do evento](/modulos/pagina-do-evento/)**.
 
-A sequência das abas é: **Detalhes → Programação → Campos do Formulário → Tabela de Preços → Aparência → Página → Credencial → Certificado → Avaliação → Patrocinadores → Relatório → WooCommerce → Equipe**.
+A sequência das abas é: **Detalhes → Programação → Campos do Formulário → Preços → Aparência → Página → Credencial → Certificado → Avaliação → Patrocinadores → Relatório → WooCommerce → Equipe**.
 
 ## Detalhes
 
@@ -86,48 +86,62 @@ Os tipos **lista** e **opções (radio)** deixam o participante escolher **uma**
 {: .important }
 > **Minimização (LGPD):** só torne obrigatório o que você realmente vai usar. Cada dado a mais é uma responsabilidade a mais sob a LGPD — e um formulário mais longo converte menos.
 
-## Tabela de Preços
+## Preços
 
-No topo da aba há o **Modo de preço**, que define como o valor da inscrição é calculado. Escolha um dos três:
+A aba **Preços** traz **três chaves de preço independentes**, que você liga conforme a necessidade do evento e pode **combinar** à vontade:
 
-- **Por quantidade (faixas)** — o preço por inscrito varia com o **número de inscritos** no pedido (quanto mais gente, menor o valor por inscrito).
-- **Por modalidade de inscrição** — cada inscrito paga conforme a **opção escolhida** num campo do formulário (ex.: Jovem / Chefe / Equipe), cada opção com a sua própria tabela.
-- **Por lote (data)** — o preço é definido por **janelas de data** (lotes); cobra o lote ativo **na data da inscrição**. Ideal para corridas e eventos com "1º lote / 2º lote / 3º lote".
+- **Preço por lote (data)** — o valor muda por **janelas de data** (lotes); cobra o lote vigente na **data da inscrição**. Ideal para corridas e eventos com "1º lote / 2º lote / 3º lote".
+- **Preço por modalidade** — cada inscrito paga conforme a **opção escolhida** no formulário (ex.: Estudante / Profissional). Requer um **campo de opção única** na aba **Campos do Formulário**.
+- **Desconto por quantidade** — o preço por inscrito cai em **faixas**, conforme o **número de inscritos** do pedido (quanto mais gente, menor o valor por inscrito).
 
-![Aba Tabela de Preços do editor de evento](/assets/screenshots/evento-editor-precos.png)
+![Aba Preços com as três chaves independentes](/assets/screenshots/evento-editor-precos.png)
 
-### Por quantidade (faixas)
+{: .note }
+> **Ligar uma chave só = como era antes.** Cada chave funciona sozinha, exatamente como funcionava. E **eventos que já existiam continuam iguais**, sem precisar reconfigurar nada — só mexa aqui se quiser aproveitar a combinação.
+
+### Combinar as chaves
+
+Você pode ligar **qualquer combinação**. Por exemplo: um evento com **1º e 2º lote** (por data), em que cada lote tem preços por **modalidade** (Estudante × Profissional) e ainda dá **desconto por quantidade** a partir de 5 inscritos.
+
+Quando **Preço por lote** está ligado, cada lote passa a ter o **seu próprio bloco de preços** — as faixas de quantidade e/ou as tabelas por modalidade daquele lote. Assim, o 1º lote pode ter valores diferentes do 2º, com a mesma estrutura de modalidades e faixas.
+
+{: .tip }
+> **Botão "Duplicar lote".** Para não reconfigurar tudo lote a lote, monte um lote por completo e use **Duplicar lote**: ele copia a configuração inteira (faixas e tabelas por modalidade) para um novo lote, e você só ajusta as **datas** e os **valores**.
+
+### Desconto por quantidade
 
 As **faixas por quantidade**: para cada faixa, a quantidade mínima, a máxima (última em branco = "acima de"), o preço por inscrito e um rótulo.
 
-### Por lote (data)
+{: .important }
+> **O desconto é destravado pelo total de inscritos do pedido — não por categoria.** Num pedido com **5 Estudantes + 3 Profissionais** (8 no total), **todos** entram na faixa "a partir de 5": cada inscrito paga o preço dessa faixa **na sua própria categoria**. Ou seja, a quantidade que conta é a do pedido inteiro, mesmo com modalidades misturadas.
 
-No modo **Por lote (data)**, você cadastra os **lotes** — cada um com uma **data de início**, uma **data de fim**, um **preço por inscrito** e um **rótulo** (ex.: "1º lote"). Use as setas para reordenar e o **+** para adicionar lotes.
+### Preço por modalidade
 
-![Aba Tabela de Preços no modo por lote de data](/assets/screenshots/evento-editor-precos-lote.png)
-
-O sistema cobra sempre o **lote ativo na data em que a pessoa se inscreve** — você não precisa trocar o preço na virada de cada lote, é automático. Quem se inscreve mais cedo paga o lote mais barato.
-
-{: .tip }
-> **Case o último lote com a data limite.** No modo por lote, se ninguém estiver num lote ativo (antes do 1º ou depois do último), as inscrições ficam indisponíveis. Combine o fim do último lote com a **[Data limite de inscrições](#detalhes)** (aba Detalhes) para o encerramento ficar claro.
-
-{: .note }
-> **Neste modo não há desconto por quantidade** — o preço do lote é por inscrito, multiplicado pela quantidade. Ex.: lote a R$ 100 × 2 inscritos = R$ 200. Para desconto por grupo, use o modo **Por quantidade**.
-
-### Por modalidade de inscrição
-
-Use este modo quando o evento tem **perfis com preços diferentes** — por exemplo, uma corrida com valores distintos por categoria, ou um encontro com preços para "Jovem", "Chefe" e "Equipe de serviço".
+Use quando o evento tem **perfis com preços diferentes** — por exemplo, uma corrida com valores por categoria, ou um encontro com preços para "Estudante", "Profissional" e "Convidado".
 
 Para configurar:
 
-1. Selecione **Por modalidade de inscrição** no Modo de preço.
-2. Em **Campo de preço (modalidade)**, escolha o **campo de opção única** do formulário que define a modalidade de cada inscrito (um campo do tipo lista ou opções, criado na aba **Campos do Formulário**).
-3. Cada opção do campo ganha a sua **própria tabela de preços**. Preencha as faixas de cada modalidade; opções sem tabela própria usam a **Tabela base** (mais abaixo) como padrão.
+1. Ligue **Preço por modalidade**.
+2. Em **Campo de preço (modalidade)**, escolha o **campo de opção única** do formulário que define a modalidade de cada inscrito (um campo do tipo **lista** ou **opções**, criado na aba **Campos do Formulário**).
+3. Cada opção do campo ganha a sua **própria tabela de preços**. Preencha os valores de cada modalidade; opções sem tabela própria usam a **Tabela base** como padrão.
 
 ![Preço por modalidade: campo designado e tabela por opção](/assets/screenshots/evento-editor-precos-modalidade.png)
 
 {: .note }
 > Se o formulário ainda não tem um campo de opção única, o editor avisa e indica criar um na aba **Campos do Formulário** — ele é quem define as modalidades disponíveis.
+
+### Preço por lote (data)
+
+Ligue **Preço por lote (data)** e cadastre os **lotes** — cada um com **data de início**, **data de fim** e um **rótulo** (ex.: "1º lote"). Use as setas para reordenar e o **+** para adicionar lotes.
+
+![Aba Preços no modo por lote de data](/assets/screenshots/evento-editor-precos-lote.png)
+
+O sistema cobra sempre o **lote vigente na data em que a pessoa se inscreve** — você não precisa trocar o preço na virada de cada lote, é automático. Quem se inscreve mais cedo paga o lote mais barato.
+
+Como cada lote tem o **seu próprio bloco de preços**, você define ali as faixas e/ou as tabelas por modalidade daquele lote (veja **[Combinar as chaves](#combinar-as-chaves)** e o botão **Duplicar lote**).
+
+{: .tip }
+> **Case o último lote com a data limite.** Se ninguém estiver num lote vigente (antes do 1º ou depois do último), as inscrições ficam indisponíveis. Combine o fim do último lote com a **[Data limite de inscrições](#detalhes)** (aba Detalhes) para o encerramento ficar claro.
 
 ## Aparência
 
