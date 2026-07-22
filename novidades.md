@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Gradientes de fundo na descrição do evento
+**v1.49.0 · julho de 2026**
+
+Agora dá para usar **gradientes CSS** de fundo na **descrição do evento** — um ou vários na mesma caixa — para montar heros coloridos, faixas e efeitos decorativos direto pelo editor, sem precisar de imagem. Antes o WordPress descartava esses fundos (só aceitava um gradiente simples). Continua tudo seguro: imagens externas e trechos perigosos seguem bloqueados. Veja exemplos em **[Personalizar com CSS](/modulos/personalizar-css/)**.
+
 ## Documentos com layout melhor e título personalizável
 **v1.48.0 · julho de 2026**
 

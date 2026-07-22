@@ -273,6 +273,24 @@ add_filter( 'v3revent_standalone_custom_css', function ( $css, $context, $event_
 
 As mesmas classes e variáveis descritas nesta página valem dentro dessas telas, na medida em que elas usem os componentes do plugin. Como o CSS vem de código (e não de entrada de usuário), fica sob a sua responsabilidade — o plugin apenas impede que o trecho quebre o bloco `<style>`.
 
+## Gradientes na descrição do evento
+
+Na **descrição do evento** (editor de rich text / HTML), você pode usar **gradientes CSS** de fundo — inclusive **vários na mesma propriedade** — para criar hero coloridos, faixas e efeitos decorativos:
+
+```html
+<div style="background-image:
+    radial-gradient(circle at 100% 0%, rgba(255,255,255,0.15) 130px, transparent 131px),
+    linear-gradient(135deg, #9f174d, #b82f69);
+    padding: 32px; color: #fff; border-radius: 16px;">
+  Corra por uma causa. Celebre a vida!
+</div>
+```
+
+Aceitos: `linear-gradient()`, `radial-gradient()`, `conic-gradient()` (e as versões `repeating-*`), um ou vários, com cores em `hsl()`/`rgb()`/`calc()`. Por segurança, o fundo precisa ser **só gradiente** (sem `url(...)`) — imagens externas, `expression()`, `javascript:` e trechos de HTML continuam bloqueados. Essa liberação vale apenas para o conteúdo do V3REvent; o resto do site segue com a sanitização padrão do WordPress.
+
+{: .note }
+> Se preferir, círculos e formas também podem ser feitos com blocos posicionados (`position: absolute` + `border-radius`), que já funcionavam antes. Os gradientes são só um caminho a mais.
+
 ## Precisa de ajuda?
 
 Se você quer um ajuste e não encontrou a classe ou a variável certa, fale com a gente pelo **[Ajuda e Feedback](/modulos/ajuda-e-feedback/)** — é útil informar qual tela e qual elemento você quer personalizar.
