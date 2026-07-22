@@ -32,6 +32,8 @@ Cada evento define um **[Tipo de inscrição](/modulos/editor-evento/)** que con
 {: .note }
 > **"Valor base" quando o preço varia.** Se a **modalidade** e/ou a **quantidade** afetam o valor, os preços exibidos na tabela aparecem como **"Valor base"**, com um aviso de que o valor final **varia conforme a categoria e/ou a quantidade** de inscritos. O **valor efetivo** de cada um aparece no **resumo** depois que a pessoa escolhe a categoria e adiciona os participantes.
 
+![Tabela de lotes com o rótulo "Valor base" e a legenda "varia conforme a categoria · com desconto por quantidade"](/assets/screenshots/form-publico-valor-base.png)
+
 ![Formulário público de um evento com preço por lote de data](/assets/screenshots/form-publico-lotes.png)
 4. **Consentimento** — o responsável marca o consentimento de tratamento de dados (com link para a sua política). Se o evento habilitar, há também a opção de **networking** (que libera o vCard no QR da credencial).
 5. **Checkout** — ao confirmar, o formulário valida os dados (incluindo CPF e e-mail), leva a inscrição ao carrinho e segue **direto para o checkout** do WooCommerce.
