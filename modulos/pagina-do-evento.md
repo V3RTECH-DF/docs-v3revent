@@ -75,9 +75,9 @@ Conforme o tema, a página pode incluir:
 
 ## Acessibilidade: tamanho do texto
 
-No topo da página, o visitante encontra uma pequena barra **A− / A / A+** para **diminuir, restaurar ou aumentar** o tamanho do texto — uma ajuda para quem tem baixa visão ou prefere uma leitura mais confortável. A preferência fica **guardada no navegador** dele, valendo nas próximas visitas.
+No **canto superior direito do topo do evento (hero)**, o visitante encontra uma **caixinha discreta** com **A− / A / A+** para **diminuir, restaurar ou aumentar** o tamanho do texto — uma ajuda para quem tem baixa visão ou prefere uma leitura mais confortável. A preferência fica **guardada no navegador** dele, valendo nas próximas visitas.
 
-![Página do evento em tamanho normal (100%), com a barra de acessibilidade A− / A / A+ no topo](/assets/screenshots/pagina-acessibilidade-100.png)
+![Página do evento em tamanho normal (100%), com a caixinha de acessibilidade A− / A / A+ no canto superior direito do hero](/assets/screenshots/pagina-acessibilidade-100.png)
 
 Ao clicar em **A+**, o conteúdo é ampliado sem quebrar o layout:
 

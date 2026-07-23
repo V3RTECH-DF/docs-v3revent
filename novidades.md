@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Controles de tamanho de texto dentro do topo do evento
+**v1.55.0 · julho de 2026**
+
+Os controles de acessibilidade **A− / A / A+** deixaram de ocupar uma faixa de largura inteira no topo da página e agora aparecem numa **caixinha discreta no canto superior direito do topo do evento (hero)** — economizando espaço e mantendo o recurso à mão. A caixinha é translúcida e legível sobre qualquer tipo de topo (imagem, imagem+texto ou só texto), no tema claro ou escuro; no **celular**, fica compacta no canto sem cobrir o título. O funcionamento é o mesmo (aumenta/diminui o conteúdo, memoriza a escolha, liga/desliga na aba **Aparência**). Veja em **[Página do evento](/modulos/pagina-do-evento/#acessibilidade-tamanho-do-texto)**.
+
 ## Largura dos campos no formulário
 **v1.54.0 · julho de 2026**
 
@@ -40,7 +45,7 @@ Agora você pode fazer um campo do formulário **aparecer só quando fizer senti
 ## Controle de tamanho do texto (acessibilidade)
 **v1.51.0 · julho de 2026**
 
-A página do evento passa a oferecer, no topo, uma pequena barra com **A− / A / A+** para o visitante **aumentar ou diminuir o tamanho** do conteúdo — uma ajuda de acessibilidade para quem tem baixa visão. A preferência fica **lembrada** no navegador dele. Vem **ligado por padrão**; se quiser, você desliga por evento na aba **Aparência** do editor. (Vale no layout **"Página do Plugin"**.)
+A página do evento passa a oferecer controles **A− / A / A+** para o visitante **aumentar ou diminuir o tamanho** do conteúdo — uma ajuda de acessibilidade para quem tem baixa visão. A preferência fica **lembrada** no navegador dele. Vem **ligado por padrão**; se quiser, você desliga por evento na aba **Aparência** do editor. (Vale no layout **"Página do Plugin"**.) _Na v1.55.0 esses controles passaram para uma caixinha discreta no canto do topo do evento._
 
 ## Preço por modalidade mais simples
 **v1.50.0 · julho de 2026**
