@@ -12,6 +12,16 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Correção: texto invisível ao digitar no formulário (tema escuro)
+**v1.53.2 · julho de 2026**
+
+Corrigimos um problema de legibilidade no **formulário de inscrição** quando o **tema do seu site** usa fundo escuro: em alguns casos, o texto que a pessoa **digitava** nos campos (texto, área de texto e listas de seleção) ficava **invisível** — texto escuro sobre fundo escuro. Agora o formulário mantém o fundo e a cor do texto sempre combinando, prevalecendo sobre o tema do site, e o conteúdo digitado volta a aparecer com clareza, tanto no modo claro quanto no escuro. (Complementa o ajuste das listas de seleção feito na v1.49.1.)
+
+## Correção: campo de envio de arquivos aparecendo
+**v1.53.1 · julho de 2026**
+
+Logo após lançarmos o **campo de arquivo (upload)**, ele podia aparecer **sem o botão de anexar** na página pública, mostrando só o rótulo. Corrigido: o botão para escolher o arquivo agora aparece normalmente no formulário. Se você criou um campo de arquivo e ele parecia não funcionar, basta atualizar para esta versão.
+
 ## Campo de envio de arquivos
 **v1.53.0 · julho de 2026**
 
