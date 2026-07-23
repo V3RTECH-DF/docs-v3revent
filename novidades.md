@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Controle de tamanho do texto (acessibilidade)
+**v1.51.0 · julho de 2026**
+
+A página do evento passa a oferecer, no topo, uma pequena barra com **A− / A / A+** para o visitante **aumentar ou diminuir o tamanho** do conteúdo — uma ajuda de acessibilidade para quem tem baixa visão. A preferência fica **lembrada** no navegador dele. Vem **ligado por padrão**; se quiser, você desliga por evento na aba **Aparência** do editor. (Vale no layout **"Página do Plugin"**.)
+
 ## Preço por modalidade mais simples
 **v1.50.0 · julho de 2026**
 

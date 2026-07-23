@@ -203,6 +203,9 @@ A identidade visual do evento, que se aplica ao formulário, à página, aos e-m
 
 ![Aba Aparência do editor de evento](/assets/screenshots/evento-editor-aparencia.png)
 
+{: .note }
+> **Controles de tamanho de texto (acessibilidade).** Ainda na aba **Aparência**, a opção **"Mostrar controles de tamanho de texto na página do evento"** exibe uma barra com **A− / A / A+** no topo da página (layout "Página do Plugin"), para o visitante aumentar ou diminuir o conteúdo. Vem **ligada por padrão**; desmarque para ocultá-la neste evento.
+
 - **Logo do evento** (pela Biblioteca de Mídia) e a **posição** dela na página do evento (ver abaixo);
 - **Cores do evento** (ver abaixo);
 - **Fonte**;
