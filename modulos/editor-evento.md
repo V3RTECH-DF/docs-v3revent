@@ -128,7 +128,7 @@ As **sessões** do evento (dia, início, fim, título, descrição, palestrante(
 
 ## Campos do Formulário
 
-Define **quais dados coletar de cada participante**. Cada campo é um card com **id**, **rótulo**, **tipo**, **obrigatório**, **placeholder**, **opções** (para seleção/múltipla escolha) e **ordem** (arraste para reordenar).
+Define **quais dados coletar de cada participante**. Cada campo é um card com **id**, **rótulo**, **tipo**, **obrigatório**, **placeholder**, **largura**, **opções** (para seleção/múltipla escolha) e **ordem** (arraste para reordenar).
 
 ![Aba Campos do Formulário do editor de evento](/assets/screenshots/evento-editor-campos.png)
 
@@ -148,6 +148,19 @@ O tipo **arquivo (upload)** permite ao inscrito **enviar documentos** (ex.: laud
 
 {: .important }
 > **Minimização (LGPD):** só torne obrigatório o que você realmente vai usar. Cada dado a mais é uma responsabilidade a mais sob a LGPD — e um formulário mais longo converte menos.
+
+### Largura do campo
+
+Em cada card você define a **Largura** do campo no formulário: **1 coluna (⅓)**, **2 colunas (⅔)** ou **3 colunas (linha inteira)**. O formulário usa uma **grade de 3 colunas**, então você pode montar linhas compactas — por exemplo, **Cidade**, **Estado** e **CEP** com 1 coluna cada, lado a lado — e deixar campos longos como **Nome completo** ocupando a linha inteira.
+
+- **Padrão:** todo campo novo começa em **linha inteira** (3 colunas). Estreite só os que fizerem sentido lado a lado.
+- **No celular**, os campos sempre **empilham** (1 por linha), independentemente da largura escolhida — a largura vale em telas de tablet e computador.
+- Os campos entram na ordem em que estão listados; se dois campos numa linha somam mais de 3 colunas, o segundo desce para a linha seguinte.
+
+<!-- print pendente: evento-editor-campo-largura.png — aba Campos do Formulário com o seletor "Largura" de um card aberto mostrando as opções 1/2/3 colunas, viewport desktop (requer login do Bruno) -->
+
+{: .note }
+> Se você já tinha formulários com campos aparecendo lado a lado, eles passam a **empilhar** (um por linha) até você definir as larguras — é rápido e reversível: basta escolher 1 ou 2 colunas nos campos que quiser juntar.
 
 ### Condições de exibição
 

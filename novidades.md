@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Largura dos campos no formulário
+**v1.54.0 · julho de 2026**
+
+Agora você define a **largura de cada campo** do formulário de inscrição: **1 coluna (⅓)**, **2 colunas (⅔)** ou **3 colunas (linha inteira)**. Na aba **Campos do Formulário**, cada campo tem a opção **Largura** — dá para montar linhas compactas (ex.: **Cidade · Estado · CEP** lado a lado) e deixar campos longos, como **Nome completo**, ocupando a linha toda. No **celular** tudo empilha automaticamente. Por padrão os campos começam em **linha inteira**; se você já tinha campos aparecendo lado a lado, eles passam a empilhar até você escolher as larguras (ajuste rápido). Veja em **[Campos do Formulário](/modulos/editor-evento/#largura-do-campo)**.
+
 ## Correção: texto invisível ao digitar no formulário (tema escuro)
 **v1.53.2 · julho de 2026**
 
