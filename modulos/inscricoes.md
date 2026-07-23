@@ -21,7 +21,7 @@ No topo, você filtra por:
 
 ## A tabela
 
-Cada linha é uma inscrição (um pedido), com o responsável, o evento, o número de inscritos, o valor, a data e o **status**. Você troca o status **direto na linha** — a mudança é aplicada na hora.
+Cada linha é uma inscrição (um pedido), com o responsável, o evento, o número de inscritos, o valor, a data e o **status**. Para trocar o status, **clique na etiqueta de status** (a "pílula" colorida) da linha: abre um menu com os status disponíveis (Pendente / Confirmada / Cancelada), com o atual marcado. Escolha um e a mudança é **aplicada na hora**.
 
 Quando um pedido ultrapassou a capacidade do evento, a inscrição aparece **sinalizada como excedente**.
 

@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Trocar o status da inscrição ficou mais simples
+**v1.56.0 · julho de 2026**
+
+Na tela **Inscrições**, a coluna **Status** tinha uma etiqueta colorida **e** um menu suspenso logo abaixo, repetindo a mesma informação. Agora a **própria etiqueta é clicável**: clique nela e escolha o status no menu (**Pendente / Confirmada / Cancelada**), cada um com seu ícone e cor, com o atual marcado. Mais limpo e direto, sem perder clareza. O **filtro por status** no topo da lista continua igual. Veja em **[Inscrições](/modulos/inscricoes/#status-de-uma-inscricao)**.
+
 ## Controles de tamanho de texto dentro do topo do evento
 **v1.55.0 · julho de 2026**
 
