@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Preço por modalidade mais simples
+**v1.50.0 · julho de 2026**
+
+Ficou mais fácil definir um preço por **modalidade** (ex.: um valor com desconto para PCD). Quando o evento **não** usa desconto por quantidade, cada modalidade agora mostra um **campo simples "Preço (R$)"** — é só digitar o valor, sem precisar montar "faixas" nem ligar o desconto por quantidade. Vale tanto no evento quanto em cada **lote**. Deixando em branco, a modalidade usa o **valor base**. Eventos que já usavam faixas por quantidade continuam funcionando igual.
+
 ## Gradientes de fundo na descrição do evento
 **v1.49.0 · julho de 2026**
 

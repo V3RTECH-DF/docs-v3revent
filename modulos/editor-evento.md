@@ -145,7 +145,7 @@ Os tipos **lista** e **opções (radio)** deixam o participante escolher **uma**
 A aba **Preços** traz **três chaves de preço independentes**, que você liga conforme a necessidade do evento e pode **combinar** à vontade:
 
 - **Preço por lote (data)** — o valor muda por **janelas de data** (lotes); cobra o lote vigente na **data da inscrição**. Ideal para corridas e eventos com "1º lote / 2º lote / 3º lote".
-- **Preço por modalidade** — cada inscrito paga conforme a **opção escolhida** no formulário (ex.: Estudante / Profissional). Requer um **campo de opção única** na aba **Campos do Formulário**.
+- **Preço por modalidade** — cada inscrito paga conforme a **opção escolhida** no formulário (ex.: Estudante / Profissional, ou uma modalidade com desconto para PCD). Requer um **campo de opção única** na aba **Campos do Formulário**. Se o **Desconto por quantidade** estiver **desligado**, cada modalidade mostra um campo simples **"Preço (R$)"** — basta digitar o valor da modalidade (em branco, ela usa o **valor base**). Com o desconto por quantidade **ligado**, a modalidade passa a ter uma **tabela de faixas** por número de inscritos.
 - **Desconto por quantidade** — o preço por inscrito cai em **faixas**, conforme o **número de inscritos** do pedido (quanto mais gente, menor o valor por inscrito).
 
 ![Aba Preços com as três chaves independentes](/assets/screenshots/evento-editor-precos.png)
