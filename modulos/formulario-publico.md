@@ -78,8 +78,7 @@ Assim que a resposta bate com a condição, o campo **aparece na hora**:
 
 Quando o organizador inclui um campo do tipo **arquivo**, o participante pode **anexar um documento** (por exemplo, um laudo ou comprovante), direto no card dele. O organizador define os **formatos aceitos**, o **tamanho máximo** e se cabe **um ou vários** arquivos. O arquivo é guardado de forma **privada** e só a organização acessa depois.
 
-<!-- print pendente: form-campo-upload.png — campo de upload de arquivo no card do inscrito, no formulário público, viewport desktop. BLOQUEADO por bug: o controle de upload está renderizando invisível no form público (colisão de CSS em public.css, feature #101). Recapturar após a correção. -->
-
+![Campo de upload de arquivo no formulário público](/assets/screenshots/form-campo-upload.png)
 ## Disponibilidade
 
 Se as **inscrições estiverem fechadas** ou o evento **esgotado**, o formulário informa a situação. No caso de capacidade atingida com a política de excedente, ele **avisa** que a inscrição entrará como excedente e permite prosseguir.

@@ -40,8 +40,7 @@ A página do evento mostra automaticamente, num **cartão logo abaixo do topo**,
 - **Inscrições encerradas** — depois da **[data limite de inscrições](#detalhes)**.
 - **Inscrições indisponíveis no momento** — quando você **desligou** as inscrições manualmente (**Inscrições abertas** desmarcado).
 
-<!-- print pendente: evento-editor-inscricoes-aviso.png — aba Detalhes com o campo "Data de abertura das inscrições" ao lado da "Data limite de inscrições", viewport desktop -->
-
+![Data de abertura e data limite das inscrições, no editor](/assets/screenshots/evento-editor-inscricoes-aviso.png)
 O campo **Data de abertura das inscrições** é o par simétrico da **data limite**: **antes** dela a página exibe "Em breve" e o formulário fica bloqueado; **depois** dela (e até a data limite, se houver) as inscrições ficam abertas. **Se você deixar a data de abertura em branco, as inscrições já começam abertas** — nada muda em relação ao comportamento de sempre.
 
 {: .note }
@@ -57,10 +56,7 @@ Ligue **Exibir contato dos organizadores na página** para mostrar um cartão **
 
 Só os campos **preenchidos** aparecem na página — deixe em branco o que não quiser divulgar. O cartão é opcional: com o toggle desligado, nada aparece.
 
-<!-- print pendente: evento-editor-contato-organizadores.png — aba Detalhes com o toggle "Exibir contato dos organizadores" ligado e os campos e-mail/WhatsApp/telefone, viewport desktop -->
-
-
-
+![Contato dos organizadores no editor de evento](/assets/screenshots/evento-editor-contato-organizadores.png)
 {: .tip }
 > Use um canal que a organização realmente acompanha durante o período de inscrições. Um contato visível reduz dúvidas e aumenta a confiança de quem vai pagar a inscrição.
 
@@ -73,10 +69,7 @@ Ligue **Contagem regressiva na página** para exibir contadores que atualizam **
 
 Cada contador só aparece se a **data correspondente estiver preenchida** e ainda for **futura**. Um contador cuja data já passou simplesmente não é exibido.
 
-<!-- print pendente: evento-editor-contagem-regressiva.png — aba Detalhes com os toggles "Contagem regressiva na página" (início do evento e fim das inscrições), viewport desktop -->
-
-
-
+![Contagem regressiva no editor de evento](/assets/screenshots/evento-editor-contagem-regressiva.png)
 {: .tip }
 > O contador de **fim das inscrições** cria senso de urgência e costuma acelerar a decisão de quem está em dúvida — combine-o com a **[data limite](#detalhes)**.
 
@@ -115,8 +108,7 @@ Na página, os documentos aparecem em uma **grade** (vários por linha, até pre
 
 ![Aba Documentos do editor de evento](/assets/screenshots/evento-editor-documentos.png)
 
-<!-- print pendente: evento-editor-documentos-titulo.png — aba Documentos mostrando o campo "Título da seção" preenchido (ex.: "Documentos complementares"), viewport desktop (requer login do Bruno) -->
-
+![Título da seção de documentos no editor](/assets/screenshots/evento-editor-documentos-titulo.png)
 {: .tip }
 > Coloque o **regulamento antes do formulário de inscrição** — assim o participante lê as regras antes de confirmar. Você também pode inserir a lista em qualquer página com o shortcode `[v3revent_documents]`.
 
@@ -141,8 +133,7 @@ Os tipos **lista** e **opções (radio)** deixam o participante escolher **uma**
 
 O tipo **arquivo (upload)** permite ao inscrito **enviar documentos** (ex.: laudo, comprovante). Você define os **tipos aceitos** (ex.: `pdf, jpg, png`), o **tamanho máximo** (MB) e se aceita **um ou vários** arquivos. Os arquivos ficam em **armazenamento privado** e só podem ser **baixados por você** (ou por quem tem permissão no evento), na aba **Relatórios** — o link do arquivo aparece na linha do inscrito. Por segurança, o download é sempre um **anexo** (nunca abre no navegador) e **executáveis/scripts são bloqueados**, mesmo que listados.
 
-<!-- print pendente: evento-editor-campo-arquivo.png — aba Campos do Formulário com um card do tipo "Arquivo (upload)" aberto, mostrando os campos "Tipos aceitos", "Tamanho máximo (MB)" e a opção de vários arquivos, viewport desktop (requer login do Bruno) -->
-
+![Configuração do campo de arquivo no editor](/assets/screenshots/evento-editor-campo-arquivo.png)
 {: .important }
 > **LGPD:** arquivos enviados são dados pessoais. O plugin os guarda de forma privada e os **apaga** junto com os dados do inscrito quando o titular pede exclusão ou quando o prazo de retenção expira. Peça só os documentos realmente necessários.
 
@@ -157,8 +148,7 @@ Em cada card você define a **Largura** do campo no formulário: **1 coluna (⅓
 - **No celular**, os campos sempre **empilham** (1 por linha), independentemente da largura escolhida — a largura vale em telas de tablet e computador.
 - Os campos entram na ordem em que estão listados; se dois campos numa linha somam mais de 3 colunas, o segundo desce para a linha seguinte.
 
-<!-- print pendente: evento-editor-campo-largura.png — aba Campos do Formulário com o seletor "Largura" de um card aberto mostrando as opções 1/2/3 colunas, viewport desktop (requer login do Bruno) -->
-
+![Seletor de largura do campo no editor](/assets/screenshots/evento-editor-campo-largura.png)
 {: .note }
 > Se você já tinha formulários com campos aparecendo lado a lado, eles passam a **empilhar** (um por linha) até você definir as larguras — é rápido e reversível: basta escolher 1 ou 2 colunas nos campos que quiser juntar.
 
@@ -171,8 +161,7 @@ Exemplo: um campo **"Nome do guia"** que só aparece quando **"Precisa de guia?"
 {: .note }
 > A regra também é verificada **no servidor**, então um campo oculto nunca bloqueia a inscrição nem grava dados indevidos, independentemente do navegador.
 
-<!-- print pendente: evento-editor-campo-condicao.png — aba Campos do Formulário com a seção "Condições de exibição" de um campo aberta, mostrando uma condição (campo + operador "for igual a" + valor), viewport desktop (requer login do Bruno) -->
-
+![Condição de exibição de um campo no editor](/assets/screenshots/evento-editor-campo-condicao.png)
 Veja o efeito no formulário público em **[Campos que aparecem conforme a resposta](/modulos/formulario-publico/#campos-que-aparecem-conforme-a-resposta)**.
 
 ## Preços
@@ -216,8 +205,7 @@ Para configurar:
 
 ![Preço por modalidade: campo designado e tabela por opção](/assets/screenshots/evento-editor-precos-modalidade.png)
 
-<!-- print pendente: evento-editor-precos-modalidade-simples.png — aba Preços com "Preço por modalidade" ligado e "Desconto por quantidade" DESLIGADO, mostrando cada modalidade com o campo simples "Preço (R$)" (sem faixas), viewport desktop (requer login do Bruno) -->
-
+![Preço simples por modalidade no editor](/assets/screenshots/evento-editor-precos-modalidade-simples.png)
 {: .note }
 > **Sem desconto por quantidade, é só digitar o valor.** Com o **Desconto por quantidade desligado**, cada modalidade mostra um único campo **"Preço (R$)"** — sem montar faixas. É o caminho mais rápido para, por exemplo, uma modalidade com desconto para PCD.
 

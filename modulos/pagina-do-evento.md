@@ -103,20 +103,17 @@ Quando as inscrições **não estão abertas**, a página mostra um **cartão lo
 
 O aviso é **automático**: você controla tudo pela aba **Detalhes** do editor (as datas de abertura e limite e o interruptor **Inscrições abertas**). Veja **[Editor de evento → Detalhes](/modulos/editor-evento/)**.
 
-<!-- print pendente: pagina-aviso-inscricoes.png — página do evento com o cartão "Inscrições em breve" logo abaixo do topo, viewport desktop -->
-
+![Cartão “Inscrições em breve” na página do evento](/assets/screenshots/pagina-aviso-inscricoes.png)
 ## Contagem regressiva
 
 Quando ligada na aba **Detalhes**, a página exibe um box com **contadores** que atualizam **ao vivo** (dias, horas, minutos e segundos): um para o **início do evento** e outro para o **fim das inscrições**. Cada contador só aparece se a sua data estiver preenchida e ainda for futura. Veja **[Editor de evento → Detalhes](/modulos/editor-evento/)**.
 
-<!-- print pendente: pagina-contagem-regressiva.png — página do evento com o box de contagem regressiva, viewport desktop -->
-
+![Contagem regressiva na página do evento](/assets/screenshots/pagina-contagem-regressiva.png)
 ## Contato dos organizadores
 
 Quando ligado na aba **Detalhes**, aparece o cartão **"Fale com a organização"** com os canais que você preencheu — **e-mail**, **WhatsApp** e **telefone** (só os informados). O botão de WhatsApp abre a conversa direto. Veja **[Editor de evento → Detalhes](/modulos/editor-evento/)**.
 
-<!-- print pendente: pagina-contato-organizadores.png — página do evento com o cartão "Fale com a organização", viewport desktop -->
-
+![Cartão “Fale com a organização” na página do evento](/assets/screenshots/pagina-contato-organizadores.png)
 ## Montando à sua maneira (blocos e shortcodes)
 
 Se você prefere usar o seu próprio tema ou o editor de blocos do WordPress, cada elemento também está disponível como **shortcode**, que você insere pelo bloco "Shortcode" do Gutenberg:
