@@ -130,12 +130,17 @@ Define **quais dados coletar de cada participante**. Cada campo é um card com *
 
 ![Aba Campos do Formulário do editor de evento](/assets/screenshots/evento-editor-campos.png)
 
-Tipos disponíveis: texto, e-mail, CPF, telefone, número, **lista (select)**, **opções (radio)**, **checkbox**, área de texto e data. O padrão traz nome, CPF, e-mail, organização e telefone.
+Tipos disponíveis: texto, e-mail, CPF, telefone, número, **lista (select)**, **opções (radio)**, **checkbox**, área de texto, data e **arquivo (upload)**. O padrão traz nome, CPF, e-mail, organização e telefone.
 
 Os tipos **lista** e **opções (radio)** deixam o participante escolher **uma** entre as opções que você definir (uma por linha). O tipo **checkbox** tem dois comportamentos:
 
 - **Sem opções** — um único checkbox de **sim/não** (ex.: "Aceito receber novidades").
 - **Com opções** — vira **múltipla escolha**: o participante pode marcar **mais de uma** (ex.: restrições alimentares: Vegetariano, Vegano, Sem lactose). Cada opção aparece em sua própria linha; se marcar o campo como obrigatório, o participante precisa escolher ao menos uma.
+
+O tipo **arquivo (upload)** permite ao inscrito **enviar documentos** (ex.: laudo, comprovante). Você define os **tipos aceitos** (ex.: `pdf, jpg, png`), o **tamanho máximo** (MB) e se aceita **um ou vários** arquivos. Os arquivos ficam em **armazenamento privado** e só podem ser **baixados por você** (ou por quem tem permissão no evento), na aba **Relatórios** — o link do arquivo aparece na linha do inscrito. Por segurança, o download é sempre um **anexo** (nunca abre no navegador) e **executáveis/scripts são bloqueados**, mesmo que listados.
+
+{: .important }
+> **LGPD:** arquivos enviados são dados pessoais. O plugin os guarda de forma privada e os **apaga** junto com os dados do inscrito quando o titular pede exclusão ou quando o prazo de retenção expira. Peça só os documentos realmente necessários.
 
 {: .important }
 > **Minimização (LGPD):** só torne obrigatório o que você realmente vai usar. Cada dado a mais é uma responsabilidade a mais sob a LGPD — e um formulário mais longo converte menos.

@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Campo de envio de arquivos
+**v1.53.0 · julho de 2026**
+
+O formulário agora tem um tipo de campo **Arquivo (upload)**: o inscrito pode **enviar documentos** (laudo, comprovante, etc.). Na aba **Campos do Formulário**, escolha o tipo **Arquivo** e defina os **tipos aceitos**, o **tamanho máximo** e se permite **um ou vários** arquivos. Os arquivos ficam **guardados de forma privada** e só você (ou quem tem permissão no evento) baixa, pela aba **Relatórios**. Tudo com segurança e conforme a LGPD — os arquivos são apagados junto com os dados do inscrito.
+
 ## Campos condicionais no formulário
 **v1.52.0 · julho de 2026**
 
