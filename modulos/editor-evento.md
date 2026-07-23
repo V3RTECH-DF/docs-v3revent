@@ -115,6 +115,8 @@ Na página, os documentos aparecem em uma **grade** (vários por linha, até pre
 
 ![Aba Documentos do editor de evento](/assets/screenshots/evento-editor-documentos.png)
 
+<!-- print pendente: evento-editor-documentos-titulo.png — aba Documentos mostrando o campo "Título da seção" preenchido (ex.: "Documentos complementares"), viewport desktop (requer login do Bruno) -->
+
 {: .tip }
 > Coloque o **regulamento antes do formulário de inscrição** — assim o participante lê as regras antes de confirmar. Você também pode inserir a lista em qualquer página com o shortcode `[v3revent_documents]`.
 
@@ -139,6 +141,8 @@ Os tipos **lista** e **opções (radio)** deixam o participante escolher **uma**
 
 O tipo **arquivo (upload)** permite ao inscrito **enviar documentos** (ex.: laudo, comprovante). Você define os **tipos aceitos** (ex.: `pdf, jpg, png`), o **tamanho máximo** (MB) e se aceita **um ou vários** arquivos. Os arquivos ficam em **armazenamento privado** e só podem ser **baixados por você** (ou por quem tem permissão no evento), na aba **Relatórios** — o link do arquivo aparece na linha do inscrito. Por segurança, o download é sempre um **anexo** (nunca abre no navegador) e **executáveis/scripts são bloqueados**, mesmo que listados.
 
+<!-- print pendente: evento-editor-campo-arquivo.png — aba Campos do Formulário com um card do tipo "Arquivo (upload)" aberto, mostrando os campos "Tipos aceitos", "Tamanho máximo (MB)" e a opção de vários arquivos, viewport desktop (requer login do Bruno) -->
+
 {: .important }
 > **LGPD:** arquivos enviados são dados pessoais. O plugin os guarda de forma privada e os **apaga** junto com os dados do inscrito quando o titular pede exclusão ou quando o prazo de retenção expira. Peça só os documentos realmente necessários.
 
@@ -153,6 +157,10 @@ Exemplo: um campo **"Nome do guia"** que só aparece quando **"Precisa de guia?"
 
 {: .note }
 > A regra também é verificada **no servidor**, então um campo oculto nunca bloqueia a inscrição nem grava dados indevidos, independentemente do navegador.
+
+<!-- print pendente: evento-editor-campo-condicao.png — aba Campos do Formulário com a seção "Condições de exibição" de um campo aberta, mostrando uma condição (campo + operador "for igual a" + valor), viewport desktop (requer login do Bruno) -->
+
+Veja o efeito no formulário público em **[Campos que aparecem conforme a resposta](/modulos/formulario-publico/#campos-que-aparecem-conforme-a-resposta)**.
 
 ## Preços
 
@@ -194,6 +202,11 @@ Para configurar:
 3. Cada opção do campo ganha a sua **própria tabela de preços**. Preencha os valores de cada modalidade; opções sem tabela própria usam a **Tabela base** como padrão.
 
 ![Preço por modalidade: campo designado e tabela por opção](/assets/screenshots/evento-editor-precos-modalidade.png)
+
+<!-- print pendente: evento-editor-precos-modalidade-simples.png — aba Preços com "Preço por modalidade" ligado e "Desconto por quantidade" DESLIGADO, mostrando cada modalidade com o campo simples "Preço (R$)" (sem faixas), viewport desktop (requer login do Bruno) -->
+
+{: .note }
+> **Sem desconto por quantidade, é só digitar o valor.** Com o **Desconto por quantidade desligado**, cada modalidade mostra um único campo **"Preço (R$)"** — sem montar faixas. É o caminho mais rápido para, por exemplo, uma modalidade com desconto para PCD.
 
 {: .note }
 > Se o formulário ainda não tem um campo de opção única, o editor avisa e indica criar um na aba **Campos do Formulário** — ele é quem define as modalidades disponíveis.

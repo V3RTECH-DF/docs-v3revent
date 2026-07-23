@@ -73,6 +73,26 @@ Conforme o tema, a página pode incluir:
 {: .note }
 > **A logo do evento** aparece na página **com destaque**, sobre um **cartão branco** (legível em tema claro ou escuro). Você escolhe **onde ela aparece** — no topo, abaixo do hero, junto das informações — ou **não mostrá-la** na página, e também o **tamanho** dela (Pequeno, Médio, Grande ou Personalizado), em **[Editor de evento → Aparência](/modulos/editor-evento/)**.
 
+## Acessibilidade: tamanho do texto
+
+No topo da página, o visitante encontra uma pequena barra **A− / A / A+** para **diminuir, restaurar ou aumentar** o tamanho do texto — uma ajuda para quem tem baixa visão ou prefere uma leitura mais confortável. A preferência fica **guardada no navegador** dele, valendo nas próximas visitas.
+
+![Página do evento em tamanho normal (100%), com a barra de acessibilidade A− / A / A+ no topo](/assets/screenshots/pagina-acessibilidade-100.png)
+
+Ao clicar em **A+**, o conteúdo é ampliado sem quebrar o layout:
+
+![Mesma página com o texto ampliado após clicar em A+](/assets/screenshots/pagina-acessibilidade-ampliado.png)
+
+O recurso vem **ligado por padrão** no layout **Página do plugin**. Se quiser, você o desliga por evento na aba **[Aparência](/modulos/editor-evento/)** do editor.
+
+## Documentos na página
+
+Quando você anexa documentos ao evento (regulamento, kit do participante…), eles aparecem em uma **grade** — vários por linha, preenchendo a largura — com o **título da seção** que você definiu (aqui, *"Documentos complementares"*). Cada item é um **link de download** com a extensão do arquivo em destaque.
+
+![Seção de documentos na página do evento, em grade, com o título "Documentos complementares"](/assets/screenshots/pagina-evento-documentos.png)
+
+O título da seção e a posição na página são definidos na aba **[Documentos](/modulos/editor-evento/)** do editor.
+
 ## Aviso de inscrições
 
 Quando as inscrições **não estão abertas**, a página mostra um **cartão logo abaixo do topo** explicando o momento, em vez de simplesmente esconder o formulário:

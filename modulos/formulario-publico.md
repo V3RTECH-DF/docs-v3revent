@@ -10,6 +10,10 @@ nav_order: 8
 
 ![Formulário público de inscrição com preço ao vivo](/assets/screenshots/form-publico.png)
 
+O formulário começa com um **título** (por padrão, **"Inscrição"**) e, logo abaixo, uma **barra com a data e o local** do evento, centralizada. Isso dá contexto a quem chega direto no formulário (por link ou shortcode).
+
+![Título "Inscrição" e a barra de data e local centralizada no topo do formulário](/assets/screenshots/form-publico-titulo.png)
+
 ## Individual ou em grupo?
 
 Cada evento define um **[Tipo de inscrição](/modulos/editor-evento/)** que controla se o formulário pede os **Dados do Responsável pela Inscrição** (a pessoa que inscreve um grupo):
@@ -53,6 +57,28 @@ Em vez de digitar um a um, o responsável pode **importar uma planilha**:
 > **A importação é o que viabiliza grupos grandes**
 >
 > Uma empresa que inscreve 80 funcionários não vai digitar 80 vezes. Deixe o modelo de planilha visível e explique nos seus canais que dá para importar — isso reduz o abandono do formulário em inscrições grandes.
+
+## Campos que aparecem conforme a resposta
+{: #campos-que-aparecem-conforme-a-resposta }
+
+Alguns campos podem estar configurados para **aparecer só quando fazem sentido**, de acordo com o que o participante responde em outro campo. Por exemplo: o campo **"Nome do guia"** só surge depois que a pessoa marca **"Sim"** em **"Precisa de guia acompanhante?"**.
+
+Enquanto a condição não é atendida, o campo fica **oculto** — e nem é exigido:
+
+![Campo condicional oculto: "Precisa de guia acompanhante?" ainda sem resposta, sem o campo "Nome do guia"](/assets/screenshots/form-campo-condicional-oculto.png)
+
+Assim que a resposta bate com a condição, o campo **aparece na hora**:
+
+![Campo condicional visível: com "Sim" selecionado, o campo "Nome do guia" surge ao lado](/assets/screenshots/form-campo-condicional-visivel.png)
+
+{: .note }
+> Quem monta o formulário define essas regras na aba **Campos do Formulário** do editor. Veja **[Editor de evento → Condições de exibição](/modulos/editor-evento/#condições-de-exibição)**.
+
+## Enviar um arquivo
+
+Quando o organizador inclui um campo do tipo **arquivo**, o participante pode **anexar um documento** (por exemplo, um laudo ou comprovante), direto no card dele. O organizador define os **formatos aceitos**, o **tamanho máximo** e se cabe **um ou vários** arquivos. O arquivo é guardado de forma **privada** e só a organização acessa depois.
+
+<!-- print pendente: form-campo-upload.png — campo de upload de arquivo no card do inscrito, no formulário público, viewport desktop. BLOQUEADO por bug: o controle de upload está renderizando invisível no form público (colisão de CSS em public.css, feature #101). Recapturar após a correção. -->
 
 ## Disponibilidade
 
