@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Campos condicionais no formulário
+**v1.52.0 · julho de 2026**
+
+Agora você pode fazer um campo do formulário **aparecer só quando fizer sentido**. Na aba **Campos do Formulário**, cada campo tem uma seção **Condições de exibição**: por exemplo, mostrar **"Nome do guia"** apenas quando **"Precisa de guia?" = Sim**. Dá para **combinar várias condições** (exigindo **todas** ou **qualquer uma**) e usar **igual a** / **diferente de**. Um campo oculto pela condição não é exigido nem gravado. Formulários mais curtos e inteligentes, sem pedir o que não se aplica.
+
 ## Controle de tamanho do texto (acessibilidade)
 **v1.51.0 · julho de 2026**
 

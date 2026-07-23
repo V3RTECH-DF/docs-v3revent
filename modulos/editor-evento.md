@@ -140,6 +140,15 @@ Os tipos **lista** e **opções (radio)** deixam o participante escolher **uma**
 {: .important }
 > **Minimização (LGPD):** só torne obrigatório o que você realmente vai usar. Cada dado a mais é uma responsabilidade a mais sob a LGPD — e um formulário mais longo converte menos.
 
+### Condições de exibição
+
+Cada campo pode ter **condições**: aparece só quando **outros campos** têm certos valores. Em cada card, na seção **Condições de exibição**, clique em **Adicionar condição** e escolha o **campo**, o operador (**for igual a** / **for diferente de**) e o **valor**. Com **mais de uma** condição, você define se o campo aparece quando **todas** (E) ou **qualquer uma** (OU) delas for atendida.
+
+Exemplo: um campo **"Nome do guia"** que só aparece quando **"Precisa de guia?" = Sim**. Enquanto estiver oculto, ele **não é exigido** e **não é gravado** — mesmo que seja obrigatório.
+
+{: .note }
+> A regra também é verificada **no servidor**, então um campo oculto nunca bloqueia a inscrição nem grava dados indevidos, independentemente do navegador.
+
 ## Preços
 
 A aba **Preços** traz **três chaves de preço independentes**, que você liga conforme a necessidade do evento e pode **combinar** à vontade:
