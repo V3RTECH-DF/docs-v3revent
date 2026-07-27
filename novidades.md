@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Inscritos do evento direto no editor
+**v1.58.0 · julho de 2026**
+
+Agora, ao abrir um evento no editor, há uma aba **Inscritos** (logo depois de **Detalhes**) que mostra **só os inscritos daquele evento** — sem precisar ir até a tela geral **Inscrições** e filtrar. É a mesma lista de sempre, já focada no evento: dá para **ver** as inscrições, **trocar o status** de cada uma clicando na etiqueta colorida (**Pendente / Confirmada / Cancelada**) e **exportar** em **CSV**, **XLSX** ou **PDF**. A tela geral **Inscrições** (todos os eventos) continua existindo igual — a aba é um atalho para quando você está acompanhando um evento específico. Veja em **[Editor de evento → Inscritos](/modulos/editor-evento/#inscritos)**.
+
 ## A inscrição agora passa pelo carrinho
 **v1.57.0 · julho de 2026**
 

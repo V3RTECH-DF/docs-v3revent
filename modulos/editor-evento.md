@@ -10,7 +10,7 @@ O editor concentra toda a configuração de um evento, organizado em abas na ord
 
 No topo do editor, o botão **Ver página** abre a página pública do evento em uma nova aba. Enquanto o evento está em rascunho, ele vira **Pré-visualizar** (mostra a página só para você). Veja **[Página do evento](/modulos/pagina-do-evento/)**.
 
-A sequência das abas é: **Detalhes → Programação → Campos do Formulário → Preços → Aparência → Página → Credencial → Certificado → Avaliação → Patrocinadores → Relatório → WooCommerce → Equipe**.
+A sequência das abas é: **Detalhes → Inscritos → Programação → Campos do Formulário → Preços → Aparência → Página → Credencial → Certificado → Avaliação → Patrocinadores → Relatório → WooCommerce → Equipe**.
 
 ## Detalhes
 
@@ -94,6 +94,21 @@ Define se o formulário pede os **Dados do Responsável pela Inscrição**:
 
 {: .note }
 > A **data limite** é o jeito de programar o encerramento: informe a data e não precisa lembrar de desligar as inscrições no dia — o sistema fecha o formulário automaticamente quando ela passa. Deixe em branco para não ter limite por data.
+
+## Inscritos
+
+A aba **Inscritos** traz, dentro do próprio evento, a **lista de inscrições daquele evento** — sem precisar sair para a tela geral **Inscrições** e filtrar. É a mesma tabela, só que já **presa a este evento**: some o filtro de evento e a coluna "Evento", e tudo o que você faz aqui vale só para as inscrições deste evento.
+
+![Aba Inscritos do editor de evento, com a lista e os botões de exportar](/assets/screenshots/evento-editor-inscritos.png)
+
+Nela você:
+
+- **Vê a lista** de inscrições do evento — responsável, número de inscritos, valor, data e **status** —, com **busca** por nome/e-mail e **filtro por status** (pendente, confirmada, cancelada);
+- **Troca o status** de cada inscrição: clique na **etiqueta de status** (a "pílula" colorida) da linha e escolha **Pendente / Confirmada / Cancelada** no menu — a mudança é aplicada na hora;
+- **Exporta** a lista do evento em **CSV**, **XLSX** ou **PDF**, pelos botões acima da tabela.
+
+{: .note }
+> **A tela geral continua existindo.** O menu **[Inscrições](/modulos/inscricoes/)** (todos os eventos, com filtro de evento) segue igual. A aba **Inscritos** é um atalho: faz o mesmo, já focado no evento aberto — útil quando você está montando ou acompanhando um evento específico.
 
 ## Documentos
 

@@ -10,6 +10,9 @@ A tela **Inscrições** é a lista de todos os pedidos de inscrição. Aqui voc�
 
 ![Lista de inscrições com filtros e status editável](/assets/screenshots/inscricoes.png)
 
+{: .note }
+> **Precisa das inscrições de um único evento?** Além desta tela geral, cada evento tem a aba **Inscritos** no editor, já filtrada só para aquele evento — com a mesma lista, a mesma troca de status e a mesma exportação (CSV/XLSX/PDF). Veja **[Editor de evento → Inscritos](/modulos/editor-evento/#inscritos)**.
+
 ## Filtros e busca
 
 No topo, você filtra por:
