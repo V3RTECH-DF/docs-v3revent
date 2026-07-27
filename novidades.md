@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## A inscrição agora passa pelo carrinho
+**v1.57.0 · julho de 2026**
+
+Antes, ao confirmar a inscrição, o participante ia **direto para a tela de pagamento**, pulando o carrinho. Isso o impedia de **revisar ou desistir** e, se ele saísse no meio (fechar o navegador, acabar a energia) e voltasse depois, uma **nova inscrição se somava** à anterior — acumulando pedidos. Agora a inscrição vai para a **página do carrinho**, onde ele pode **revisar, remover, esvaziar ou continuar comprando** antes de pagar (como em qualquer loja WooCommerce). O botão passou a dizer **"Confirmar inscrição e ir para o carrinho"**, e o item no carrinho **lista os nomes das pessoas inscritas** — o que ajuda a identificar inscrições ou participantes repetidos, sobretudo na inscrição de **grupo**. Veja em **[Formulário público](/modulos/formulario-publico/)**.
+
 ## Trocar o status da inscrição ficou mais simples
 **v1.56.0 · julho de 2026**
 

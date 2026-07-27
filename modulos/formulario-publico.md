@@ -40,10 +40,15 @@ Cada evento define um **[Tipo de inscrição](/modulos/editor-evento/)** que con
 
 ![Formulário público de um evento com preço por lote de data](/assets/screenshots/form-publico-lotes.png)
 4. **Consentimento** — o responsável marca o consentimento de tratamento de dados (com link para a sua política). Se o evento habilitar, há também a opção de **networking** (que libera o vCard no QR da credencial).
-5. **Checkout** — ao confirmar, o formulário valida os dados (incluindo CPF e e-mail), leva a inscrição ao carrinho e segue **direto para o checkout** do WooCommerce.
+5. **Carrinho** — ao clicar em **"Confirmar inscrição e ir para o carrinho"**, o formulário valida os dados (incluindo CPF e e-mail) e leva a inscrição para a **página do carrinho** do WooCommerce. Ali o participante **revê a inscrição** — inclusive os **nomes das pessoas inscritas**, que aparecem no item — e pode **remover, ajustar ou continuar comprando** antes de seguir para o pagamento.
+
+![Item de inscrição no carrinho mostrando o número de inscritos, os nomes (Ana Silva, Bruno Costa), o valor por inscrito e o responsável, com os controles de quantidade e remover](/assets/screenshots/carrinho-inscricao-nomes.png)
+
+{: .note }
+> **Por que passa pelo carrinho?** Assim o participante consegue **revisar e desistir** antes de pagar, e não acumula pedidos: se ele começar uma inscrição e sair no meio (fechar o navegador, acabar a energia), ao voltar encontra o que já estava no carrinho em vez de gerar uma inscrição duplicada. Os **nomes dos inscritos** no item ajudam a identificar duplicidades — útil sobretudo na inscrição de **grupo**.
 
 {: .tip }
-> **Tem um cupom de desconto?** No checkout, o participante pode inserir o código no campo de cupom e o desconto é abatido do total. Veja como criar e restringir cupons em **[Descontos com cupom](/guia-do-gestor/descontos-com-cupom/)**.
+> **Tem um cupom de desconto?** No carrinho ou no checkout, o participante pode inserir o código no campo de cupom e o desconto é abatido do total. Veja como criar e restringir cupons em **[Descontos com cupom](/guia-do-gestor/descontos-com-cupom/)**.
 
 ## Importar participantes por planilha
 
