@@ -40,9 +40,12 @@ Cada evento define um **[Tipo de inscrição](/modulos/editor-evento/)** que con
 
 ![Formulário público de um evento com preço por lote de data](/assets/screenshots/form-publico-lotes.png)
 4. **Consentimento** — o responsável marca o consentimento de tratamento de dados (com link para a sua política). Se o evento habilitar, há também a opção de **networking** (que libera o vCard no QR da credencial).
-5. **Carrinho** — ao clicar em **"Confirmar inscrição e ir para o carrinho"**, o formulário valida os dados (incluindo CPF e e-mail) e leva a inscrição para a **página do carrinho** do WooCommerce. Ali o participante **revê a inscrição** — inclusive os **nomes das pessoas inscritas**, que aparecem no item — e pode **remover, ajustar ou continuar comprando** antes de seguir para o pagamento.
+5. **Carrinho** — ao clicar em **"Confirmar inscrição e ir para o carrinho"**, o formulário valida os dados (incluindo CPF e e-mail) e leva a inscrição para a **página do carrinho** do WooCommerce. Ali o participante **revê a inscrição** — inclusive os **nomes das pessoas inscritas**, que aparecem no item — e pode **remover a inscrição ou continuar comprando** antes de seguir para o pagamento.
 
-![Item de inscrição no carrinho mostrando o número de inscritos, os nomes (Ana Silva, Bruno Costa), o valor por inscrito e o responsável, com os controles de quantidade e remover](/assets/screenshots/carrinho-inscricao-nomes.png)
+![Item de inscrição no carrinho mostrando o número de inscritos, os nomes (Ana Silva, Bruno Costa), o valor por inscrito e o responsável, com o botão de remover](/assets/screenshots/carrinho-inscricao-nomes.png)
+
+{: .note }
+> **A quantidade no carrinho não é editável.** O número de inscritos é definido pelos participantes que o responsável adicionou no formulário — por isso o item **não tem seletor de quantidade**. Para inscrever **mais ou menos pessoas**, remova o item e **refaça a inscrição** no formulário, adicionando ou retirando participantes. No carrinho, a única ação sobre o item é **remover**.
 
 {: .note }
 > **Por que passa pelo carrinho?** Assim o participante consegue **revisar e desistir** antes de pagar, e não acumula pedidos: se ele começar uma inscrição e sair no meio (fechar o navegador, acabar a energia), ao voltar encontra o que já estava no carrinho em vez de gerar uma inscrição duplicada. Os **nomes dos inscritos** no item ajudam a identificar duplicidades — útil sobretudo na inscrição de **grupo**.
