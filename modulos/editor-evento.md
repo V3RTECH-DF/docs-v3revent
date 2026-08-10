@@ -42,7 +42,6 @@ Define como o evento acontece:
 - **Híbrido** — o evento acontece **ao mesmo tempo presencial e on-line** (transmissão + público no local).
 
 ![Seletor "Modalidade do evento" na aba Detalhes](/assets/screenshots/evento-editor-modalidade.png)
-<!-- CAPTURA PENDENTE: seletor "Modalidade do evento" na aba Detalhes, aberto mostrando as três opções (Presencial, Virtual, Híbrido). -->
 
 A modalidade aparece para o público — como uma **pílula** ao lado da data e do local, tanto na **[página do evento](/modulos/pagina-do-evento/)** quanto na **[listagem `[v3revent_events]`](/modulos/shortcodes-e-api/#página-de-listagem-de-eventos-v3revent_events)**, onde também serve de **filtro**. Ela também define quem é elegível ao **certificado**: em modalidade **Presencial** ou **Híbrido**, só quem fez **check-in**; em **Virtual**, quem tem a inscrição **confirmada** (veja a aba **[Certificado](#certificado)**, abaixo).
 
@@ -133,7 +132,6 @@ Nela você:
 Ainda na aba **Inscritos**, logo abaixo da lista, você liga um **resumo periódico por e-mail** do andamento das inscrições — um "raio-x" rápido, sem precisar abrir o painel toda hora.
 
 ![Seção "E-mail de andamento das inscrições" na aba Inscritos, com o seletor de frequência](/assets/screenshots/evento-editor-email-andamento.png)
-<!-- CAPTURA PENDENTE: seção "E-mail de andamento das inscrições" na aba Inscritos — mostrar o seletor de Frequência aberto e a mensagem de contagem de coordenadores (ex.: "2 coordenador(es) receberá(ão) este e-mail."). -->
 
 Em **Frequência**, escolha:
 

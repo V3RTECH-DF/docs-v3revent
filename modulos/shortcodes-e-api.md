@@ -89,7 +89,6 @@ Por isso, navegando pela **loja** do seu site, você **não vai encontrar** os e
 4. Publique a página e, se quiser, adicione-a ao **menu** do site, para o visitante chegar até ela navegando normalmente.
 
 ![Página com o shortcode [v3revent_events] listando eventos em cartões](/assets/screenshots/shortcode-eventos-cartoes.png)
-<!-- CAPTURA PENDENTE: página pública com [v3revent_events] no layout padrão (cartões), mostrando 3+ eventos publicados com imagem, título, data/local, selo de situação da inscrição. -->
 
 ### Cartões ou tabela
 
@@ -99,7 +98,6 @@ O parâmetro **`layout`** decide a apresentação:
 - **`table`** — uma **tabela** com Evento, Data, Local, Modalidade e Prazo de inscrição. Os **cabeçalhos das colunas são clicáveis**: clique em "Data", por exemplo, para ordenar por data — clique de novo para inverter o sentido. Funciona **sem precisar de JavaScript** (é navegação normal por link), então funciona em qualquer site. Boa opção para listas longas ou históricos de edições passadas.
 
 ![Página com o shortcode [v3revent_events layout="table"] listando eventos em tabela ordenável](/assets/screenshots/shortcode-eventos-tabela.png)
-<!-- CAPTURA PENDENTE: página pública com [v3revent_events layout="table"], mostrando a tabela com cabeçalhos clicáveis e a seta de ordenação ativa numa coluna. -->
 
 ### Todos os parâmetros
 

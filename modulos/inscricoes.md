@@ -40,7 +40,6 @@ Há também um **link para o pedido no WooCommerce**, para conferir o pagamento 
 No botão **Colunas**, acima da tabela, você escolhe quais informações aparecem — além das colunas padrão (responsável, evento, valor, data, status), dá para incluir **qualquer campo do formulário do evento**, como a **modalidade** de inscrição. Marque as que quiser ver, clique em **Aplicar**, e a escolha fica **salva para o seu usuário** (vale nas próximas visitas).
 
 ![Botão Colunas aberto, com a lista de campos disponíveis para marcar](/assets/screenshots/inscricoes-colunas.png)
-<!-- CAPTURA PENDENTE: dropdown do botão "Colunas" aberto na tela Inscrições, mostrando colunas padrão marcadas e um campo do formulário (ex.: modalidade) disponível para marcar. -->
 
 Para **ordenar**, clique no **cabeçalho** de qualquer coluna visível — inclusive as que você adicionou. Um clique ordena, outro clique inverte o sentido.
 
