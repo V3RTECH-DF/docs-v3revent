@@ -24,6 +24,14 @@ Ela **não aparece** no menu **Páginas** do WordPress porque o evento é um con
 </details>
 
 <details markdown="1">
+<summary>Criei meus eventos mas eles não aparecem na loja — o que faço?</summary>
+
+É assim mesmo, de propósito. O produto do WooCommerce que o V3REvent cria para cada evento é **oculto do catálogo**: ele só serve para levar o preço ao carrinho — quem tem a descrição, a programação e o **formulário de inscrição** é a **[página do evento](/modulos/pagina-do-evento/)**, gerada automaticamente ao publicar. Por isso, navegando pela loja, você não encontra os eventos.
+
+**Não torne o produto visível na loja** — isso mostra a página crua do WooCommerce, sem formulário. O jeito certo de reunir seus eventos numa vitrine é criar uma página comum e colar o shortcode **`[v3revent_events]`**, que lista todos os eventos publicados (em cartões ou tabela, com filtros). Veja o passo a passo em **[Shortcodes e API → Página de listagem de eventos](/modulos/shortcodes-e-api/#página-de-listagem-de-eventos-v3revent_events)**.
+</details>
+
+<details markdown="1">
 <summary>Preciso do WooCommerce?</summary>
 
 Sim. O V3REvent usa o **WooCommerce** para o carrinho, o checkout e o pagamento

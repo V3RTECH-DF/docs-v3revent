@@ -22,6 +22,7 @@ Os dados básicos do evento.
 - **Descrição do evento** — texto de apresentação, com **editor de formatação** (veja abaixo);
 - **Data/hora de início** (obrigatória) e **de término**;
 - **Local** e **link do local**;
+- **Modalidade do evento** — ver abaixo;
 - **Capacidade total** (0 = ilimitada);
 - **Máximo de inscritos por pedido**;
 - **Inscrições abertas** (liga/desliga o formulário);
@@ -31,6 +32,19 @@ Os dados básicos do evento.
 - **Exibir contato dos organizadores na página** (opcional) — mostra um cartão "Fale com a organização" na página do evento (veja abaixo);
 - **Contagem regressiva na página** (opcional) — mostra contadores para o início do evento e o fim das inscrições (veja abaixo);
 - **Status** do evento.
+
+### Modalidade do evento
+
+Define como o evento acontece:
+
+- **Presencial** — o evento acontece num **local físico**.
+- **Virtual** — o evento acontece **on-line**.
+- **Híbrido** — o evento acontece **ao mesmo tempo presencial e on-line** (transmissão + público no local).
+
+![Seletor "Modalidade do evento" na aba Detalhes](/assets/screenshots/evento-editor-modalidade.png)
+<!-- CAPTURA PENDENTE: seletor "Modalidade do evento" na aba Detalhes, aberto mostrando as três opções (Presencial, Virtual, Híbrido). -->
+
+A modalidade aparece para o público — como uma **pílula** ao lado da data e do local, tanto na **[página do evento](/modulos/pagina-do-evento/)** quanto na **[listagem `[v3revent_events]`](/modulos/shortcodes-e-api/#página-de-listagem-de-eventos-v3revent_events)**, onde também serve de **filtro**. Ela também define quem é elegível ao **certificado**: em modalidade **Presencial** ou **Híbrido**, só quem fez **check-in**; em **Virtual**, quem tem a inscrição **confirmada** (veja a aba **[Certificado](#certificado)**, abaixo).
 
 ### Aviso e data de abertura das inscrições
 
@@ -97,21 +111,41 @@ Define se o formulário pede os **Dados do Responsável pela Inscrição**:
 
 ## Inscritos
 
-A aba **Inscritos** traz, dentro do próprio evento, a **lista de inscrições daquele evento** — sem precisar sair para a tela geral **Inscrições** e filtrar. É a mesma tabela, só que já **presa a este evento**: some o filtro de evento e a coluna "Evento", e tudo o que você faz aqui vale só para as inscrições deste evento.
+A aba **Inscritos** traz, dentro do próprio evento, a **lista de participantes daquele evento** — sem precisar sair para a tela geral **Inscrições** e filtrar. É a mesma lista da tela **[Inscrições](/modulos/inscricoes/)**, só que já **presa a este evento**: some o filtro de evento e a coluna "Evento", e tudo o que você faz aqui vale só para as inscrições deste evento.
 
 ![Aba Inscritos do editor de evento, com a lista e os botões de exportar](/assets/screenshots/evento-editor-inscritos.png)
 
 Nela você:
 
-- **Vê a lista** de inscrições do evento — responsável, número de inscritos, valor, data e **status** —, com **busca** por nome/e-mail e **filtro por status** (pendente, confirmada, cancelada);
-- **Troca o status** de cada inscrição: clique na **etiqueta de status** (a "pílula" colorida) da linha e escolha **Pendente / Confirmada / Cancelada** no menu — a mudança é aplicada na hora;
+- **Vê a lista** — **uma linha por participante** (não por pedido: numa inscrição em grupo, aparece cada pessoa que vai ao evento), com **busca** por nome/e-mail e **filtro por status** (pendente, confirmada, cancelada); veja os detalhes em **[Inscrições → A tabela](/modulos/inscricoes/#a-tabela)**;
+- **Escolhe as colunas** e **ordena** por qualquer uma delas — inclusive campos do próprio formulário do evento, como a modalidade de inscrição;
+- **Troca o status** de cada inscrição: clique na **etiqueta de status** (a "pílula" colorida) da linha e escolha **Pendente / Confirmada / Cancelada** no menu — a mudança é aplicada na hora e vale para **todos os participantes daquele pedido** (o status é do pedido, não da pessoa);
 
 ![Menu de troca de status aberto na etiqueta de uma inscrição](/assets/screenshots/evento-editor-inscritos-status.png)
 
-- **Exporta** a lista do evento em **CSV**, **XLSX** ou **PDF**, pelos botões acima da tabela.
+- **Exporta** a lista do evento em **CSV**, **XLSX** ou **PDF**, pelos botões acima da tabela — respeitando as **mesmas colunas** que você escolheu ver na tela.
 
 {: .note }
 > **A tela geral continua existindo.** O menu **[Inscrições](/modulos/inscricoes/)** (todos os eventos, com filtro de evento) segue igual. A aba **Inscritos** é um atalho: faz o mesmo, já focado no evento aberto — útil quando você está montando ou acompanhando um evento específico.
+
+### E-mail de andamento das inscrições
+
+Ainda na aba **Inscritos**, logo abaixo da lista, você liga um **resumo periódico por e-mail** do andamento das inscrições — um "raio-x" rápido, sem precisar abrir o painel toda hora.
+
+![Seção "E-mail de andamento das inscrições" na aba Inscritos, com o seletor de frequência](/assets/screenshots/evento-editor-email-andamento.png)
+<!-- CAPTURA PENDENTE: seção "E-mail de andamento das inscrições" na aba Inscritos — mostrar o seletor de Frequência aberto e a mensagem de contagem de coordenadores (ex.: "2 coordenador(es) receberá(ão) este e-mail."). -->
+
+Em **Frequência**, escolha:
+
+- **Desligado** — nenhum e-mail é enviado (é o ponto de partida de todo evento);
+- **Diária** — um resumo todo dia;
+- **Semanal** — um resumo por semana;
+- **Somente ao encerrar as inscrições** — um único e-mail, disparado quando a **data limite de inscrições** passa.
+
+O e-mail traz: inscritos **confirmados**, **pendentes** e **cancelados**, **vagas restantes**, **valor arrecadado** e **previsto**, os **dias até o prazo** de inscrição — e **quanto mudou desde o último envio** (ex.: "+12 confirmados desde o último resumo"). É um retrato **agregado**: nenhum nome, e-mail ou dado individual de participante aparece nele.
+
+{: .important }
+> **Quem recebe: só os Coordenadores de Eventos atribuídos a este evento** (aba **[Equipe](#equipe)**). Se **nenhum coordenador** estiver atribuído, **ninguém recebe** o e-mail — mesmo com a frequência ligada — e a própria tela avisa, com um atalho direto para a aba **Equipe**. Antes de configurar a frequência, confira se já tem gente na equipe do evento.
 
 ## Documentos
 
@@ -379,7 +413,7 @@ Configura o **certificado de participação** dos inscritos elegíveis:
 - **Carga horária** em horas (opcional; 0 = não exibir);
 - um **contador de elegíveis** e o botão **Enviar certificados aos elegíveis** (envio manual por e-mail).
 
-Quem é elegível depende da **modalidade** do evento (aba **Detalhes**): em evento **presencial**, quem fez **check-in**; em evento **virtual**, quem tem a inscrição confirmada. Cada certificado tem um **link público de verificação** (`certificado/{código}`), imprimível e com versão em PDF.
+Quem é elegível depende da **[modalidade](#modalidade-do-evento)** do evento (aba **Detalhes**): em evento **presencial** ou **híbrido**, quem fez **check-in**; em evento **virtual**, quem tem a inscrição confirmada. Cada certificado tem um **link público de verificação** (`certificado/{código}`), imprimível e com versão em PDF.
 
 {: .note }
 > O certificado só é liberado para quem é elegível. Em evento presencial, isso significa que **o check-in no dia alimenta diretamente a emissão** — mais um motivo para credenciar bem.

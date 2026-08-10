@@ -24,11 +24,27 @@ No topo, você filtra por:
 
 ## A tabela
 
-Cada linha é uma inscrição (um pedido), com o responsável, o evento, o número de inscritos, o valor, a data e o **status**. Para trocar o status, **clique na etiqueta de status** (a "pílula" colorida) da linha: abre um menu com os status disponíveis (Pendente / Confirmada / Cancelada), com o atual marcado. Escolha um e a mudança é **aplicada na hora**.
+Cada linha é um **participante** — não um pedido. Numa inscrição em grupo, aparece uma linha para **cada pessoa** que vai ao evento, com o **responsável pela inscrição** exibido como uma coluna (é ele quem pagou/preencheu o pedido, mas pode nem ser um dos participantes). Assim você vê quem realmente vai comparecer, sem precisar abrir o pedido no WooCommerce para descobrir os nomes.
+
+Para trocar o **status**, **clique na etiqueta de status** (a "pílula" colorida) da linha: abre um menu com os status disponíveis (Pendente / Confirmada / Cancelada), com o atual marcado. Escolha um e a mudança é **aplicada na hora**.
+
+{: .important }
+> **O status é do pedido, não da pessoa.** Ao trocar o status de um participante de uma inscrição em grupo, um aviso deixa claro que a mudança vale para **todos os participantes daquele mesmo pedido** — não dá para confirmar um e deixar outro pendente dentro do mesmo pedido.
 
 Quando um pedido ultrapassou a capacidade do evento, a inscrição aparece **sinalizada como excedente**.
 
 Há também um **link para o pedido no WooCommerce**, para conferir o pagamento e os dados de cobrança.
+
+### Escolher colunas e ordenar
+
+No botão **Colunas**, acima da tabela, você escolhe quais informações aparecem — além das colunas padrão (responsável, evento, valor, data, status), dá para incluir **qualquer campo do formulário do evento**, como a **modalidade** de inscrição. Marque as que quiser ver, clique em **Aplicar**, e a escolha fica **salva para o seu usuário** (vale nas próximas visitas).
+
+![Botão Colunas aberto, com a lista de campos disponíveis para marcar](/assets/screenshots/inscricoes-colunas.png)
+<!-- CAPTURA PENDENTE: dropdown do botão "Colunas" aberto na tela Inscrições, mostrando colunas padrão marcadas e um campo do formulário (ex.: modalidade) disponível para marcar. -->
+
+Para **ordenar**, clique no **cabeçalho** de qualquer coluna visível — inclusive as que você adicionou. Um clique ordena, outro clique inverte o sentido.
+
+A **exportação** (abaixo) e o **Relatório do evento** respeitam as mesmas colunas escolhidas aqui.
 
 ## Status de uma inscrição
 
