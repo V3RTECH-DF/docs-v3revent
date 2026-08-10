@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Visual da página de listagem de eventos
+**v1.62.0 · agosto de 2026**
+
+Melhoria visual na página de listagem de eventos (shortcode **`[v3revent_events]`**), a partir de feedback de uso real. Nos **cartões**, a arte do evento agora aparece **inteira e legível**, respeitando a proporção da própria imagem — antes, uma arte muito larga (tipo banner) virava uma faixa fina com espaço vazio embaixo; os cartões também ficaram mais equilibrados entre si, sem sobra no rodapé. Na **tabela**, o cabeçalho ganhou destaque próprio, o **logo do evento** passa a aparecer em cada linha (quando houver), o nome do evento fica em evidência e as colunas ficam centralizadas. Veja **[Shortcodes e API → Página de listagem de eventos](/modulos/shortcodes-e-api/#página-de-listagem-de-eventos-v3revent_events)**.
+
 ## Confiabilidade dos envios automáticos
 **v1.61.1 · agosto de 2026**
 

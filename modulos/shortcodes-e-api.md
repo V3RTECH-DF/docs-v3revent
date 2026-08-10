@@ -94,8 +94,8 @@ Por isso, navegando pela **loja** do seu site, você **não vai encontrar** os e
 
 O parâmetro **`layout`** decide a apresentação:
 
-- **`cards`** (padrão) — cada evento vira um **cartão** com imagem, título, data, local, modalidade e o selo de situação da inscrição (Abertas / Em breve / Encerradas). Bom para uma vitrine visual.
-- **`table`** — uma **tabela** com Evento, Data, Local, Modalidade e Prazo de inscrição. Os **cabeçalhos das colunas são clicáveis**: clique em "Data", por exemplo, para ordenar por data — clique de novo para inverter o sentido. Funciona **sem precisar de JavaScript** (é navegação normal por link), então funciona em qualquer site. Boa opção para listas longas ou históricos de edições passadas.
+- **`cards`** (padrão) — cada evento vira um **cartão** com a arte do evento **inteira e legível** (respeitando a proporção da imagem, sem cortar nem sobrar espaço vazio), título, data, local, modalidade e o selo de situação da inscrição (Abertas / Em breve / Encerradas). Bom para uma vitrine visual.
+- **`table`** — uma **tabela** com cabeçalho em destaque e, em cada linha, o **logo do evento** (quando houver), Evento, Data, Local, Modalidade e Prazo de inscrição. Os **cabeçalhos das colunas são clicáveis**: clique em "Data", por exemplo, para ordenar por data — clique de novo para inverter o sentido. Funciona **sem precisar de JavaScript** (é navegação normal por link), então funciona em qualquer site. Boa opção para listas longas ou históricos de edições passadas.
 
 ![Página com o shortcode [v3revent_events layout="table"] listando eventos em tabela ordenável](/assets/screenshots/shortcode-eventos-tabela.png)
 
