@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## O painel de gestão no site passou a respeitar a largura da sua página
+**v1.68.5–v1.68.8 · agosto de 2026**
+
+Quando você cola o `[v3revent_gestao]` numa página montada com Elementor, Divi ou outro construtor, o painel agora **respeita a largura que você definiu** para o container em vez de encolher para o tamanho do conteúdo ou ignorar o limite configurado. Corrigimos também dois casos mais específicos: container estreito dentro de outro container estreito (comum em layouts com colunas aninhadas) e a largura recalculada pelo site quando a tela muda de tamanho. Quer o painel mais largo ou mais estreito? **Ajuste a largura do container na própria página** — não há nada a configurar no plugin, ele sempre acompanha o espaço que você deu a ele. Veja **[Gestão pelo site](/modulos/gestao-pelo-site/)**.
+
 ## Botões e campos maiores no celular e no tablet
 **v1.68.1 · agosto de 2026**
 
