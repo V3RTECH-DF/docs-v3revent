@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Botões e campos maiores no celular e no tablet
+**v1.68.1 · agosto de 2026**
+
+Nas telas de gestão (Painel, Eventos, Inscrições, Check-in, Relatórios), os botões e campos ficaram **maiores em celular e tablet** — no tamanho mínimo recomendado para toque, sem precisar mirar com precisão. No computador, com o mouse, tudo continua do mesmo tamanho de sempre. O ganho é mais sentido no **Check-in**: quem faz check-in em pé, na portaria, com o celular na mão, tem menos chance de errar o toque no botão certo.
+
 ## Gestão de eventos direto no site, sem precisar do wp-admin
 **v1.68.0 · agosto de 2026**
 
@@ -35,7 +40,7 @@ Antes, ao confirmar a inscrição, o participante ia **direto para a tela de pag
 ## Trocar o status da inscrição ficou mais simples
 **v1.56.0 · julho de 2026**
 
-Na tela **Inscrições**, a coluna **Status** tinha uma etiqueta colorida **e** um menu suspenso logo abaixo, repetindo a mesma informação. Agora a **própria etiqueta é clicável**: clique nela e escolha o status no menu (**Pendente / Confirmada / Cancelada**), cada um com seu ícone e cor, com o atual marcado. Mais limpo e direto, sem perder clareza. O **filtro por status** no topo da lista continua igual. Veja em **[Inscrições](/modulos/inscricoes/#status-de-uma-inscricao)**.
+Na tela **Inscrições**, a coluna **Status** tinha uma etiqueta colorida **e** um menu suspenso logo abaixo, repetindo a mesma informação. Agora a **própria etiqueta é clicável**: clique nela e escolha o status no menu (**Pendente / Confirmada / Cancelada**), cada um com seu ícone e cor, com o atual marcado. Mais limpo e direto, sem perder clareza. O **filtro por status** no topo da lista continua igual. Veja em **[Inscrições](/modulos/inscricoes/#status-de-uma-inscrição)**.
 
 ## Controles de tamanho de texto dentro do topo do evento
 **v1.55.0 · julho de 2026**
