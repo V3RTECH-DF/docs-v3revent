@@ -22,7 +22,6 @@ Os dados básicos do evento.
 - **Descrição do evento** — texto de apresentação, com **editor de formatação** (veja abaixo);
 - **Data/hora de início** (obrigatória) e **de término**;
 - **Local** e **link do local**;
-- **Modalidade do evento** — ver abaixo;
 - **Capacidade total** (0 = ilimitada);
 - **Máximo de inscritos por pedido**;
 - **Inscrições abertas** (liga/desliga o formulário);
@@ -32,18 +31,6 @@ Os dados básicos do evento.
 - **Exibir contato dos organizadores na página** (opcional) — mostra um cartão "Fale com a organização" na página do evento (veja abaixo);
 - **Contagem regressiva na página** (opcional) — mostra contadores para o início do evento e o fim das inscrições (veja abaixo);
 - **Status** do evento.
-
-### Modalidade do evento
-
-Define como o evento acontece:
-
-- **Presencial** — o evento acontece num **local físico**.
-- **Virtual** — o evento acontece **on-line**.
-- **Híbrido** — o evento acontece **ao mesmo tempo presencial e on-line** (transmissão + público no local).
-
-![Seletor "Modalidade do evento" na aba Detalhes](/assets/screenshots/evento-editor-modalidade.png)
-
-A modalidade aparece para o público — como uma **pílula** ao lado da data e do local, tanto na **[página do evento](/modulos/pagina-do-evento/)** quanto na **[listagem `[v3revent_events]`](/modulos/shortcodes-e-api/#página-de-listagem-de-eventos-v3revent_events)**, onde também serve de **filtro**. Ela também define quem é elegível ao **certificado**: em modalidade **Presencial** ou **Híbrido**, só quem fez **check-in**; em **Virtual**, quem tem a inscrição **confirmada** (veja a aba **[Certificado](#certificado)**, abaixo).
 
 ### Aviso e data de abertura das inscrições
 
@@ -58,6 +45,20 @@ O campo **Data de abertura das inscrições** é o par simétrico da **data limi
 
 {: .note }
 > As duas datas trabalham juntas: **abertura** programa o início e **limite** programa o fim. Com as duas preenchidas, você define a **janela de inscrição** inteira e não precisa lembrar de ligar nem desligar o formulário — o sistema cuida das duas pontas.
+
+#### Data e hora, não só data
+
+Os dois campos aceitam **data e hora**, do mesmo jeito que a data do evento. A hora é **opcional**: quem não precisa dela pode ignorar e o comportamento continua exatamente o de sempre —
+
+- sem hora na **abertura**, vale o **início do dia** (00:00);
+- sem hora no **limite**, vale o **fim do dia** (23:59), ou seja, o último dia continua inteiro válido para inscrição.
+
+![Campos de data e hora da abertura e do limite de inscrições](/assets/screenshots/evento-editor-inscricoes-hora.png)
+
+Use a hora quando o horário importar de verdade — por exemplo, encerrar as inscrições ao **meio-dia** de sexta, em vez de só "sexta", ou abrir a partir das **9h** no dia do lançamento. Um evento já existente que você abrir e salvar sem mexer nesses campos **não muda em nada**: ele já vem com o horário equivalente ao comportamento anterior.
+
+{: .tip }
+> **O limite é inclusive no minuto exato.** Se você marcar o limite para as 12:00, a inscrição feita às 12:00 em ponto ainda é aceita — só passa a barrar a partir de 12:01. Vale o mesmo raciocínio para os lotes de preço, logo abaixo em **[Preço por lote (data)](#preço-por-lote-data)**.
 
 ### Contato dos organizadores
 
@@ -110,40 +111,21 @@ Define se o formulário pede os **Dados do Responsável pela Inscrição**:
 
 ## Inscritos
 
-A aba **Inscritos** traz, dentro do próprio evento, a **lista de participantes daquele evento** — sem precisar sair para a tela geral **Inscrições** e filtrar. É a mesma lista da tela **[Inscrições](/modulos/inscricoes/)**, só que já **presa a este evento**: some o filtro de evento e a coluna "Evento", e tudo o que você faz aqui vale só para as inscrições deste evento.
+A aba **Inscritos** traz, dentro do próprio evento, a **lista de inscrições daquele evento** — sem precisar sair para a tela geral **Inscrições** e filtrar. É a mesma tabela, só que já **presa a este evento**: some o filtro de evento e a coluna "Evento", e tudo o que você faz aqui vale só para as inscrições deste evento.
 
 ![Aba Inscritos do editor de evento, com a lista e os botões de exportar](/assets/screenshots/evento-editor-inscritos.png)
 
 Nela você:
 
-- **Vê a lista** — **uma linha por participante** (não por pedido: numa inscrição em grupo, aparece cada pessoa que vai ao evento), com **busca** por nome/e-mail e **filtro por status** (pendente, confirmada, cancelada); veja os detalhes em **[Inscrições → A tabela](/modulos/inscricoes/#a-tabela)**;
-- **Escolhe as colunas** e **ordena** por qualquer uma delas — inclusive campos do próprio formulário do evento, como a modalidade de inscrição;
-- **Troca o status** de cada inscrição: clique na **etiqueta de status** (a "pílula" colorida) da linha e escolha **Pendente / Confirmada / Cancelada** no menu — a mudança é aplicada na hora e vale para **todos os participantes daquele pedido** (o status é do pedido, não da pessoa);
+- **Vê a lista** de inscrições do evento — responsável, número de inscritos, valor, data e **status** —, com **busca** por nome/e-mail e **filtro por status** (pendente, confirmada, cancelada);
+- **Troca o status** de cada inscrição: clique na **etiqueta de status** (a "pílula" colorida) da linha e escolha **Pendente / Confirmada / Cancelada** no menu — a mudança é aplicada na hora;
 
 ![Menu de troca de status aberto na etiqueta de uma inscrição](/assets/screenshots/evento-editor-inscritos-status.png)
 
-- **Exporta** a lista do evento em **CSV**, **XLSX** ou **PDF**, pelos botões acima da tabela — respeitando as **mesmas colunas** que você escolheu ver na tela.
+- **Exporta** a lista do evento em **CSV**, **XLSX** ou **PDF**, pelos botões acima da tabela.
 
 {: .note }
 > **A tela geral continua existindo.** O menu **[Inscrições](/modulos/inscricoes/)** (todos os eventos, com filtro de evento) segue igual. A aba **Inscritos** é um atalho: faz o mesmo, já focado no evento aberto — útil quando você está montando ou acompanhando um evento específico.
-
-### E-mail de andamento das inscrições
-
-Ainda na aba **Inscritos**, logo abaixo da lista, você liga um **resumo periódico por e-mail** do andamento das inscrições — um "raio-x" rápido, sem precisar abrir o painel toda hora.
-
-![Seção "E-mail de andamento das inscrições" na aba Inscritos, com o seletor de frequência](/assets/screenshots/evento-editor-email-andamento.png)
-
-Em **Frequência**, escolha:
-
-- **Desligado** — nenhum e-mail é enviado (é o ponto de partida de todo evento);
-- **Diária** — um resumo todo dia;
-- **Semanal** — um resumo por semana;
-- **Somente ao encerrar as inscrições** — um único e-mail, disparado quando a **data limite de inscrições** passa.
-
-O e-mail traz: inscritos **confirmados**, **pendentes** e **cancelados**, **vagas restantes**, **valor arrecadado** e **previsto**, os **dias até o prazo** de inscrição — e **quanto mudou desde o último envio** (ex.: "+12 confirmados desde o último resumo"). É um retrato **agregado**: nenhum nome, e-mail ou dado individual de participante aparece nele.
-
-{: .important }
-> **Quem recebe: só os Coordenadores de Eventos atribuídos a este evento** (aba **[Equipe](#equipe)**). Se **nenhum coordenador** estiver atribuído, **ninguém recebe** o e-mail — mesmo com a frequência ligada — e a própria tela avisa, com um atalho direto para a aba **Equipe**. Antes de configurar a frequência, confira se já tem gente na equipe do evento.
 
 ## Documentos
 
@@ -264,7 +246,7 @@ Para configurar:
 
 ### Preço por lote (data)
 
-Ligue **Preço por lote (data)** e cadastre os **lotes** — cada um com **data de início**, **data de fim** e um **rótulo** (ex.: "1º lote"). Use as setas para reordenar e o **+** para adicionar lotes.
+Ligue **Preço por lote (data)** e cadastre os **lotes** — cada um com **início**, **fim** e um **rótulo** (ex.: "1º lote"). Use as setas para reordenar e o **+** para adicionar lotes.
 
 ![Aba Preços no modo por lote de data](/assets/screenshots/evento-editor-precos-lote.png)
 
@@ -272,8 +254,25 @@ O sistema cobra sempre o **lote vigente na data em que a pessoa se inscreve** �
 
 Como cada lote tem o **seu próprio bloco de preços**, você define ali as faixas e/ou as tabelas por modalidade daquele lote (veja **[Combinar as chaves](#combinar-as-chaves)** e o botão **Duplicar lote**).
 
+#### Início e fim com hora, e o encadeamento automático
+
+**Início** e **fim** de cada lote aceitam **data e hora**, igual ao período de inscrições. A hora é opcional: sem ela, o lote começa à meia-noite e termina no fim do dia — o comportamento de sempre.
+
+![Campos de início e fim de um lote, com data e hora](/assets/screenshots/evento-editor-precos-lote-hora.png)
+
+Ao adicionar um lote novo, o **início já vem sugerido** como o minuto seguinte ao fim do lote anterior — se o 1º lote termina às 12:00, o 2º já nasce começando às 12:01. Você pode ajustar livremente; o editor **avisa (sem impedir)** se perceber um **buraco** (uma janela de tempo sem nenhum lote vigente) ou uma **sobreposição** entre lotes.
+
+{: .important }
+> **Buraco entre lotes fecha as inscrições nesse intervalo.** Se o 1º lote termina às 12:00 e o 2º só começa às 14:00, entre 12:01 e 13:59 **não há lote ativo** — o formulário não aceita inscrição, mesmo com o evento publicado e as datas de abertura/limite abertas. É o motivo do aviso de encadeamento: confira sempre se o fim de um lote encosta no início do seguinte.
+
+{: .tip }
+> **O fim do lote é inclusive.** Um lote que termina às 12:00 ainda vale para uma inscrição feita às 12:00 em ponto; o lote seguinte assume a partir de 12:01. Para não deixar brecha, comece o próximo lote no minuto seguinte ao fim do anterior — é exatamente o que a sugestão automática já faz.
+
 {: .tip }
 > **Case o último lote com a data limite.** Se ninguém estiver num lote vigente (antes do 1º ou depois do último), as inscrições ficam indisponíveis. Combine o fim do último lote com a **[Data limite de inscrições](#detalhes)** (aba Detalhes) para o encerramento ficar claro.
+
+{: .note }
+> **A página se atualiza sozinha na virada do lote.** Quem estiver com o formulário aberto no navegador quando o lote virar vê o **preço mudar automaticamente**, sem precisar recarregar a página — e o valor cobrado no carrinho é sempre o mesmo que apareceu na tela.
 
 ## Aparência
 
@@ -411,7 +410,7 @@ Configura o **certificado de participação** dos inscritos elegíveis:
 - **Carga horária** em horas (opcional; 0 = não exibir);
 - um **contador de elegíveis** e o botão **Enviar certificados aos elegíveis** (envio manual por e-mail).
 
-Quem é elegível depende da **[modalidade](#modalidade-do-evento)** do evento (aba **Detalhes**): em evento **presencial** ou **híbrido**, quem fez **check-in**; em evento **virtual**, quem tem a inscrição confirmada. Cada certificado tem um **link público de verificação** (`certificado/{código}`), imprimível e com versão em PDF.
+Quem é elegível depende da **modalidade** do evento (aba **Detalhes**): em evento **presencial**, quem fez **check-in**; em evento **virtual**, quem tem a inscrição confirmada. Cada certificado tem um **link público de verificação** (`certificado/{código}`), imprimível e com versão em PDF.
 
 {: .note }
 > O certificado só é liberado para quem é elegível. Em evento presencial, isso significa que **o check-in no dia alimenta diretamente a emissão** — mais um motivo para credenciar bem.

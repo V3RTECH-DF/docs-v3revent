@@ -39,6 +39,10 @@ Cada evento define um **[Tipo de inscrição](/modulos/editor-evento/)** que con
 ![Tabela de lotes com o rótulo "Valor base" e a legenda "varia conforme a categoria · com desconto por quantidade"](/assets/screenshots/form-publico-valor-base.png)
 
 ![Formulário público de um evento com preço por lote de data](/assets/screenshots/form-publico-lotes.png)
+
+{: .note }
+> **A lista de lotes só mostra a hora quando o organizador definiu uma.** Um evento em que os lotes viram só por data continua exibindo só as datas, sem poluir a tela; a hora aparece na linha do lote apenas quando ela foi configurada. E se você deixar o formulário aberto no navegador **no exato momento em que o lote vira**, o preço **muda sozinho na tela**, sem precisar recarregar a página — o valor cobrado no carrinho é sempre o que aparece.
+
 4. **Consentimento** — o responsável marca o consentimento de tratamento de dados (com link para a sua política). Se o evento habilitar, há também a opção de **networking** (que libera o vCard no QR da credencial).
 5. **Carrinho** — ao clicar em **"Confirmar inscrição e ir para o carrinho"**, o formulário valida os dados (incluindo CPF e e-mail) e leva a inscrição para a **página do carrinho** do WooCommerce. Ali o participante **revê a inscrição** — inclusive os **nomes das pessoas inscritas**, que aparecem no item — e pode **remover a inscrição ou continuar comprando** antes de seguir para o pagamento.
 

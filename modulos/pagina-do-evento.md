@@ -54,7 +54,7 @@ Conforme o tema, a página pode incluir:
 - **Aviso de inscrições** — cartão logo abaixo do topo quando as inscrições não estão abertas (veja abaixo);
 - **Contagem regressiva** — contadores ao vivo para o início do evento e o fim das inscrições (opcional, veja abaixo);
 - **Contato dos organizadores** — cartão "Fale com a organização" com os canais de atendimento (opcional, veja abaixo);
-- **Informações** — **data, local e modalidade em destaque**, centralizados em "pílulas" com ícone (calendário, localização e categoria), seguidos da descrição do evento também centralizada. A pílula de modalidade mostra **Presencial**, **Virtual** ou **Híbrido**, conforme escolhido em **[Editor de evento → Detalhes](/modulos/editor-evento/#modalidade-do-evento)**;
+- **Informações** — **data e local em destaque**, centralizados em "pílulas" com ícone (calendário e localização), seguidos da descrição do evento também centralizada;
 - **Programação** — as sessões cadastradas, agrupadas por dia, com trilhas em destaque;
 - **Galeria** — imagens do evento;
 - **Documentos** — regulamento, kit do participante e outros arquivos como links de download (a posição é escolhida na aba **[Documentos](/modulos/editor-evento/)** do editor);
@@ -126,9 +126,6 @@ Se você prefere usar o seu próprio tema ou o editor de blocos do WordPress, ca
 | `[v3revent_documents]` | Os documentos do evento (regulamento, kit…) como links de download. |
 | `[v3revent_sponsors]` | Os patrocinadores, agrupados por tipo. |
 | `[v3revent_share]` | Os botões de compartilhamento. |
-
-{: .tip }
-> **Quer uma página com vários eventos, não só um?** A página do evento é sempre sobre **um** evento. Para montar uma **vitrine com todos os seus eventos** — já que o produto do WooCommerce fica oculto da loja de propósito —, use o shortcode **`[v3revent_events]`** numa página comum. Veja **[Shortcodes e API → Página de listagem de eventos](/modulos/shortcodes-e-api/#página-de-listagem-de-eventos-v3revent_events)**.
 
 {: .tip }
 > **Compartilhar bem multiplica inscrições**

@@ -12,41 +12,10 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
-## Visual da página de listagem de eventos
-**v1.62.0 · agosto de 2026**
+## Hora, além da data, nas inscrições e nos lotes
+**v1.63.0 · agosto de 2026**
 
-Melhoria visual na página de listagem de eventos (shortcode **`[v3revent_events]`**), a partir de feedback de uso real. Nos **cartões**, a arte do evento agora aparece **inteira e legível**, respeitando a proporção da própria imagem — antes, uma arte muito larga (tipo banner) virava uma faixa fina com espaço vazio embaixo; os cartões também ficaram mais equilibrados entre si, sem sobra no rodapé. Na **tabela**, o cabeçalho ganhou destaque próprio, o **logo do evento** passa a aparecer em cada linha (quando houver), o nome do evento fica em evidência e as colunas ficam centralizadas. Veja **[Shortcodes e API → Página de listagem de eventos](/modulos/shortcodes-e-api/#página-de-listagem-de-eventos-v3revent_events)**.
-
-## Confiabilidade dos envios automáticos
-**v1.61.1 · agosto de 2026**
-
-Ajuste de bastidor: o **expurgo automático de dados por retenção (LGPD)** e o novo **e-mail de andamento das inscrições** (veja abaixo) dependem de tarefas agendadas no WordPress. Corrigimos uma situação rara em que esse agendamento podia deixar de existir silenciosamente — por exemplo, se a hospedagem limpasse a lista de tarefas do site. Agora o plugin confere e recria o agendamento sempre que carrega, sem duplicar. Não exige nenhuma ação sua.
-
-## E-mail periódico com o andamento das inscrições
-**v1.61.0 · agosto de 2026**
-
-Novo recurso na aba **Inscritos** do editor de evento: um **resumo automático por e-mail** do andamento das inscrições, na frequência que você escolher — **diária**, **semanal** ou **somente quando as inscrições encerram** (vem **desligado** por padrão). O e-mail traz confirmados, pendentes, cancelados, vagas restantes, valor arrecadado e previsto, dias até o prazo — e **quanto mudou desde o último envio**. Vai só para quem tem o papel **Coordenador de Eventos** naquele evento; sem coordenador atribuído, **ninguém recebe**, e a tela avisa com um atalho para a aba **Equipe**. O conteúdo é sempre agregado — nenhum nome ou dado pessoal de participante aparece. Veja **[Editor de evento → E-mail de andamento das inscrições](/modulos/editor-evento/#e-mail-de-andamento-das-inscrições)**.
-
-## Correções na modalidade híbrida e no shortcode de eventos
-**v1.60.1 · agosto de 2026**
-
-Dois ajustes sobre o lançamento da v1.60.0: o editor do evento estava "esquecendo" a modalidade **Híbrido** ao recarregar a página (voltava para "Presencial" sozinho) — corrigido, e a modalidade passou a aparecer também na **página do evento**, não só na listagem. Também corrigimos o contraste dos selos de situação da inscrição (Abertas / Em breve / Encerradas) na listagem `[v3revent_events]`, que estava abaixo do mínimo recomendado de acessibilidade.
-
-## Página de listagem de eventos e modalidade híbrida
-**v1.60.0 · agosto de 2026**
-
-Chegou o shortcode **`[v3revent_events]`**: uma forma de mostrar **vários eventos numa mesma página** do site — em **cartões** (padrão) ou em **tabela ordenável** (clique no cabeçalho da coluna para ordenar, sem depender de JavaScript) —, com filtros por **situação das inscrições**, **modalidade** e **período**, limite de itens, paginação e a opção de escolher exatamente quais eventos aparecem. Nasceu porque o produto do WooCommerce de cada evento é **oculto do catálogo de propósito** (quem tem o formulário é a página do evento) — esta é a forma correta de montar uma vitrine pública, em vez de tornar o produto visível na loja. A aba **Shortcodes** (tela **Shortcodes e API**) passa a mostrar, para este shortcode, todos os **parâmetros** e um **exemplo pronto para copiar**.
-
-Além disso, o evento ganhou a modalidade **Híbrido** (presencial + virtual ao mesmo tempo), somando-se a Presencial e Virtual — escolhida na aba **Detalhes** do editor, aparece como pílula na página do evento e na listagem, e também serve de filtro. Veja **[Shortcodes e API → Página de listagem de eventos](/modulos/shortcodes-e-api/#página-de-listagem-de-eventos-v3revent_events)** e **[Editor de evento → Modalidade do evento](/modulos/editor-evento/#modalidade-do-evento)**.
-
-## Lista de inscrições por participante, com colunas escolhíveis
-**v1.59.6 · agosto de 2026**
-
-Correção de comportamento importante: em inscrições de **grupo**, a lista de **Inscrições** (tela geral e aba **Inscritos** do evento) mostrava só o **responsável** pela inscrição — que muitas vezes nem vai ao evento — e os participantes reais só apareciam no detalhe do pedido no WooCommerce. Agora as duas telas listam **uma linha por participante**, com o responsável exibido como coluna própria.
-
-De quebra, um botão **Colunas** deixa você escolher o que aparece na lista — incluindo **qualquer campo do formulário do evento** (por exemplo, a modalidade de inscrição) — e ordenar clicando no cabeçalho de qualquer uma delas; a escolha fica salva para o seu usuário, e a exportação e o relatório do evento passam a respeitar as mesmas colunas. Ao trocar o status de uma inscrição em grupo, um aviso deixa claro que a mudança vale para **todos os participantes** daquele pedido. Veja **[Inscrições](/modulos/inscricoes/#a-tabela)**.
-
----
+A **Data de abertura**, a **Data limite de inscrições** (aba Detalhes) e o **início/fim de cada lote de preço** (aba Preços) agora aceitam **hora**, não só data — dá para encerrar as inscrições ao meio-dia ou fazer um lote virar às 18h, por exemplo. A hora é **opcional**: sem ela, tudo continua como sempre (abertura à meia-noite, limite até o fim do dia). O sistema já sugere o início de um lote novo como o minuto seguinte ao fim do anterior, e avisa se perceber um buraco ou sobreposição entre lotes — um buraco fecha as inscrições nesse intervalo, então vale conferir. A página do participante também **atualiza o preço sozinha** quando o lote vira, sem precisar recarregar. Veja **[Editor de evento → Detalhes](/modulos/editor-evento/#data-e-hora-não-só-data)** e **[Preço por lote](/modulos/editor-evento/#início-e-fim-com-hora-e-o-encadeamento-automático)**.
 
 ## Inscritos do evento direto no editor
 **v1.58.0 · julho de 2026**
@@ -61,7 +30,7 @@ Antes, ao confirmar a inscrição, o participante ia **direto para a tela de pag
 ## Trocar o status da inscrição ficou mais simples
 **v1.56.0 · julho de 2026**
 
-Na tela **Inscrições**, a coluna **Status** tinha uma etiqueta colorida **e** um menu suspenso logo abaixo, repetindo a mesma informação. Agora a **própria etiqueta é clicável**: clique nela e escolha o status no menu (**Pendente / Confirmada / Cancelada**), cada um com seu ícone e cor, com o atual marcado. Mais limpo e direto, sem perder clareza. O **filtro por status** no topo da lista continua igual. Veja em **[Inscrições](/modulos/inscricoes/#status-de-uma-inscrição)**.
+Na tela **Inscrições**, a coluna **Status** tinha uma etiqueta colorida **e** um menu suspenso logo abaixo, repetindo a mesma informação. Agora a **própria etiqueta é clicável**: clique nela e escolha o status no menu (**Pendente / Confirmada / Cancelada**), cada um com seu ícone e cor, com o atual marcado. Mais limpo e direto, sem perder clareza. O **filtro por status** no topo da lista continua igual. Veja em **[Inscrições](/modulos/inscricoes/#status-de-uma-inscricao)**.
 
 ## Controles de tamanho de texto dentro do topo do evento
 **v1.55.0 · julho de 2026**

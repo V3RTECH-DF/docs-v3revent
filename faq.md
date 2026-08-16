@@ -24,14 +24,6 @@ Ela **não aparece** no menu **Páginas** do WordPress porque o evento é um con
 </details>
 
 <details markdown="1">
-<summary>Criei meus eventos mas eles não aparecem na loja — o que faço?</summary>
-
-É assim mesmo, de propósito. O produto do WooCommerce que o V3REvent cria para cada evento é **oculto do catálogo**: ele só serve para levar o preço ao carrinho — quem tem a descrição, a programação e o **formulário de inscrição** é a **[página do evento](/modulos/pagina-do-evento/)**, gerada automaticamente ao publicar. Por isso, navegando pela loja, você não encontra os eventos.
-
-**Não torne o produto visível na loja** — isso mostra a página crua do WooCommerce, sem formulário. O jeito certo de reunir seus eventos numa vitrine é criar uma página comum e colar o shortcode **`[v3revent_events]`**, que lista todos os eventos publicados (em cartões ou tabela, com filtros). Veja o passo a passo em **[Shortcodes e API → Página de listagem de eventos](/modulos/shortcodes-e-api/#página-de-listagem-de-eventos-v3revent_events)**.
-</details>
-
-<details markdown="1">
 <summary>Preciso do WooCommerce?</summary>
 
 Sim. O V3REvent usa o **WooCommerce** para o carrinho, o checkout e o pagamento
@@ -97,6 +89,28 @@ CSV/XLSX e importa — os cards de participante são preenchidos automaticamente
 O formulário **não bloqueia**: avisa que a inscrição entrará como **excedente** e
 deixa prosseguir. Na lista de inscrições, os excedentes ficam sinalizados. Para
 fechar de vez, desligue **Inscrições abertas** na aba Detalhes do evento.
+</details>
+
+<details markdown="1">
+<summary>Posso fechar as inscrições no meio do dia?</summary>
+
+Sim. A **Data limite de inscrições** (aba Detalhes) e o **início/fim de cada lote**
+(aba Preços) aceitam **data e hora**, não só data — informe o horário exato em que
+quer encerrar (ex.: meio-dia de sexta) em vez de esperar o fim do dia. Se você não
+informar hora nenhuma, o comportamento continua o de sempre: o limite vale até o
+**fim do dia** (23:59). Veja **[Editor de evento → Detalhes](/modulos/editor-evento/#detalhes)**.
+</details>
+
+<details markdown="1">
+<summary>Por que meu formulário diz que as inscrições estão fechadas se ainda tem lote?</summary>
+
+Provavelmente há um **buraco entre dois lotes**: se o 1º lote termina às 12:00 e o
+2º só começa às 14:00, entre 12:01 e 13:59 **nenhum lote está vigente** e o
+formulário não aceita inscrição — mesmo com o evento publicado. Abra a aba
+**Preços** do evento e confira se o fim de cada lote encosta no início do
+seguinte; ao criar um lote novo, o início já vem sugerido como o minuto seguinte
+ao fim do anterior, e o editor avisa quando percebe um buraco ou uma sobreposição.
+Veja **[Editor de evento → Preço por lote](/modulos/editor-evento/#preço-por-lote-data)**.
 </details>
 
 ## Pagamento e documentos
