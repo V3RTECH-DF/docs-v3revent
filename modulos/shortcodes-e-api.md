@@ -49,7 +49,7 @@ No editor do WordPress (Gutenberg), adicione um bloco **Shortcode** e cole o có
 
 ### Todos os shortcodes
 
-Todos aceitam o atributo **`id`** — o **número do evento** (ex.: `[v3revent_gallery id="1257"]`). Você encontra o ID na **lista de eventos** (coluna **ID**), que ainda traz um botão para **copiar o shortcode de inscrição pronto**. Se o shortcode estiver na **própria página do evento**, pode **omitir** o `id` — ele já pega o evento da página.
+A maioria aceita o atributo **`id`** — o **número do evento** (ex.: `[v3revent_gallery id="1257"]`). Você encontra o ID na **lista de eventos** (coluna **ID**), que ainda traz um botão para **copiar o shortcode de inscrição pronto**. Se o shortcode estiver na **própria página do evento**, pode **omitir** o `id` — ele já pega o evento da página. `[v3revent_events]` e `[v3revent_gestao]` fogem desse padrão: o primeiro lista **vários** eventos de uma vez (filtros próprios, sem `id` único); o segundo não exibe conteúdo de evento nenhum — é a gestão inteira.
 
 | Shortcode | O que exibe | Exemplo de uso |
 |---|---|---|
@@ -59,12 +59,19 @@ Todos aceitam o atributo **`id`** — o **número do evento** (ex.: `[v3revent_g
 | `[v3revent_documents]` | Os **documentos** do evento (regulamento, kit do participante…) como links de download. | Numa seção "Baixe o regulamento": `[v3revent_documents id="1257"]` |
 | `[v3revent_sponsors]` | Os **patrocinadores**, agrupados por tipo (ouro, prata…). | No rodapé da página do evento: `[v3revent_sponsors]` |
 | `[v3revent_share]` | Os **botões de compartilhamento** do evento nas redes. | Ao fim da página do evento: `[v3revent_share]` |
+| `[v3revent_events]` | Uma **lista de eventos publicados**, em cartões ou em tabela, com filtros de situação, modalidade e período, e paginação. | Numa página "Todos os eventos": `[v3revent_events]` |
+| `[v3revent_gestao]` | O **painel de gestão** do V3REvent (Painel, Eventos, Inscrições, Check-in, Relatórios) direto numa página do site, sem entrar no `wp-admin`. | Numa página "Gestão de eventos": `[v3revent_gestao]` |
 
 {: .note }
 > A lista na tela é a **fonte viva** — ela reflete exatamente os shortcodes que o plugin oferece na sua versão. Se um shortcode novo for adicionado, ele aparece ali automaticamente, com o botão Copiar. O `[v3revent_registration]` também aceita `event_id` no lugar de `id` (compatibilidade), mas o padrão é **`id`**.
 
 {: .tip }
-> Você **não precisa** montar tudo com shortcodes. O V3REvent já gera uma **[página do evento](/modulos/pagina-do-evento/)** temática e completa. Os shortcodes servem para quando você quer encaixar **um pedaço** do evento numa página que você mesmo montou (ex.: só o formulário, ou só a programação).
+> Você **não precisa** montar tudo com shortcodes. O V3REvent já gera uma **[página do evento](/modulos/pagina-do-evento/)** temática e completa. Os shortcodes servem para quando você quer encaixar **um pedaço** do evento numa página que você mesmo montou (ex.: só o formulário, ou só a programação), listar vários eventos, ou abrir a gestão fora do `wp-admin`.
+
+{: .important }
+> **`[v3revent_gestao]` é diferente dos outros — não é conteúdo, é acesso.**
+>
+> Só quem **já tem papel em algum evento** (Administrador da Organização, Coordenador de Eventos ou Equipe de Evento) vê a gestão de verdade; quem não tem papel nenhum vê apenas um aviso, e nada do plugin chega a carregar. **Configurações da organização** continua **exclusiva do `wp-admin`** — essa aba não aparece na página de gestão. O V3REvent marca a página como **não indexável** para buscadores, e ela **não entra em nenhum menu** automaticamente — evite colocá-la no menu público do site; trate o link como o do `wp-admin`. Passo a passo de montagem, o que cada papel vê e a tabela de erros: **[Gestão pelo site](/modulos/gestao-pelo-site/)**.
 
 ## Dúvidas frequentes (integração)
 
