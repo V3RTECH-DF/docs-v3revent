@@ -55,6 +55,8 @@ O V3REvent controla quem pode fazer o quê por meio de **três papéis**. Isso p
 
 Quem instala o plugin (usuários que já administram o WordPress) entra automaticamente como **Administrador da Organização**. A partir daí, você designa coordenadores e equipe **por evento**, na aba **Equipe** do editor de evento.
 
+Coordenadores e equipe não precisam necessariamente acessar pelo `wp-admin`: você pode publicar uma página no site com o mesmo acesso, nas mesmas permissões — veja **[Gestão pelo site](/modulos/gestao-pelo-site/)**.
+
 {: .important }
 > **Por que isso importa**
 >

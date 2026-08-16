@@ -12,6 +12,11 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Gestão de eventos direto no site, sem precisar do wp-admin
+**v1.68.0 · agosto de 2026**
+
+Agora dá para gerenciar eventos **sem entrar no painel do WordPress**. Cole o shortcode `[v3revent_gestao]` numa página comum do site e quem tem papel em algum evento passa a acessar **Painel, Eventos (com o editor completo), Inscrições, Check-in e Relatórios** — inclusive exportar em CSV, XLSX e PDF — por ali, com as **mesmas permissões** que teria no `wp-admin`. É a solução para equipe que faz check-in ou acompanha inscrições sem precisar (nem dever) ter uma conta de administrador do WordPress. As Configurações da organização continuam exclusivas do painel, e a página não aparece para quem não tem papel em nenhum evento. Veja **[Gestão pelo site](/modulos/gestao-pelo-site/)**.
+
 ## Hora, além da data, nas inscrições e nos lotes
 **v1.63.0 · agosto de 2026**
 

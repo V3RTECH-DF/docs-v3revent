@@ -8,7 +8,7 @@ has_children: true
 
 Referência detalhada de cada área do V3REvent. Use esta seção para consultar uma tela específica — cada página traz o que a tela faz, os campos importantes, exemplos e dicas.
 
-O V3REvent tem duas frentes: o **painel administrativo** (onde você cria e gerencia eventos) e as **telas públicas** (o que o inscrito e o participante veem).
+O V3REvent tem três frentes: o **painel administrativo** (onde você cria e gerencia eventos), a **página de gestão no site** (a mesma gestão, sem precisar do `wp-admin`) e as **telas públicas** (o que o inscrito e o participante veem).
 
 ## No painel administrativo
 
@@ -23,6 +23,12 @@ O V3REvent tem duas frentes: o **painel administrativo** (onde você cria e gere
 | **[Configurações](/modulos/configuracoes/)** | Perfil da organização, e-mails, aparência global, LGPD e integrações. |
 | **[Shortcodes e API](/modulos/shortcodes-e-api/)** | Shortcodes para páginas e a integração com outros sistemas: chaves de API, referência da API, webhooks e receitas no n8n. |
 | **[Ajuda e Feedback](/modulos/ajuda-e-feedback/)** | O cabeçalho do painel: manual e envio de feedback à V3RTECH. |
+
+## Pela página de gestão no site
+
+| Módulo | O que você faz |
+|---|---|
+| **[Gestão pelo site (sem wp-admin)](/modulos/gestao-pelo-site/)** | Painel, Eventos (com editor), Inscrições, Check-in e Relatórios numa página comum do WordPress — mesmas permissões do painel, sem precisar do `wp-admin`. |
 
 ## Nas telas públicas
 

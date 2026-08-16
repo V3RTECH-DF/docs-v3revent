@@ -47,6 +47,27 @@ endereço, contato e logo. Ele alimenta recibos, credenciais e e-mails de todos 
 eventos. Passo a passo em **[Primeiros passos](/primeiros-passos/)**.
 </details>
 
+<details markdown="1">
+<summary>Preciso dar acesso ao painel do WordPress para minha equipe?</summary>
+
+Não. Publique uma página comum do site com o shortcode `[v3revent_gestao]` e
+compartilhe o link com quem tem papel em algum evento — a pessoa gerencia
+Painel, Eventos, Inscrições, Check-in e Relatórios por ali, com login próprio,
+sem nunca entrar no `wp-admin`. Veja **[Gestão pelo site](/modulos/gestao-pelo-site/)**.
+</details>
+
+<details markdown="1">
+<summary>Por que minha equipe não vê todos os eventos?</summary>
+
+Porque o acesso é **por evento**, não geral. Só o **Administrador da
+Organização** vê todos os eventos; um **Coordenador de Eventos** ou membro da
+**Equipe de Evento** só enxerga (e só exporta dados de) os eventos em que foi
+designado — vale tanto no painel quanto na **[página de gestão do
+site](/modulos/gestao-pelo-site/)**. Para dar acesso a outro evento, adicione a
+pessoa na aba **Equipe** do editor daquele evento. Veja **[Primeiros
+passos](/primeiros-passos/#4-entender-os-papéis-de-acesso)**.
+</details>
+
 ## Inscrições e preços
 
 <details markdown="1">

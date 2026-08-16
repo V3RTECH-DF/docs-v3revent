@@ -52,7 +52,7 @@ Este manual tem dois objetivos: **ensinar você a operar o plugin** e **mostrar 
 - **Certificado de participação** — emita certificados aos elegíveis (por check-in ou inscrição confirmada), com modelo, carga horária e link público de verificação.
 - **Avaliação do evento** — pesquisa anônima respondida pelos presentes (com NPS) e a sua retrospectiva de lições aprendidas.
 - **Patrocinadores** — cadastre patrocinadores e apoiadores, exiba os logos na página pública e leve os valores e contrapartidas ao relatório.
-- **Papéis e equipe** — divida o trabalho entre Administrador da Organização, Coordenador de Eventos e Equipe de Evento, cada um com o acesso certo.
+- **Papéis e equipe** — divida o trabalho entre Administrador da Organização, Coordenador de Eventos e Equipe de Evento, cada um com o acesso certo — inclusive por uma página do site, sem precisar do painel do WordPress.
 - **Relatórios e exportação** — acompanhe inscritos e receita, filtre, mude status e exporte em **CSV, XLSX ou PDF** (inclusive só a lista de presentes).
 - **Relatório do evento** — um **PDF consolidado** de fechamento, com seções escolhíveis (org, patrocinadores, presença, valores, avaliação, equipe…).
 - **Privacidade por padrão (LGPD)** — consentimento no formulário, retenção configurável e atendimento aos direitos do titular.
