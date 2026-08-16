@@ -59,7 +59,7 @@ A maioria aceita o atributo **`id`** — o **número do evento** (ex.: `[v3reven
 | `[v3revent_documents]` | Os **documentos** do evento (regulamento, kit do participante…) como links de download. | Numa seção "Baixe o regulamento": `[v3revent_documents id="1257"]` |
 | `[v3revent_sponsors]` | Os **patrocinadores**, agrupados por tipo (ouro, prata…). | No rodapé da página do evento: `[v3revent_sponsors]` |
 | `[v3revent_share]` | Os **botões de compartilhamento** do evento nas redes. | Ao fim da página do evento: `[v3revent_share]` |
-| `[v3revent_events]` | Uma **lista de eventos publicados**, em cartões ou em tabela, com filtros de situação, modalidade e período, e paginação. | Numa página "Todos os eventos": `[v3revent_events]` |
+| `[v3revent_events]` | Uma **lista de eventos publicados**, em cartões ou em tabela, com filtros de situação, modalidade e período, e paginação. | Numa página "Todos os eventos": `[v3revent_events]` — atributos e receitas prontas em **[Listagem de eventos](/modulos/listagem-de-eventos/)** |
 | `[v3revent_gestao]` | O **painel de gestão** do V3REvent (Painel, Eventos, Inscrições, Check-in, Relatórios) direto numa página do site, sem entrar no `wp-admin`. | Numa página "Gestão de eventos": `[v3revent_gestao]` |
 
 {: .note }
