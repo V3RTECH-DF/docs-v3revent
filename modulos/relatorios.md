@@ -38,6 +38,8 @@ Dois grupos de botões, cada um em **CSV, XLSX ou PDF**:
 - **Exportar todos** — a lista completa de inscritos do evento;
 - **Exportar presentes** — apenas quem **compareceu** (fez check-in).
 
+O seletor de colunas inclui **Valor da inscrição** e **Valor por participante (média)** — veja como cada uma se comporta (e por que pendentes/canceladas aparecem entre parênteses) em **[Inscrições → Colunas de valor](/modulos/inscricoes/#colunas-de-valor)**.
+
 {: .tip }
 > **A lista de presentes vale ouro no pós-evento**
 >

@@ -42,6 +42,15 @@ Há também um **link para o pedido no WooCommerce**, para conferir o pagamento 
 
 Com um **evento filtrado**, aparecem os botões para exportar a lista em **CSV**, **XLSX** ou **PDF**. Veja também os cortes por presença em **[Relatórios](/modulos/relatorios/)**.
 
+### Colunas de valor
+
+No seletor de colunas (tela e exportação) há duas colunas de dinheiro:
+
+- **Valor da inscrição** — o total cobrado no pedido inteiro, mostrado só na **primeira linha** de cada inscrição. Numa inscrição em grupo (vários participantes num só pedido), as demais linhas ficam em branco nessa coluna — de propósito, para que somar a coluna na planilha não infle o total contando o mesmo pedido várias vezes.
+- **Valor por participante (média)** — o total dividido pelo número de inscritos do pedido. É uma **média**: numa inscrição com participantes em modalidades diferentes (ex.: um pagante e um cortesia), não é o valor individual de cada um.
+
+Inscrição **pendente** ou **cancelada** aparece com o valor **entre parênteses** — visível, mas fora da soma. Somar a coluna "Valor da inscrição" na planilha dá o mesmo total que a **Receita total** do Painel e o indicador de Relatórios.
+
 {: .tip }
 > **Use a exportação como conferência e backup**
 >

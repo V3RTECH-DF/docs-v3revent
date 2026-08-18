@@ -60,9 +60,10 @@ Quem é elegível depende da **modalidade** do evento: em **presencial**, quem f
 
 Para fechar o ciclo com um documento único, use a aba **Relatório** do editor (ou o ícone de relatório na lista de eventos). Você **escolhe quais seções incluir e em que ordem** — organização, dados gerais, patrocinadores, programação, inscritos e presença, **valores (previsto × arrecadado)**, avaliação, lições aprendidas, texto livre e equipe — e clica em **Gerar Relatório (PDF)**.
 
-- Informe a **meta de arrecadação prevista** para o comparativo com o arrecadado real (inscrições pagas + patrocínios recebidos);
+- Informe a **meta de arrecadação prevista** para o comparativo com o arrecadado real (inscrições pagas + patrocínios recebidos) — sem meta, o relatório mostra "sem meta definida" em vez de um percentual sem sentido;
+- escolha como a **descrição do evento** entra no documento — resumo curto, texto puro ou completo (com a formatação da página) — para não deixar a descrição tomar as primeiras páginas do relatório;
 - escreva um **texto livre** de fechamento;
-- o PDF é gerado **na hora**, com os dados atuais, e baixado no painel.
+- o PDF é gerado **na hora**, com os dados atuais, e baixado no painel, com cabeçalho, rodapé numerado e as cores da sua organização em todas as páginas.
 
 {: .tip }
 > **Um relatório para prestar contas**

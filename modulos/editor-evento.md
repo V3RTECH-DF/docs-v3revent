@@ -451,11 +451,27 @@ Monta o **relatório consolidado do evento em PDF**, com seções **escolhíveis
 ![Aba Relatório do editor de evento](/assets/screenshots/evento-editor-relatorio.png)
 
 - Ligue/desligue e **reordene** as seções: dados da organização, dados gerais (obrigatória), patrocinadores, programação, inscritos e presença, valores, avaliação, lições aprendidas, texto livre e equipe;
-- informe a **meta de arrecadação prevista** (usada no comparativo previsto × arrecadado);
+- escolha o **modo de exibição da descrição do evento** (veja abaixo);
+- informe a **meta de arrecadação prevista** (usada no comparativo previsto × arrecadado) — sem meta, o relatório mostra "sem meta definida" em vez de um percentual;
 - escreva um **texto livre** do coordenador;
 - **Salvar configuração** guarda as escolhas; **Gerar Relatório (PDF)** baixa o documento na hora, com os dados atuais.
 
 O relatório é gerado **sob demanda** (não fica armazenado) e é um **download restrito ao painel** — por conter valores, equipe e retrospectiva, não tem link público. Também dá para gerá-lo pelo ícone de relatório na **[lista de eventos](/modulos/eventos/)**. Veja **[No dia e depois](/guia-do-gestor/no-dia-e-depois/)**.
+
+Todas as páginas trazem **cabeçalho** com a logo (ou nome) da sua organização e **rodapé** com o evento e a numeração ("página X de Y"). Títulos de seção e destaques seguem as **cores da sua organização** (a mesma cascata evento → organização → marca usada no formulário público). Os indicadores de **inscritos e presença** aparecem lado a lado, cada número junto do seu rótulo, com uma nota explicando o cálculo — pensados para não serem lidos errado numa leitura rápida.
+
+### Modo de exibição da descrição
+
+A **descrição do evento** — a mesma que aparece formatada na página pública, com cartões, cores e botão — pode tomar várias páginas se incluída como está. Por isso, na aba Relatório você escolhe:
+
+- **Resumo curto** *(padrão)* — poucas linhas, direto ao ponto;
+- **Texto puro** — o conteúdo sem a formatação visual (sem cartões nem cores);
+- **Completo** — a descrição inteira, com a mesma formatação da página pública.
+
+{: .tip }
+> **Use "Completo" com moderação**
+>
+> Uma descrição rica (com cartões, imagens ou várias seções) pode ocupar várias páginas no modo completo. Para um relatório de fechamento enxuto — o mais comum para apresentar a patrocinadores ou à diretoria — prefira **Resumo curto**.
 
 ## WooCommerce
 

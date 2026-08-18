@@ -64,4 +64,4 @@ O participante digita o código e clica em **Aplicar**. O desconto aparece na ho
 - **Combinação de cupons e “uso individual”**: se marcar **Uso individual apenas**, aquele cupom não poderá ser somado a outros.
 
 {: .note }
-> O desconto do cupom fica registrado no **pedido do WooCommerce**. Nos relatórios de receita do V3REvent, a inscrição entra com o valor efetivamente cobrado.
+> O desconto do cupom fica registrado no **pedido do WooCommerce**. Nos relatórios de receita do V3REvent, a inscrição entra com o **valor efetivamente cobrado** (já com o desconto) — e o valor de tabela, sem desconto, também fica guardado por baixo dos panos, para você enxergar quanto foi concedido de desconto quando precisar. Inscrições feitas antes de agosto/2026 não têm esse registro e continuam aparecendo pelo valor de tabela da época.

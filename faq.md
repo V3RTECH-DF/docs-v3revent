@@ -145,6 +145,18 @@ compra é entre você (organizador) e o inscrito.
 </details>
 
 <details markdown="1">
+<summary>Minha receita total caiu depois de atualizar o plugin — é um erro?</summary>
+
+Provavelmente não. A partir da v1.69.0 (agosto/2026), o valor de cada inscrição
+passou a ser o **efetivamente cobrado no pedido** — com cupom de desconto já
+descontado — em vez de recalculado pelo preço cheio do evento. Se você usava
+cupons, o total antigo estava **inflado**; o número menor que você vê agora é a
+correção, não uma perda real. Inscrições feitas antes da atualização continuam
+pelo valor de tabela da época (sem correção retroativa) e aparecem identificadas
+numa nota junto do total. Veja **[Descontos com cupom](/guia-do-gestor/descontos-com-cupom/)**.
+</details>
+
+<details markdown="1">
 <summary>O recibo do V3REvent é nota fiscal?</summary>
 
 Não. O recibo é um **comprovante de pagamento** com a identidade do evento e os

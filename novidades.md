@@ -12,6 +12,23 @@ O que mudou no V3REvent, em linguagem simples — **da mais recente para a mais 
 
 ---
 
+## Relatório do evento reformulado: indicadores legíveis e descrição sob controle
+**v1.71.0 · agosto de 2026**
+
+O **Relatório do evento** (aba **Relatório** do editor) ganhou uma revisão completa. O bloco "Inscritos e presença" — que em alguns casos quebrava numa lista vertical e fazia cada número colar no rótulo seguinte, dando a entender que a arrecadação era zero — agora sai com os indicadores lado a lado, cada número junto do seu próprio rótulo, com uma nota curta explicando como cada um é calculado. "Realização do previsto" mostra **"sem meta definida"** em vez de um percentual sem sentido, quando o evento não tem meta de arrecadação. Todas as páginas passaram a ter **cabeçalho** (com o logo da organização) e **rodapé** (evento e numeração de página), e os títulos e destaques seguem as **cores da sua organização**. A maior mudança visível: agora você escolhe, por evento, como a **descrição** entra no relatório — **resumo curto** (padrão), **texto puro** ou **completo** com a formatação da página pública. Antes, a descrição formatada podia tomar as três primeiras páginas do documento. Veja **[Editor de evento → Relatório](/modulos/editor-evento/#relatório)**.
+
+## Coluna de valor nas inscrições e nas exportações
+**v1.70.0 · agosto de 2026**
+
+As telas **Inscrições** e **Relatórios** (e as exportações em CSV, XLSX e PDF) ganharam duas colunas no seletor de colunas: **"Valor da inscrição"** (o total cobrado pelo pedido, mostrado só na primeira linha — para não inflar a soma numa inscrição em grupo) e **"Valor por participante (média)"**. Inscrição **pendente ou cancelada** aparece com o valor **entre parênteses**, para deixar claro que ele não entra na soma — assim, somar a coluna na planilha bate com o total que você vê em Relatórios. Veja **[Inscrições](/modulos/inscricoes/#exportar)**.
+
+## O valor arrecadado passa a ser o que foi realmente cobrado
+**v1.69.0 · agosto de 2026**
+
+Corrigimos uma distorção importante: quando uma inscrição era paga com **cupom de desconto**, o V3REvent contabilizava o **preço cheio** — o total que você via no Painel, em Relatórios e no PDF do evento ficava maior do que o dinheiro que de fato entrou. Agora o valor registrado é sempre o **do pedido**, cupom incluído, e não é mais recalculado depois. Uma consequência para quem já usava cupons: **inscrições feitas antes desta atualização continuam pelo valor de tabela** (sem correção retroativa) e aparecem identificadas numa nota junto do total — então é esperado que a receita total **caia** um pouco em eventos que tiveram cupons, e essa queda é a correção, não um erro. Veja **[Descontos com cupom](/guia-do-gestor/descontos-com-cupom/)**.
+
+---
+
 ## O painel de gestão no site passou a respeitar a largura da sua página
 **v1.68.5–v1.68.8 · agosto de 2026**
 

@@ -19,6 +19,9 @@ No topo, quatro cartões resumem a operação:
 - **Receita total** — soma dos valores das inscrições confirmadas.
 - **Eventos** — quantos eventos estão ativos.
 
+{: .note }
+> **O que entra na Receita total.** Só inscrições **confirmadas** somam — pendentes e canceladas ficam de fora. O valor de cada inscrição é o que foi **efetivamente cobrado** no pedido (com cupom de desconto já descontado, quando houve). Inscrições feitas antes da atualização de agosto/2026 (v1.69.0) entram pelo **valor de tabela** da época, por não terem esse dado registrado — se o seu total pareceu menor depois de atualizar o plugin, é essa correção, veja **[Descontos com cupom](/guia-do-gestor/descontos-com-cupom/)**.
+
 ## Os gráficos
 
 Dois gráficos mostram a evolução ao longo dos últimos meses:
